@@ -12004,16 +12004,13 @@
           (r = w("a")),
            (r.innerHTML =
            '<span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Click here to play</p>Mario Heardle Infinite!'),
-           //'<span class="kofitext svelte-1d3p4dy"><img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png" alt="Twitter Link" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Thank you so much for to playing my game!</p>Follow me @NinjiGalaxy on Twitter!'),
            M(
              r,
              "class",
              "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
            ),
-           M(r, "href", "https://mario-heardle-infinite.glitch.me/"),
+           M(r, "href", "https://ninjigalaxy.github.io/mario-heardle-infinite/"),
            M(r, "title", "Mario Heardle Infinite"),
-           //M(r, "href", "https://twitter.com/NinjiGalaxy"),
-           //M(r, "title", "NinjiGalaxy on Twitter"),
           M(
             n,
             "class",
