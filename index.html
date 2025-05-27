@@ -53,4 +53,81 @@
 if (location.protocol != 'https:') { location.href = 'https:' + window.location.href.substring(window.location.protocol.length); }
 </script>
 </head>
+<div id="disclaimer-overlay">
+  <div id="disclaimer-box">
+    <p id="disclaimer-text">
+      ⚠️ IMPORTANT ⚠️<br>
+      <br>
+      <br>
+      Thank you for visiting the new home of Mario Heardle. It should work identically to the original, with one difference.<br>
+      <br>
+      If you read the message currently on the glitch.com version, you'd know about the new feature where you can extract your data as a .json file. The key difference between the versions of Mario Heardle at the moment is that this one instead has a button for importing that data.<br>
+      <br>
+      Please try to spread this url around. I'm not asking this out of a deparate need for attention, but rather so that people who want to play Mario Heardle in the future will be able to find the site since Google will still prioritize the original url until we make this one more popular.<br>
+      <br>
+      By clicking "I Understand", you are promising that you're aware of how the "Import Data" button should only be used for a .json file provided by the glitch.com version of Mario Heardle and that trying to upload something else will not work.<br>
+      <br>
+      <br>
+      ⚠️ IMPORTANT ⚠️
+    </p>
+    <button id="disclaimer-close">I Understand</button>
+  </div>
+</div>
+
+<style>
+  #disclaimer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  #disclaimer-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+   #disclaimer-box a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  #disclaimer-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  #disclaimer-close {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const overlay = document.getElementById("disclaimer-overlay");
+    const closeBtn = document.getElementById("disclaimer-close");
+
+    // Disable interaction with everything else
+    document.body.style.pointerEvents = "none";
+    overlay.style.pointerEvents = "auto";
+
+    closeBtn.addEventListener("click", function () {
+      overlay.style.display = "none";
+      document.body.style.pointerEvents = "auto";
+    });
+  });
+</script>
 </html>
