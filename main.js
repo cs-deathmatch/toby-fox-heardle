@@ -17642,3 +17642,48 @@
   });
 })();
 
+const button = document.createElement('button');
+button.innerText = 'Import Data';
+
+button.style.position = 'fixed';
+button.style.bottom = '50px';
+button.style.left = '10px';
+button.style.zIndex = '1000';
+button.style.padding = '10px 15px';
+button.style.backgroundColor = '#28A745';
+button.style.color = 'white';
+button.style.border = 'none';
+button.style.borderRadius = '5px';
+button.style.cursor = 'pointer';
+
+document.body.appendChild(button);
+
+button.addEventListener('click', () => {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+
+  input.addEventListener('change', () => {
+    const file = input.files[0];
+
+    if (!file) {
+      alert('No file selected.');
+      return;
+    }
+
+    const reader = new FileReader();
+
+    reader.onload = (event) => {
+      try {
+        const importedData = JSON.parse(event.target.result);
+        localStorage.setItem('userStats', JSON.stringify(importedData));
+        alert('Data imported successfully and replaced "userStats" in localStorage!');
+      } catch (error) {
+        console.error('Error parsing JSON:', error);
+        alert('Failed to import data. Ensure the file is a valid JSON.');
+      }
+    };
+    reader.readAsText(file);
+  });
+  input.click();
+});
