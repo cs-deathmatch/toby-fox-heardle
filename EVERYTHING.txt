@@ -1,3 +1,5 @@
+This is a text document for internal use. It lists all the songs in Mario Heardle in order, in the format Mario Heardle uses them in. Some songs are tagged to indicate which update they were added in. If you want to spoil yourself on what's being added in future updates, this is the text file for you! (Hint: look out for when songs start popping up with the tag "//E//")
+
       Super Mario Bros. (1985, NES)
       
       "Ground - Super Mario Bros. (1985)",
