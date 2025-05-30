@@ -1102,14 +1102,14 @@
 "Airship - Super Mario Bros. 3",//04-19-25
 "Toad Town (Ghost Town) - Paper Mario: The Origami King",//04-20-25
 "Spaceport Alpha - Diddy Kong Racing",//04-21-25
-"File Select - Super Mario 64",//04-22-25
+//"NULL",//04-22-25
 "Luigi/Mario/Yoshi Circuit - Mario Kart: Double Dash!!",//04-23-25
 "Treetop Rock - Donkey Kong Country (SNES)",//04-24-25
-"Lake Lapcat - Bowser's Fury",//04-25-25
+//"NULL",//04-25-25
 "Hidden Hills - Yoshi's Crafted World",//04-26-25
 "Under The Ice - Mario Pinball Land",//04-27-25
 "Beware Of Forest Mushrooms (Forest Maze) - Super Mario RPG: Legend Of The Seven Stars",//04-28-25
-"Electrodrome - Mario Kart 8",//04-29-25
+//"NULL",//04-29-25
 "Block Land - Super Mario 3D Land",//04-30-25
 "Ashley (Stage 1) - Game & Wario",//05-01-25
 "Title Screen - Captain Toad: Treasure Tracker",//05-02-25
@@ -1142,7 +1142,37 @@
 "Bonus [Super Mario Bros.] - Super Mario All-Stars",//05-29-25
 "Super Skywheel B - Mario vs. Donkey Kong: Mini-Land Mayhem!",//05-30-25
 "Title Screen - Super Mario Bros. 2",//05-31-25
-
+"Staff Roll - Mario Kart DS",//06-01-25
+"File Select - Super Mario 64",//06-02-25
+"Lake Lapcat - Bowser's Fury",//06-03-25
+"Electrodrome - Mario Kart 8",//06-04-25
+"Fortress - Super Mario Bros. 3",//06-05-25
+"Mount Must Dash (Super Mario Kart ~ Mario Circuit) - Super Mario 3D World",//06-06-25
+"Title Screen - New Super Mario Bros. Wii",//06-07-25
+"Fire Attack - Game & Watch Gallery 4",//06-08-25
+"Tomb Suites - Luigi's Mansion 3",//06-09-25
+"Destruction Dance (Wrecking Crew ~ Bonus Stage) - Dance Dance Revolution: Mario Mix",//06-10-25
+"Ground (Coin Rush) - Super Mario Run",//06-11-25
+"Yoshi Park - Mario Super Sluggers",//06-12-25
+"Stilt Village - Donkey Kong Land III",//06-13-25
+"Sky Island (Super Mario Bros. 3 ~ Athletic) - Mario Golf World Tour",//06-14-25
+"Doki Doki Do It - Super Mario Bros: The Great Mission To Rescue Princess Peach",//06-15-25
+"Shopping In Wakeport - Mario & Luigi: Dream Team",//06-16-25
+"Adventure Tours: Sparkletown - Mario & Sonic At The Olympic Winter Games (DS)",//06-17-25
+"Krook's March - Donkey Kong Country 2: Diddy's Kong Quest",//06-18-25
+"Tour London Loop (Wave 3) - MK8DX Booster Course Pass Waves 1-3",//06-19-25
+"Ghost House [Super Mario Bros.] - Super Mario Maker",//06-20-25
+"Wuhu Loop/Maka Wuhu - Mario Kart 7",//06-21-25
+"Gelato Beach - Super Mario Sunshine",//06-22-25
+"The Real Final Battle - Mario vs. Donkey Kong (Switch)",//06-23-25
+"Drowsy - Dr. Luigi",//06-24-25
+"Faire Square - Mario Party 6",//06-25-25
+"Mysterious - Mario Paint",//06-26-25
+"Chucklehuck Woods - Mario & Luigi: Superstar Saga (GBA)",//06-27-25
+"Indigo Underground - Paper Mario: Color Splash",//06-28-25
+"Bandit Valley - Yoshi's New Island",//06-29-25
+"Let's Go Lightly (Bobsled Run, Platform Peril) - Mario Party (N64)",//06-30-25
+    
 "Ground - Super Mario 3D Land",//11-03-25
     
 "Underwater - Super Mario Bros. (1985)",//09-13
@@ -1150,7 +1180,6 @@
 "Phase BGM - Wrecking Crew",
 "Name Registration - Vs. Super Mario Bros.",//02-10
 "Ending - Super Mario Bros. The Lost Levels",
-"Doki Doki Do It - Super Mario Bros: The Great Mission To Rescue Princess Peach",
 "The Light Blue Waltz (Underwater Theme) - Super Mario Bros: The Great Mission To Rescue Princess Peach",
 "Ground - Super Mario Bros. 2",//07-10
 "Ending - Super Mario Bros. 2",//05-11
@@ -1158,7 +1187,6 @@
 "Grass Land (World 1) - Super Mario Bros. 3",//09-18
 "Ground - Super Mario Bros. 3",//12-31
 "Underground - Super Mario Bros. 3",
-"Fortress - Super Mario Bros. 3",//04-08
 "Desert Land (World 2) - Super Mario Bros. 3",
 "Underwater - Super Mario Bros. 3",//12-06
 "Sky Land (World 5) - Super Mario Bros. 3",
@@ -1179,7 +1207,6 @@
 "Music C (Starman) - Yoshi (NES)",
 "Creative Exercise - Mario Paint",//08-23 
 "Monkey Song - Mario Paint",//06-21
-"Mysterious - Mario Paint",//01-03
 "Title Screen - Super Mario Kart",//06-11
 "Donut Plains - Super Mario Kart",//01-09
 "Choco Island - Super Mario Kart",
@@ -1231,7 +1258,6 @@
 "Level Theme 1 - Virtual Boy Wario Land",
 "K. Rool Returns (Title Screen) - Donkey Kong Country 2: Diddy's Kong Quest",
 "Stickerbush Symphony - Donkey Kong Country 2: Diddy's Kong Quest",
-"Krook's March - Donkey Kong Country 2: Diddy's Kong Quest",
 "Crocodile Cacophony - Donkey Kong Country 2: Diddy's Kong Quest",
 "Donkey Kong Rescued (Staff Roll) - Donkey Kong Country 2: Diddy's Kong Quest",
 "Battling Bowser - Super Mario RPG: Legend Of The Seven Stars",//02-22
@@ -1274,7 +1300,6 @@
 "Manhole - Game & Watch Gallery",//02-01
 "Fire - Game & Watch Gallery",
 "Donkey Kong - Game & Watch Gallery 2",
-"Stilt Village - Donkey Kong Land III",
 "Treetop Tumble - Donkey Kong Land III",
 "Jungle Falls - Diddy Kong Racing",
 "Walrus Cove - Diddy Kong Racing",
@@ -1292,7 +1317,6 @@
 "DK's Jungle Adventure - Mario Party (N64)",
 "Yoshi's Tropical Island - Mario Party (N64)",//08-01
 "Bowser's Magma Mountain - Mario Party (N64)",
-"Let's Go Lightly (Bobsled Run, Platform Peril) - Mario Party (N64)",//04-23
 "Faster Than All (Handcar Havoc, Slot Car Derby, etc) - Mario Party (N64)",
 "Chance Time! - Mario Party (N64)",
 "Everyone's A Super Star (Staff Roll) - Mario Party (N64)",
@@ -1365,7 +1389,6 @@
 "Vanilla Dome - Super Mario World: Super Mario Advance 2",//04-27
 "Status Screen - Super Mario World: Super Mario Advance 2",
 "Bianco Hills - Super Mario Sunshine",//07-14
-"Gelato Beach - Super Mario Sunshine",//03-26
 "Hotel Delfino - Super Mario Sunshine",
 "Noki Depths - Super Mario Sunshine",
 "Pianta Hot Spring - Super Mario Sunshine",
@@ -1382,7 +1405,6 @@
 "Loud And Sweet (Blame It On The Crane, Booksquirm, etc) - Mario Party 4",//05-28
 "Donkey Kong 3 - Game & Watch Gallery 4",
 "Octopus - Game & Watch Gallery 4",
-"Fire Attack - Game & Watch Gallery 4",
 "Paper Plane - WarioWare, Inc.: Mega Microgame$!",
 "Staff Roll - WarioWare, Inc.: Mega Microgame$!",
 "DK Island Swing - Donkey Kong Country (GBA)",
@@ -1410,7 +1432,6 @@
 "Peach's Castle - Mario & Luigi: Superstar Saga (GBA)",
 "Prince Peasley's Theme - Mario & Luigi: Superstar Saga (GBA)",//11-10
 "Hoohoo Mountaintop - Mario & Luigi: Superstar Saga (GBA)",
-"Chucklehuck Woods - Mario & Luigi: Superstar Saga (GBA)",//12-15
 "Woohoo Hooniversity - Mario & Luigi: Superstar Saga (GBA)",//01-29
 "Sweet Surfin' (Gwarhar Lagoon) - Mario & Luigi: Superstar Saga (GBA)",//06-03
 "Sea... Sea... Sea... (Oho Ocean) - Mario & Luigi: Superstar Saga (GBA)",
@@ -1448,7 +1469,6 @@
 "Main Menu - Mario Power Tennis",
 "Delfino Plaza Court - Mario Power Tennis",
 "Towering Treetop - Mario Party 6",
-"Faire Square - Mario Party 6",
 "Snowflake Lake - Mario Party 6",//03-13
 "Frantic (Daft Rafts, Snow Brawl, etc) - Mario Party 6",
 "Rec Room - Super Mario 64 DS",//08-15
@@ -1466,7 +1486,6 @@
 "Banana Bungalow - DK: King Of Swing",
 "Main Menu - Dance Dance Revolution Mario Mix",
 "Here We Go! (Super Mario Bros. ~ Ground) - Dance Dance Revolution: Mario Mix",//05-23
-"Destruction Dance (Wrecking Crew ~ Bonus Stage) - Dance Dance Revolution: Mario Mix",//07-15
 "Boo Boogie (Super Mario Bros. 2 ~ Ground) - Dance Dance Revolution: Mario Mix",//09-10
 "Starring Wario! (Wario World ~ Greenhorn Forest) - Dance Dance Revolution: Mario Mix",//10-19
 "Bowser's Castle (Mario Kart: Double Dash!!) - Dance Dance Revolution: Mario Mix",//12-18
@@ -1496,7 +1515,6 @@
 "Battle Mode - Mario Kart DS",
 "Boss Battle - Mario Kart DS",
 "Records - Mario Kart DS",
-"Staff Roll - Mario Kart DS",
 "Title Screen - Super Mario Strikers",
 "Pipeline Central Intro - Super Mario Strikers",
 "Peach's Castle - Mario & Luigi: Partners In Time",
@@ -1611,7 +1629,6 @@
 "Galaxy Colosseum/Galaxy Arena - Mario Kart Wii",
 "Main Menu - Mario Super Sluggers",//12-30
 "Mario Stadium - Mario Super Sluggers",
-"Yoshi Park - Mario Super Sluggers",
 "Staff Roll - Mario Super Sluggers",
 "Just Plains - Wario Land: Shake It!",
 "Mt. Lava Lava/Sneak Peak - Wario Land: Shake It!",
@@ -1634,9 +1651,7 @@
 "Alpine Skiing: Downhill - Mario & Sonic At The Olympic Winter Games (Wii)",
 "Dream Ice Hockey: Bowser's Castle (Mario Kart: Super Circuit) - Mario & Sonic At The Olympic Winter Games (Wii)",
 "Dream Ski Jumping: (Good Egg Galaxy ~ Super Mario Galaxy) - Mario & Sonic At The Olympic Winter Games (Wii)",
-"Adventure Tours: Sparkletown - Mario & Sonic At The Olympic Winter Games (DS)",
 "Adventure Tours: Boss - Mario & Sonic At The Olympic Winter Games (DS)",
-"Title Screen - New Super Mario Bros. Wii",//11-04
 "World 1 (Grass) - New Super Mario Bros. Wii",//11-30
 "Underground - New Super Mario Bros. Wii",//02-05
 "Bonus - New Super Mario Bros. Wii",
@@ -1708,7 +1723,6 @@
 "Main Menu - Mario Kart 7",
 "Toad Circuit/Mario Circuit - Mario Kart 7",//05-06
 "Shy Guy Bazaar - Mario Kart 7",//02-20
-"Wuhu Loop/Maka Wuhu - Mario Kart 7",//01-01
 "Music Park/Melody Motorway - Mario Kart 7",
 "Neo Bowser City/Koopa City - Mario Kart 7",
 "Bowser's Castle - Mario Kart 7",
@@ -1751,7 +1765,6 @@
 "Nightmare Lullaby - Mario & Luigi: Dream Team",
 "Bowser's Theme - Mario & Luigi: Dream Team",
 "Antasma's Theme - Mario & Luigi: Dream Team",//08-10
-"Shopping In Wakeport - Mario & Luigi: Dream Team",//05-20
 "Lofty Mount Pajamaja - Mario & Luigi: Dream Team",//08-07
 "Sacred Somnom Woods - Mario & Luigi: Dream Team",//06-23
 "Never Let Up! (Boss Battle) - Mario & Luigi: Dream Team",//11-16
@@ -1779,7 +1792,6 @@
 "The Great Tower - Super Mario 3D World",//05-01
 "The Great Tower Showdown - Super Mario 3D World",
 "The Credits Roll (Staff Roll) - Super Mario 3D World",//05-14
-"Mount Must Dash (Super Mario Kart ~ Mario Circuit) - Super Mario 3D World",
 "Captain Toad Plays Peek-A-Boo - Super Mario 3D World",
 "Pipeline Lagoon/Sunshine Seaside (Underwater) - Super Mario 3D World",
 "World Castle - Super Mario 3D World",
@@ -1794,7 +1806,6 @@
 "Champion's Road (Super Mario Galaxy ~ Gusty Garden Galaxy) - Super Mario 3D World",//01-13
 "Perilous Palace Path - Mario Party: Island Tour",
 "Dizzy - Dr. Luigi",
-"Drowsy - Dr. Luigi",
 "Trunk Twister - Donkey Kong Country: Tropical Freeze",
 "Big Top Bop (World 1 Boss) - Donkey Kong Country: Tropical Freeze",
 "Frosty Fruits - Donkey Kong Country: Tropical Freeze",
@@ -1803,9 +1814,7 @@
 "Secret Seclusion (Donkey Kong Jr. Theme) - Donkey Kong Country: Tropical Freeze",
 "Main Theme - Yoshi's New Island",
 "Underground - Yoshi's New Island",
-"Bandit Valley - Yoshi's New Island",
 "Forest Course - Mario Golf World Tour",
-"Sky Island (Super Mario Bros. 3 ~ Athletic) - Mario Golf World Tour",
 "Selection Screen - Mario Kart 8",//04-15
 "Mario Kart Stadium - Mario Kart 8",//03-15
 "Water Park - Mario Kart 8",
@@ -1854,7 +1863,6 @@
 "Staff Roll - Yoshi's Woolly World",
 "Title Screen - Super Mario Maker",//03-31
 "Underground [Super Mario Bros.] (Edit) - Super Mario Maker",//12-16
-"Ghost House [Super Mario Bros.] - Super Mario Maker",//06-17
 "Ghost House [Super Mario Bros. 3] - Super Mario Maker",//01-27
 "100 Mario Challenge (Super Mario Bros. 3 ~ Grass Land) - Super Mario Maker",
 "Whispered Secrets (Peach's Theme) - Mario & Luigi: Paper Jam",
@@ -1874,7 +1882,6 @@
 "Title Screen - Paper Mario: Color Splash",//07-07
 "Ruddy Road - Paper Mario: Color Splash",//04-18
 "Cherry Lake - Paper Mario: Color Splash",//10-07
-"Indigo Underground - Paper Mario: Color Splash",//09-01
 "Bloo Bay Beach - Paper Mario: Color Splash",//04-03
 "Blissful Beach - Paper Mario: Color Splash",
 "Plum Park - Paper Mario: Color Splash",//07-01
@@ -1885,7 +1892,6 @@
 "Balloon Bash - Mario Party: Star Rush",
 "Boo's Block Party - Mario Party: Star Rush",
 "Underground - Super Mario Run",
-"Ground (Coin Rush) - Super Mario Run",//03-09
 "Remix 10 - Super Mario Run",//06-16
 "Selection Screen (Wireless) - Mario Kart 8 Deluxe",//06-19
 "Lunar Colony - Mario Kart 8 Deluxe",//10-30
@@ -1972,7 +1978,6 @@
 "E. Gadd's Laboratory - Luigi's Mansion 3",
 "Twisted Suites - Luigi's Mansion 3",//04-28
 "Paranormal Productions - Luigi's Mansion 3",
-"Tomb Suites - Luigi's Mansion 3",
 "Staff Roll - Luigi's Mansion 3",
 "Tokyo Overworld - Mario & Sonic at the Olympic Games Tokyo 2020",
 "Peach's Castle (Super Mario 64) - Mario & Sonic At The Olympic Games Tokyo 2020",//03-25
@@ -2011,7 +2016,6 @@
 "Tour New York Minute (Wave 2) - MK8DX Booster Course Pass Waves 1-3",
 "N64 Kalimari Desert (Wave 2) - MK8DX Booster Course Pass Waves 1-3",//02-24
 "Sky High Sundae (Wave 2) - MK8DX Booster Course Pass Waves 1-3",//11-08
-"Tour London Loop (Wave 3) - MK8DX Booster Course Pass Waves 1-3",//03-19
 "Wii Maple Treeway (Wave 3) - MK8DX Booster Course Pass Waves 1-3",
 "Merry Mountain (Wave 3) - MK8DX Booster Course Pass Waves 1-3",//12-25
 "3DS Rainbow Road (Wave 3) - MK8DX Booster Course Pass Waves 1-3",
@@ -2062,7 +2066,6 @@
 "Spooky House A - Mario vs. Donkey Kong (Switch)",
 "Twilight City A - Mario vs. Donkey Kong (Switch)",
 "Staff Roll - Mario vs. Donkey Kong (Switch)",
-"The Real Final Battle - Mario vs. Donkey Kong (Switch)",
 "Assassin Disco (Ninja Peach) - Princess Peach: Showtime!",
 "Galloping Through The Wilderness (Cowgirl Peach) - Princess Peach: Showtime!",
 "Under The Cover Of Night (Dashing Thief Peach) - Princess Peach: Showtime!",
@@ -6664,124 +6667,124 @@
             answer: "Title Screen - Super Mario Bros. 2",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/user409121565/mario-kart-ds-ost-credits",
+            answer: "Staff Roll - Mario Kart DS",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/smart-gaming-166773353/file-select",
+            answer: "File Select - Super Mario 64",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/yell0wsuit/peaceful-ocean-sm3dw-bowsers-fury-ost",
+            answer: "Lake Lapcat - Bowser's Fury",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/user-602684896/mk8-electrodrome",
+            answer: "Electrodrome - Mario Kart 8",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/simplepro/fortress-super-mario-bros-3",
+            answer: "Fortress - Super Mario Bros. 3",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/not-bowsers-fury/mount-must-dash-super-mario-3d-world-2013",
+            answer: "Mount Must Dash (Super Mario Kart ~ Mario Circuit) - Super Mario 3D World",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/vgmb/02-title-theme",
+            answer: "Title Screen - New Super Mario Bros. Wii",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/game-and-watch-gallery/gw4-fire-attack-modern-mode",
+            answer: "Fire Attack - Game & Watch Gallery 4",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/user-824634691/tomb-suites-10-theme-track-1",
+            answer: "Tomb Suites - Luigi's Mansion 3",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/kereta-simit/destruction-in-the-moonlight",
+            answer: "Destruction Dance (Wrecking Crew ~ Bonus Stage) - Dance Dance Revolution: Mario Mix",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/minimarioamiibo/ground-coin-rush",
+            answer: "Ground (Coin Rush) - Super Mario Run",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/beep-blox/yoshi-park-mario-super-sluggers",
+            answer: "Yoshi Park - Mario Super Sluggers",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/mario-vs-donkey-kong/stilt-village-donkey-kong-land-iii",
+            answer: "Stilt Village - Donkey Kong Land III",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/mario-heardle/sky-island-mario-golf-world-tour",
+            answer: "Sky Island (Super Mario Bros. 3 ~ Athletic) - Mario Golf World Tour",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/vitalic-rudenko-396547002/super-mario-bros-the-great-3",
+            answer: "Doki Doki Do It - Super Mario Bros: The Great Mission To Rescue Princess Peach",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/frigidscholar/shopping-in-wakeport-mario-luigi-dream-team-music",
+            answer: "Shopping In Wakeport - Mario & Luigi: Dream Team",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/faded_boo/adventure-tours-sparkletown",
+            answer: "Adventure Tours: Sparkletown - Mario & Sonic At The Olympic Winter Games (DS)",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/user-227502204-594364584/krooks-march",
+            answer: "Krook's March - Donkey Kong Country 2: Diddy's Kong Quest",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/mk8dxbcpost/tour-london-loop",
+            answer: "Tour London Loop (Wave 3) - MK8DX Booster Course Pass Waves 1-3",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/mr-starderp-64/super-mario-maker-smb1-ghost-house",
+            answer: "Ghost House [Super Mario Bros.] - Super Mario Maker",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/5nintendo/wuhu-loop-maka-wuhu",
+            answer: "Wuhu Loop/Maka Wuhu - Mario Kart 7",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/caitlin-freeman-8/gelato-beach-super-mario-sunshine",
+            answer: "Gelato Beach - Super Mario Sunshine",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/mario-vs-donkey-kong-switch/the-real-final-battle",
+            answer: "The Real Final Battle - Mario vs. Donkey Kong (Switch)",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/superninjigalaxy/drowsy-operation-l-dr-luigi",
+            answer: "Drowsy - Dr. Luigi",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/superninjigalaxy-2/faire-square-mario-party-6",
+            answer: "Faire Square - Mario Party 6",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/susumi-sama/mario-paint-bgm-3",
+            answer: "Mysterious - Mario Paint",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/silly-person-52110284/24-chucklehuck-woods",
+            answer: "Chucklehuck Woods - Mario & Luigi: Superstar Saga (GBA)",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/kirby-nep-adventure-rst1/indigo-underground-paper-mario-color-splash-2016",
+            answer: "Indigo Underground - Paper Mario: Color Splash",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/romeo-lopez-734877597/bandit-valley-yoshis-new-island-ost",
+            answer: "Bandit Valley - Yoshi's New Island",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/mvpl/mario-party-1-ost-lets-go",
+            answer: "Let's Go Lightly (Bobsled Run, Platform Peril) - Mario Party (N64)",
           },
           {
             url: "https://soundcloud.com/vgmplanet/song",
