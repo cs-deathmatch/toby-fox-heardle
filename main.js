@@ -12802,7 +12802,7 @@
                 ? (t += "⚫")
                 : (t += "🔴")
               : (t += "⚪");
-          let o = e + "\n\n" + t + "\n\n" + "https://mario-heardle.glitch.me/";
+          let o = e + "\n\n" + t + "\n\n" + "https://ninjigalaxy.github.io/mario-heardle";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
