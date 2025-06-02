@@ -1179,7 +1179,7 @@ let _metadata = createMetadata({
 "Underwater - Super Mario Bros. (1985)": [1985, "NES", "Super Mario", "Super Mario Bros.", "2D Platformer"],
 "Super Star (Invincible) - Super Mario Bros": [1985, "NES", "Super Mario", "Super Mario Bros.", "2D Platformer"],
 "Phase BGM - Wrecking Crew": [1985, "NES", "Wrecking Crew", "Wrecking Crew", "Puzzle"],
-"Name Registration - Vs. Super Mario Bros.": [1986, "NES", "Super Mario", "Vs. Super Mario Bros.", "2D Platformer"],
+"Name Registration - Vs. Super Mario Bros.": [1986, "Arcade", "Super Mario", "Vs. Super Mario Bros.", "2D Platformer"],
 "Ending - Super Mario Bros. The Lost Levels": [1986, "NES", "Super Mario", "Super Mario Bros.: The Lost Levels", "2D Platformer"],
 "The Light Blue Waltz (Underwater Theme) - Super Mario Bros: The Great Mission To Rescue Princess Peach": [1986, "Film/TV", "Super Mario", "Super Mario Bros: The Great Mission To Rescue Princess Peach", "Film/TV"],
 "Ground - Super Mario Bros. 2": [1988, "NES", "Super Mario", "Super Mario Bros. 2", "2D Platformer"],
