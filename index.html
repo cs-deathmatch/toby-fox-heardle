@@ -1,27 +1,18 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMNQT3Y7B0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SMNQT3Y7B0');
-</script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mario Heardle</title>
-<meta name="description" content="Guess the Mario song from the intro in as little tries as possible.">
-<meta itemprop="name" content="Mario Heardle">
-<meta itemprop="description" content="Guess the Mario song from the intro in as little tries as possible.">
+<title>Toby Fox Heardle</title>
+<meta name="description" content="Guess the Toby Fox song from the intro in as little tries as possible.">
+<meta itemprop="name" content="Toby Fox Heardle">
+<meta itemprop="description" content="Guess the Toby Fox song from the intro in as little tries as possible.">
 
 
-<meta property="og:url" content="https://mario-heardle.glitch.me/">
+<!--<meta property="og:url" content="https://wii.gay/TEMPTEMPTEMP">-->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mario Heardle">
-<meta property="og:description" content="Guess the Mario song from the intro in as little tries as possible.">
+<meta property="og:title" content="Toby Fox Heardle">
+<meta property="og:description" content="Guess the Toby Fox song from the intro in as little tries as possible.">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mario Heardle">
@@ -29,17 +20,17 @@
 
   
 <!-- EDIT THE content= TAGS on lines 23-25 WITH A LINK TO AN IMAGE THAT WILL SHOW UP WHEN YOU SHARE THE LINK   -->
-<meta itemprop="image" content="https://i.imgur.com/sh3W81A.png">
-<meta property="og:image" content="https://i.imgur.com/sh3W81A.png">
-<meta name="twitter:image" content="https://i.imgur.com/sh3W81A.png">
+<meta itemprop="image" content="/assets/header.png">
+<meta property="og:image" content="/assets/header.png">
+<meta name="twitter:image" content="/assets/header.png">
 
 
 <!-- EDIT THE href TAGS  on lines 29-33 WITH A LINK THATLL SHOW UP AS AN ICON IN YOUR BROWSER   -->
-<link rel="icon" type="image/png" href="https://i.imgur.com/sh3W81A.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/sh3W81A.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/sh3W81A.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://i.imgur.com/sh3W81A.png">
-<link rel="shortcut icon" href="https://i.imgur.com/sh3W81A.png">
+<link rel="icon" type="image/png" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
+<link rel="shortcut icon" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
   
   
   
@@ -49,85 +40,5 @@
 
 <script defer src="extension.js"></script>
 <script defer src="main.js"></script>
-<script>
-if (location.protocol != 'https:') { location.href = 'https:' + window.location.href.substring(window.location.protocol.length); }
-</script>
 </head>
-<div id="disclaimer-overlay">
-  <div id="disclaimer-box">
-    <p id="disclaimer-text">
-      ⚠️ IMPORTANT ⚠️<br>
-      <br>
-      <br>
-      Thank you for visiting the new home of Mario Heardle.<br>
-      <br>
-      If you extracted your data from the original Mario Heardle as a .json file, this is where you can use an "Import Data" button (also in the bottom left corner) to import that file into this version.<br>
-      <br>
-      The "Import Data" button should only be used for a .json file from the glitch.com version of Mario Heardle and trying to upload something else will not work.<br>
-      <br>
-      Please try to spread this url around to anyone you know who enjoyed Mario Heardle. I'm not asking this out of a deparate need for attention, but rather so that people who want to play Mario Heardle in the future will be able to find the site since Google will still prioritize the original url until we make this one more popular. Thank you for your continued support of Mario Heardle!<br>
-      <br>
-      <br>
-      ⚠️ IMPORTANT ⚠️
-    </p>
-    <button id="disclaimer-close">I Understand</button>
-  </div>
-</div>
-
-<style>
-  #disclaimer-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-
-  #disclaimer-box {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-  
-   #disclaimer-box a {
-    color: black;
-    text-decoration: underline;
-  }
-
-  #disclaimer-text {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-
-  #disclaimer-close {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const overlay = document.getElementById("disclaimer-overlay");
-    const closeBtn = document.getElementById("disclaimer-close");
-
-    // Disable interaction with everything else
-    document.body.style.pointerEvents = "none";
-    overlay.style.pointerEvents = "auto";
-
-    closeBtn.addEventListener("click", function () {
-      overlay.style.display = "none";
-      document.body.style.pointerEvents = "auto";
-    });
-  });
-</script>
 </html>

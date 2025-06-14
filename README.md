@@ -1,7 +1,9 @@
-# Mario Heardle
+# Toby Fox Heardle (Undertale, Deltarune, and more!)
+
+# Still very WIP, absolutely not ready to play yet. If you want to help, don't hesitate to get in contact, or just submit code!
 
 **DISCLAIMER: If you want to play this legitimately, don't look in main.js or extension.js or you'll be spoiled on what songs will be used in the future.**
 
-Mario Heardle is a game that tests your knowledge of the Mario franchise's extensive musical library. Each day, a different song from across the whole franchise will be played and you have to identify what song it is from just a few seconds of it. Each guess adds a few more seconds of the song and there's an extensive hint system that provides helpful feedback to guide you to the right answer. Songs from Super Mario, Mario Kart, Mario & Luigi, Paper Mario, Mario Party, many of the Mario Sports games, Mario vs. Donkey Kong, Mario + Rabbids, Mario's Picross, Dr. Mario, Donkey Kong, Yoshi, Wario Land, WarioWare, Luigi's Mansion, Princess Peach, Captain Toad, remixes from the Super Smash Bros. series, various other games, as well as a few films and TV shows are all included. The library isn't yet a complete list of every Mario game ever made but you'd have to think hard to name a game that isn't here since even Mario no Photopi is included. The complete list of songs is available here: https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo
+Toby Fox Heardle is a game that tests your knowledge of his wide range of work. Whether you're mostly familiar with his standalone games, or his Homestuck contributions, I'm sure you'll have plenty of fun with this game
 
-Mario Heardle was started April 19th of 2022, and was inspired by and built off of Sonic Heardle by @LaughAndPeace11, which can be traced back to WJSN Heardle, available here: https://github.com/jeroldcamacho/wjsn-heardle which was of course, a clone of the original Heardle which sadly was shut down by Spotify only 9 months after they bought it. I hope you enjoy it!
+Toby Fox Heardle was started on [insert the date i eventually go live with this], and was forked from [Mario Heardle](https://github.com/NinjiGalaxy/mario-heardle), which can be traced back to WJSN Heardle, available here: https://github.com/jeroldcamacho/wjsn-heardle which was of course, a clone of the original Heardle which sadly was shut down by Spotify only 9 months after they bought it. I hope you enjoy it!
