@@ -1,159 +1,158 @@
-  var app = (function () {
-  var artist = 'Toby Fox';
-  var twitter = 'cs_dust3';
+var app = (function () {
+  var artist = "Toby Fox";
+  var twitter = "cs_dust3";
   var startDate = "2025-06-13";
   const Cn = ue([
-    //list of all the searchable song titles
+      //list of all the searchable song titles
 
-// undertale songs
-"Once Upon a Time - Undertale",
-"Start Menu - Undertale",
-"Your Best Friend - Undertale",
-"Fallen Down - Undertale",
-"Ruins - Undertale",
-"Uwa!! So Temperate♫ - Undertale",
-"Anticipation - Undertale",
-"Unnecessary Tension - Undertale",
-"Enemy Approaching - Undertale",
-"Ghost Fight - Undertale",
-"Determination - Undertale",
-"Home - Undertale",
-"Home (Music Box) - Undertale",
-"Heartache - Undertale",
-"sans. - Undertale",
-"Nyeh Heh Heh! - Undertale",
-"Snowy - Undertale",
-"Uwa!! So Holiday♫ - Undertale",
-"Dogbass - Undertale",
-"Mysterious Place - Undertale",
-"Dogsong - Undertale",
-"Snowdin Town - Undertale",
-"Shop - Undertale",
-"Bonetrousle - Undertale",
-"Dating Start! - Undertale",
-"Dating Tense! - Undertale",
-"Dating Fight! - Undertale",
-"Premonition - Undertale",
-"Danger Mystery - Undertale",
-"Undyne - Undertale",
-"Waterfall - Undertale",
-"Run! - Undertale",
-"Quiet Water - Undertale",
-"Memory - Undertale",
-"Bird That Carries You Over A Disproportionately Small Gap - Undertale",
-"Dummy! - Undertale",
-"Pathetic House - Undertale",
-"Spooktune - Undertale",
-"Spookwave - Undertale",
-"Ghouliday - Undertale",
-"Chill - Undertale",
-"Thundersnail - Undertale",
-"Temmie Village - Undertale",
-"Tem Shop - Undertale",
-"NGAHHH!! - Undertale",
-"Spear of Justice - Undertale",
-"Ooo - Undertale",
-"Alphys - Undertale",
-"It's Showtime! - Undertale",
-"Metal Crusher - Undertale",
-"Another Medium - Undertale",
-"Uwa!! So HEATS!!♫ - Undertale",
-"Stronger Monsters - Undertale",
-"Hotel - Undertale",
-"Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything - Undertale",
-"Confession - Undertale",
-"Live Report - Undertale",
-"Death Report - Undertale",
-"Spider Dance - Undertale",
-"Wrong Enemy !? - Undertale",
-"Oh! One True Love - Undertale",
-"Oh! Dungeon - Undertale",
-"It's Raining Somewhere Else - Undertale",
-"CORE Approach - Undertale",
-"CORE - Undertale",
-"Last Episode! - Undertale",
-"Oh My... - Undertale",
-"Death by Glamour - Undertale",
-"For the Fans - Undertale",
-"Long Elevator - Undertale",
-"Undertale - Undertale",
-"Song That Might Play When You Fight Sans - Undertale",
-"The Choice - Undertale",
-"Small Shock - Undertale",
-"Barrier - Undertale",
-"Bergentrückung - Undertale",
-"ASGORE - Undertale",
-"You Idiot - Undertale",
-"Your Best Nightmare - Undertale",
-"Finale - Undertale",
-"An Ending - Undertale",
-"She's Playing Piano - Undertale",
-"Here We Are - Undertale",
-"Amalgam - Undertale",
-"Fallen Down (Reprise) - Undertale",
-"Don't Give Up - Undertale",
-"Hopes and Dreams - Undertale",
-"Burn in Despair! - Undertale",
-"SAVE the World - Undertale",
-"His Theme - Undertale",
-"Final Power - Undertale",
-"Reunited - Undertale",
-"Menu (Full) - Undertale",
-"Respite - Undertale",
-"Bring It In, Guys! - Undertale",
-"Last Goodbye - Undertale",
-"But the Earth Refused to Die - Undertale",
-"Battle Against a True Hero - Undertale",
-"Power of \"NEO\" - Undertale",
-"MEGALOVANIA - Undertale",
-"Good Night - Undertale",
+      // undertale songs
+      "Once Upon a Time - Undertale",
+      "Start Menu - Undertale",
+      "Your Best Friend - Undertale",
+      "Fallen Down - Undertale",
+      "Ruins - Undertale",
+      "Uwa!! So Temperate♫ - Undertale",
+      "Anticipation - Undertale",
+      "Unnecessary Tension - Undertale",
+      "Enemy Approaching - Undertale",
+      "Ghost Fight - Undertale",
+      "Determination - Undertale",
+      "Home - Undertale",
+      "Home (Music Box) - Undertale",
+      "Heartache - Undertale",
+      "sans. - Undertale",
+      "Nyeh Heh Heh! - Undertale",
+      "Snowy - Undertale",
+      "Uwa!! So Holiday♫ - Undertale",
+      "Dogbass - Undertale",
+      "Mysterious Place - Undertale",
+      "Dogsong - Undertale",
+      "Snowdin Town - Undertale",
+      "Shop - Undertale",
+      "Bonetrousle - Undertale",
+      "Dating Start! - Undertale",
+      "Dating Tense! - Undertale",
+      "Dating Fight! - Undertale",
+      "Premonition - Undertale",
+      "Danger Mystery - Undertale",
+      "Undyne - Undertale",
+      "Waterfall - Undertale",
+      "Run! - Undertale",
+      "Quiet Water - Undertale",
+      "Memory - Undertale",
+      "Bird That Carries You Over A Disproportionately Small Gap - Undertale",
+      "Dummy! - Undertale",
+      "Pathetic House - Undertale",
+      "Spooktune - Undertale",
+      "Spookwave - Undertale",
+      "Ghouliday - Undertale",
+      "Chill - Undertale",
+      "Thundersnail - Undertale",
+      "Temmie Village - Undertale",
+      "Tem Shop - Undertale",
+      "NGAHHH!! - Undertale",
+      "Spear of Justice - Undertale",
+      "Ooo - Undertale",
+      "Alphys - Undertale",
+      "It's Showtime! - Undertale",
+      "Metal Crusher - Undertale",
+      "Another Medium - Undertale",
+      "Uwa!! So HEATS!!♫ - Undertale",
+      "Stronger Monsters - Undertale",
+      "Hotel - Undertale",
+      "Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything - Undertale",
+      "Confession - Undertale",
+      "Live Report - Undertale",
+      "Death Report - Undertale",
+      "Spider Dance - Undertale",
+      "Wrong Enemy !? - Undertale",
+      "Oh! One True Love - Undertale",
+      "Oh! Dungeon - Undertale",
+      "It's Raining Somewhere Else - Undertale",
+      "CORE Approach - Undertale",
+      "CORE - Undertale",
+      "Last Episode! - Undertale",
+      "Oh My... - Undertale",
+      "Death by Glamour - Undertale",
+      "For the Fans - Undertale",
+      "Long Elevator - Undertale",
+      "Undertale - Undertale",
+      "Song That Might Play When You Fight Sans - Undertale",
+      "The Choice - Undertale",
+      "Small Shock - Undertale",
+      "Barrier - Undertale",
+      "Bergentrückung - Undertale",
+      "ASGORE - Undertale",
+      "You Idiot - Undertale",
+      "Your Best Nightmare - Undertale",
+      "Finale - Undertale",
+      "An Ending - Undertale",
+      "She's Playing Piano - Undertale",
+      "Here We Are - Undertale",
+      "Amalgam - Undertale",
+      "Fallen Down (Reprise) - Undertale",
+      "Don't Give Up - Undertale",
+      "Hopes and Dreams - Undertale",
+      "Burn in Despair! - Undertale",
+      "SAVE the World - Undertale",
+      "His Theme - Undertale",
+      "Final Power - Undertale",
+      "Reunited - Undertale",
+      "Menu (Full) - Undertale",
+      "Respite - Undertale",
+      "Bring It In, Guys! - Undertale",
+      "Last Goodbye - Undertale",
+      "But the Earth Refused to Die - Undertale",
+      "Battle Against a True Hero - Undertale",
+      'Power of "NEO" - Undertale',
+      "MEGALOVANIA - Undertale",
+      "Good Night - Undertale",
 
-// deltarune chapter 1 songs
-"ANOTHER HIM - Deltarune",
-"Beginning - Deltarune",
-"School - Deltarune",
-"Susie - Deltarune",
-"The Door - Deltarune",
-"Cliffs - Deltarune",
-"The Chase - Deltarune",
-"The Legend - Deltarune",
-"Lancer - Deltarune",
-"Rude Buster - Deltarune",
-"Empty Town - Deltarune",
-"Weird Birds - Deltarune",
-"Field of Hopes and Dreams - Deltarune",
-"Fanfare - Deltarune",
-"Lantern - Deltarune",
-"I'm Very Bad - Deltarune",
-"Checker Dance - Deltarune",
-"Quiet Autumn - Deltarune",
-"Scarlet Forest - Deltarune",
-"Thrash Machine - Deltarune",
-"Vs. Lancer - Deltarune",
-"Basement - Deltarune",
-"Imminent Death - Deltarune",
-"Vs. Susie - Deltarune",
-"Card Castle - Deltarune",
-"Rouxls Kaard - Deltarune",
-"April 2012 - Deltarune",
-"Hip Shop - Deltarune",
-"Gallery - Deltarune",
-"Chaos King - Deltarune",
-"Darkness Falls - Deltarune",
-"The Circus - Deltarune",
-"THE WORLD REVOLVING - Deltarune",
-"Friendship - Deltarune",
-"THE HOLY - Deltarune",
-"Your Power - Deltarune",
-"A Town Called Hometown - Deltarune",
-"You Can Always Come Home - Deltarune",
-"Don't Forget by Laura Shigihara - Deltarune",
-"Before the Story - Deltarune",
-
+      // deltarune chapter 1 songs
+      "ANOTHER HIM - Deltarune",
+      "Beginning - Deltarune",
+      "School - Deltarune",
+      "Susie - Deltarune",
+      "The Door - Deltarune",
+      "Cliffs - Deltarune",
+      "The Chase - Deltarune",
+      "The Legend - Deltarune",
+      "Lancer - Deltarune",
+      "Rude Buster - Deltarune",
+      "Empty Town - Deltarune",
+      "Weird Birds - Deltarune",
+      "Field of Hopes and Dreams - Deltarune",
+      "Fanfare - Deltarune",
+      "Lantern - Deltarune",
+      "I'm Very Bad - Deltarune",
+      "Checker Dance - Deltarune",
+      "Quiet Autumn - Deltarune",
+      "Scarlet Forest - Deltarune",
+      "Thrash Machine - Deltarune",
+      "Vs. Lancer - Deltarune",
+      "Basement - Deltarune",
+      "Imminent Death - Deltarune",
+      "Vs. Susie - Deltarune",
+      "Card Castle - Deltarune",
+      "Rouxls Kaard - Deltarune",
+      "April 2012 - Deltarune",
+      "Hip Shop - Deltarune",
+      "Gallery - Deltarune",
+      "Chaos King - Deltarune",
+      "Darkness Falls - Deltarune",
+      "The Circus - Deltarune",
+      "THE WORLD REVOLVING - Deltarune",
+      "Friendship - Deltarune",
+      "THE HOLY - Deltarune",
+      "Your Power - Deltarune",
+      "A Town Called Hometown - Deltarune",
+      "You Can Always Come Home - Deltarune",
+      "Don't Forget by Laura Shigihara - Deltarune",
+      "Before the Story - Deltarune",
     ]),
     On = {
       subscribe: ue(
-        [
+        deterministicShuffle([
           {
             url: "https://soundcloud.com/toby-radiation-fox/001-once-upon-a-time",
             answer: "Once Upon a Time - Undertale",
@@ -292,7 +291,8 @@
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/035-bird-that-carries-you-over",
-            answer: "Bird That Carries You Over A Disproportionately Small Gap - Undertale",
+            answer:
+              "Bird That Carries You Over A Disproportionately Small Gap - Undertale",
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/036-dummy!",
@@ -372,7 +372,8 @@
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/055-can-you-really-call-this-a",
-            answer: "Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything - Undertale",
+            answer:
+              "Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything - Undertale",
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/056-confession",
@@ -548,7 +549,7 @@
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/099-power-of-neo",
-            answer: "Power of \"NEO\" - Undertale",
+            answer: 'Power of "NEO" - Undertale',
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/100-megalovania",
@@ -721,13 +722,38 @@
             answer: "Before the Story - Deltarune",
           },
 
-
           //End Of Links Pog
-        ],
-        Pn
+        ]),
+        Pn,
       ).subscribe,
     };
   ("use strict");
+
+  function deterministicShuffle(arr) {
+    let seed = 2463534242;
+    let i = arr.length - 1;
+
+    for (i; i > 0; i--) {
+      seed = xorshift(seed);
+      let idx = Math.abs(seed) % i;
+      let a = arr[idx];
+      let b = arr[i];
+      arr[idx] = b;
+      arr[i] = a;
+    }
+
+    console.log(arr);
+    return arr;
+  }
+
+  function xorshift(seed) {
+    seed ^= seed << 13;
+    seed ^= seed << 17;
+    seed ^= seed << 5;
+
+    return seed;
+  }
+
   function e() {}
   function t(e) {
     return e();
@@ -756,7 +782,7 @@
         if (null == t) return e;
         const r = t.subscribe(...n);
         return r.unsubscribe ? () => r.unsubscribe() : r;
-      })(n, r)
+      })(n, r),
     );
   }
   function c(e, t, n, r) {
@@ -946,8 +972,8 @@
     "undefined" != typeof window
       ? window
       : "undefined" != typeof globalThis
-      ? globalThis
-      : global;
+        ? globalThis
+        : global;
   function Q(e) {
     e && e.c();
   }
@@ -1059,7 +1085,7 @@
           M(
             t,
             "class",
-            "px-2 py-2 uppercase tracking-widest bg-custom-mg border-none flex items-center font-semibold text-sm svelte-1r54uzk"
+            "px-2 py-2 uppercase tracking-widest bg-custom-mg border-none flex items-center font-semibold text-sm svelte-1r54uzk",
           ),
           Y(t, "bg-custom-positive", e[0]),
           Y(t, "bg-custom-mg", e[1]);
@@ -1188,7 +1214,7 @@
                   : ((i.rel = "stylesheet"), (i.href = t)),
                   (i.onload = s),
                   document.body.appendChild(i);
-              }
+              },
             );
       })(
         [
@@ -1198,7 +1224,7 @@
           },
         ],
         de,
-        a
+        a,
       );
     }
     function a() {
@@ -1299,7 +1325,7 @@
           M(
             n,
             "d",
-            "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",
           ),
           M(t, "xmlns", "http://www.w3.org/2000/svg"),
           M(t, "width", "24"),
@@ -1328,7 +1354,7 @@
           M(
             n,
             "d",
-            "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
           ),
           M(t, "xmlns", "http://www.w3.org/2000/svg"),
           M(t, "width", "24"),
@@ -1454,14 +1480,14 @@
             M(
               u,
               "class",
-              "font-serif text-3xl font-bold flex-grow text-center flex-1"
+              "font-serif text-3xl font-bold flex-grow text-center flex-1",
             ),
             // M(v, "class", "text-sm text-center text-gray-500 mt-2"), // NEW: Style for <p>
             M(d, "class", "flex flex-1 justify-end"),
             M(
               r,
               "class",
-              "flex justify-evenly text-custom-fgcolor p-3 items-center"
+              "flex justify-evenly text-custom-fgcolor p-3 items-center",
               //new M(r, "class", "flex flex-col items-center text-custom-fgcolor p-3 gap-y-2")
             ),
             M(n, "class", "max-w-screen-md mx-auto "),
@@ -1658,7 +1684,7 @@
               e[1].artist +
               " - " +
               e[1].title +
-              " on SoundCloud")
+              " on SoundCloud"),
           ),
           M(n, "class", "no-underline"),
           M(t, "class", "p-3 pb-0 flex-col items-evenly");
@@ -1877,7 +1903,7 @@
           M(
             t,
             "class",
-            "p-2 mb-2 border border-custom-mg flex items-center last:mb-0"
+            "p-2 mb-2 border border-custom-mg flex items-center last:mb-0",
           ),
           Y(t, "border-custom-line", e[7] == e[0].length);
       },
@@ -2328,344 +2354,347 @@
     };
   }
   function Qe(e) {
-  let t,
-    n,
-    r,
-    i,
-    o,
-    a,
-    l,
-    u,
-    c,
-    d,
-    h,
-    f,
-    m,
-    v,
-    k,
-    b,
-    volumeControl,
-    S,
-    D,
-    Y,
-    C,
-    O,
-    P,
-    A = mt(e[11]) + "",
-    L =
-      mt(
-        e[15]
-          ? e[4].isPrime
-            ? e[8].slice(-1)[0]
-            : e[2].maxAttempts * e[2].attemptInterval
-          : e[3]
-      ) + "",
-    N = !e[12] && 1 == e[0] && tt();
-  function H(e, t) {
-    return e[4].isPrime ? rt : nt;
-  }
-  let I = H(e),
-    W = I(e);
-  return (
-    (D = new ae({
-      props: {
-        $$slots: {
-          default: [ht],
+    let t,
+      n,
+      r,
+      i,
+      o,
+      a,
+      l,
+      u,
+      c,
+      d,
+      h,
+      f,
+      m,
+      v,
+      k,
+      b,
+      volumeControl,
+      S,
+      D,
+      Y,
+      C,
+      O,
+      P,
+      A = mt(e[11]) + "",
+      L =
+        mt(
+          e[15]
+            ? e[4].isPrime
+              ? e[8].slice(-1)[0]
+              : e[2].maxAttempts * e[2].attemptInterval
+            : e[3],
+        ) + "",
+      N = !e[12] && 1 == e[0] && tt();
+    function H(e, t) {
+      return e[4].isPrime ? rt : nt;
+    }
+    let I = H(e),
+      W = I(e);
+    return (
+      (D = new ae({
+        props: {
+          $$slots: {
+            default: [ht],
+          },
+          $$scope: {
+            ctx: e,
+          },
         },
-        $$scope: {
-          ctx: e,
+      })),
+      D.$on("click", function () {
+        s(e[18] ? e[6] : e[5]) && (e[18] ? e[6] : e[5]).apply(this, arguments);
+      }),
+      {
+        c() {
+          N && N.c(),
+            (t = x()),
+            (n = w("div")),
+            (r = w("div")),
+            (i = w("div")),
+            (o = w("div")),
+            (a = w("div")),
+            (l = x()),
+            W.c(),
+            (u = x()),
+            (c = w("div")),
+            (d = w("div")),
+            (h = w("div")),
+            (f = w("div")),
+            (m = w("div")),
+            (v = w("div")),
+            (k = _(A)),
+            (b = x()),
+            (volumeDiv = w("div")),
+            (volumeIcon = w("button")),
+            M(volumeIcon, "style", "margin-right: 15px; border: none;"),
+            (volumeSvg = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "svg",
+            )),
+            M(volumeSvg, "viewBox", "0 0 24 24"),
+            M(volumeSvg, "width", "24"),
+            M(volumeSvg, "height", "24"),
+            (volumeSvg.innerHTML =
+              "<path d='M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z' style='fill: white;'></path>"),
+            M(volumeSvg, "class", "volume-icon"),
+            M(volumeDiv, "class", "item2"),
+            M(volumeDiv, "style", "display: flex; align-items: center;"),
+            (volumeControl = w("div")),
+            M(volumeControl, "class", "volume-control"),
+            (S = w("div")),
+            Q(D.$$.fragment),
+            (Y = x()),
+            (C = w("div")),
+            (O = _(L)),
+            M(a, "class", "h-full absolute bg-custom-positive"),
+            T(a, "width", e[10] + "%"),
+            M(o, "class", "h-full absolute bg-custom-mg overflow-hidden"),
+            T(o, "width", (e[15] ? e[16] : "100") + "%"),
+            M(i, "class", "h-3 w-full relative overflow-hidden "),
+            M(r, "class", "max-w-screen-sm w-full mx-auto px-3 flex-col"),
+            M(n, "class", "border-t border-custom-line"),
+            M(m, "class", "flex items-center item1"),
+            M(S, "class", "flex justify-center items-center p-1 item3"),
+            M(f, "class", "container"),
+            M(C, "class", "item4 "),
+            M(h, "class", "px-3 "),
+            M(d, "class", "max-w-screen-sm w-full mx-auto flex-col"),
+            M(c, "class", "border-t border-custom-line");
         },
-      },
-    })),
-    D.$on("click", function () {
-      s(e[18] ? e[6] : e[5]) && (e[18] ? e[6] : e[5]).apply(this, arguments);
-    }),
-    {
-      c() {
-        N && N.c(),
-          (t = x()),
-          (n = w("div")),
-          (r = w("div")),
-          (i = w("div")),
-          (o = w("div")),
-          (a = w("div")),
-          (l = x()),
-          W.c(),
-          (u = x()),
-          (c = w("div")),
-          (d = w("div")),
-          (h = w("div")),
-          (f = w("div")),
-          (m = w("div")),
-          (v = w("div")),
-          (k = _(A)),
-          (b = x()),
-          (volumeDiv = w("div")),
-          (volumeIcon = w("button")),
-          M(volumeIcon, "style", "margin-right: 15px; border: none;"),
-          (volumeSvg = document.createElementNS(
-            "http://www.w3.org/2000/svg",
-            "svg"
-          )),
-          M(volumeSvg, "viewBox", "0 0 24 24"),
-          M(volumeSvg, "width", "24"),
-          M(volumeSvg, "height", "24"),
-          (volumeSvg.innerHTML =
-            "<path d='M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z' style='fill: white;'></path>"),
-          M(volumeSvg, "class", "volume-icon"),
-          M(volumeDiv, "class", "item2"),
-          M(volumeDiv, "style", "display: flex; align-items: center;"),
-          (volumeControl = w("div")),
-          M(volumeControl, "class", "volume-control"),
-          (S = w("div")),
-          Q(D.$$.fragment),
-          (Y = x()),
-          (C = w("div")),
-          (O = _(L)),
-          M(a, "class", "h-full absolute bg-custom-positive"),
-          T(a, "width", e[10] + "%"),
-          M(o, "class", "h-full absolute bg-custom-mg overflow-hidden"),
-          T(o, "width", (e[15] ? e[16] : "100") + "%"),
-          M(i, "class", "h-3 w-full relative overflow-hidden "),
-          M(r, "class", "max-w-screen-sm w-full mx-auto px-3 flex-col"),
-          M(n, "class", "border-t border-custom-line"),
-          M(m, "class", "flex items-center item1"),
-          M(S, "class", "flex justify-center items-center p-1 item3"),
-          M(f, "class", "container"),
-          M(C, "class", "item4 "),
-          M(h, "class", "px-3 "),
-          M(d, "class", "max-w-screen-sm w-full mx-auto flex-col"),
-          M(c, "class", "border-t border-custom-line");
-      },
-      m(e, s) {
-        N && N.m(e, s),
-          g(e, t, s),
-          g(e, n, s),
-          p(n, r),
-          p(r, i),
-          p(i, o),
-          p(o, a),
-          p(i, l),
-          W.m(i, null),
-          g(e, u, s),
-          g(e, c, s),
-          p(c, d),
-          p(d, h),
-          p(h, f),
-          p(f, m),
-          p(m, v);
-        if (!/Mobi/i.test(window.navigator.userAgent)) {
-          f.classList.add("with-volume");
-          p(f, volumeDiv), p(volumeDiv, volumeIcon), p(volumeIcon, volumeSvg);
+        m(e, s) {
+          N && N.m(e, s),
+            g(e, t, s),
+            g(e, n, s),
+            p(n, r),
+            p(r, i),
+            p(i, o),
+            p(o, a),
+            p(i, l),
+            W.m(i, null),
+            g(e, u, s),
+            g(e, c, s),
+            p(c, d),
+            p(d, h),
+            p(h, f),
+            p(f, m),
+            p(m, v);
+          if (!/Mobi/i.test(window.navigator.userAgent)) {
+            f.classList.add("with-volume");
+            p(f, volumeDiv), p(volumeDiv, volumeIcon), p(volumeIcon, volumeSvg);
 
-          // Create the slider container
-          const sliderContainer = document.createElement("div");
-          sliderContainer.className = "volume-control";
-          p(volumeDiv, sliderContainer);
+            // Create the slider container
+            const sliderContainer = document.createElement("div");
+            sliderContainer.className = "volume-control";
+            p(volumeDiv, sliderContainer);
 
-          // Create the slider
-          const slider = document.createElement("div");
-          slider.className = "slider";
-          slider.setAttribute("role", "slider");
-          slider.setAttribute("aria-label", "Volume");
-          slider.setAttribute("aria-valuemin", "0");
-          slider.setAttribute("aria-valuemax", "100");
-          slider.setAttribute("aria-valuenow", "50");
-          slider.setAttribute("tabindex", "0");
-          p(sliderContainer, slider);
+            // Create the slider
+            const slider = document.createElement("div");
+            slider.className = "slider";
+            slider.setAttribute("role", "slider");
+            slider.setAttribute("aria-label", "Volume");
+            slider.setAttribute("aria-valuemin", "0");
+            slider.setAttribute("aria-valuemax", "100");
+            slider.setAttribute("aria-valuenow", "50");
+            slider.setAttribute("tabindex", "0");
+            p(sliderContainer, slider);
 
-          // Create the slider fill
-          const sliderFill = document.createElement("div");
-          sliderFill.className = "slider-fill";
-          p(slider, sliderFill);
+            // Create the slider fill
+            const sliderFill = document.createElement("div");
+            sliderFill.className = "slider-fill";
+            p(slider, sliderFill);
 
-          // Create the slider thumb
-          const sliderThumb = document.createElement("div");
-          sliderThumb.className = "slider-thumb";
-          p(slider, sliderThumb);
+            // Create the slider thumb
+            const sliderThumb = document.createElement("div");
+            sliderThumb.className = "slider-thumb";
+            p(slider, sliderThumb);
 
-          let isDragging = false;
+            let isDragging = false;
 
-          const startDragging = () => {
-            isDragging = true;
-            volumeIcon.style.pointerEvents = "none";
-          };
+            const startDragging = () => {
+              isDragging = true;
+              volumeIcon.style.pointerEvents = "none";
+            };
 
-          const stopDragging = () => {
-            isDragging = false;
-            volumeIcon.style.pointerEvents = "auto";
-          };
+            const stopDragging = () => {
+              isDragging = false;
+              volumeIcon.style.pointerEvents = "auto";
+            };
 
-          const updateSlider = (clientX) => {
-            const rect = slider.getBoundingClientRect();
-            let value = Math.max(
-              0,
-              Math.min(100, ((clientX - rect.left) / rect.width) * 100)
-            );
-            value = Math.round(value);
-            sliderFill.style.width = `${value}%`;
-            sliderThumb.style.left = `${value}%`;
-            slider.setAttribute("aria-valuenow", value);
+            const updateSlider = (clientX) => {
+              const rect = slider.getBoundingClientRect();
+              let value = Math.max(
+                0,
+                Math.min(100, ((clientX - rect.left) / rect.width) * 100),
+              );
+              value = Math.round(value);
+              sliderFill.style.width = `${value}%`;
+              sliderThumb.style.left = `${value}%`;
+              slider.setAttribute("aria-valuenow", value);
 
-            // Update volume for SoundCloud widget
-            if (window.SC && window.SC.Widget) {
-              const widget = SC.Widget(document.querySelector("iframe"));
-              widget.setVolume(value);
-            }
-
-            // Update mute icon
-            updateMuteIcon(value);
-          };
-
-          const updateMuteIcon = (value) => {
-            const path = volumeSvg.querySelector("path");
-            let line = volumeSvg.querySelector("line");
-
-            if (value === 0) {
-              if (!line) {
-                line = document.createElementNS(
-                  "http://www.w3.org/2000/svg",
-                  "line"
-                );
-                line.setAttribute("x1", "1");
-                line.setAttribute("y1", "1");
-                line.setAttribute("x2", "23");
-                line.setAttribute("y2", "23");
-                line.setAttribute("style", "stroke: white; stroke-width: 2");
-                volumeSvg.appendChild(line);
+              // Update volume for SoundCloud widget
+              if (window.SC && window.SC.Widget) {
+                const widget = SC.Widget(document.querySelector("iframe"));
+                widget.setVolume(value);
               }
-            } else {
-              if (line) {
-                volumeSvg.removeChild(line);
+
+              // Update mute icon
+              updateMuteIcon(value);
+            };
+
+            const updateMuteIcon = (value) => {
+              const path = volumeSvg.querySelector("path");
+              let line = volumeSvg.querySelector("line");
+
+              if (value === 0) {
+                if (!line) {
+                  line = document.createElementNS(
+                    "http://www.w3.org/2000/svg",
+                    "line",
+                  );
+                  line.setAttribute("x1", "1");
+                  line.setAttribute("y1", "1");
+                  line.setAttribute("x2", "23");
+                  line.setAttribute("y2", "23");
+                  line.setAttribute("style", "stroke: white; stroke-width: 2");
+                  volumeSvg.appendChild(line);
+                }
+              } else {
+                if (line) {
+                  volumeSvg.removeChild(line);
+                }
               }
-            }
 
-            // Update the path (if needed)
-            path.setAttribute(
-              "d",
-              "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-            );
-            path.setAttribute("style", "fill: white");
-          };
+              // Update the path (if needed)
+              path.setAttribute(
+                "d",
+                "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z",
+              );
+              path.setAttribute("style", "fill: white");
+            };
 
-          slider.addEventListener("mousedown", (e) => {
-            if (isDragging) {
-              e.preventDefault();
-              e.stopPropagation();
-            }
-            isDragging = true;
-            updateSlider(e.clientX);
-            e.preventDefault(); // Prevent text selection
-          });
-
-          document.addEventListener("mousemove", (e) => {
-            if (isDragging) {
+            slider.addEventListener("mousedown", (e) => {
+              if (isDragging) {
+                e.preventDefault();
+                e.stopPropagation();
+              }
+              isDragging = true;
               updateSlider(e.clientX);
               e.preventDefault(); // Prevent text selection
-            }
-          });
+            });
 
-          document.addEventListener("mouseup", () => {
-            isDragging = false;
-          });
+            document.addEventListener("mousemove", (e) => {
+              if (isDragging) {
+                updateSlider(e.clientX);
+                e.preventDefault(); // Prevent text selection
+              }
+            });
 
-          slider.addEventListener("click", (e) => {
-            updateSlider(e.clientX);
-          });
+            document.addEventListener("mouseup", () => {
+              isDragging = false;
+            });
 
-          slider.addEventListener("keydown", (e) => {
-            let value = parseInt(slider.getAttribute("aria-valuenow"));
-            switch (e.key) {
-              case "ArrowRight":
-              case "ArrowUp":
-                value = Math.min(100, value + 5);
-                break;
-              case "ArrowLeft":
-              case "ArrowDown":
-                value = Math.max(0, value - 5);
-                break;
-              case "Home":
-                value = 0;
-                break;
-              case "End":
-                value = 100;
-                break;
-              default:
-                return;
-            }
+            slider.addEventListener("click", (e) => {
+              updateSlider(e.clientX);
+            });
+
+            slider.addEventListener("keydown", (e) => {
+              let value = parseInt(slider.getAttribute("aria-valuenow"));
+              switch (e.key) {
+                case "ArrowRight":
+                case "ArrowUp":
+                  value = Math.min(100, value + 5);
+                  break;
+                case "ArrowLeft":
+                case "ArrowDown":
+                  value = Math.max(0, value - 5);
+                  break;
+                case "Home":
+                  value = 0;
+                  break;
+                case "End":
+                  value = 100;
+                  break;
+                default:
+                  return;
+              }
+              updateSlider(
+                slider.getBoundingClientRect().left +
+                  (value / 100) * slider.offsetWidth,
+              );
+              e.preventDefault();
+            });
+
+            volumeIcon.addEventListener("click", () => {
+              const currentValue = parseInt(
+                slider.getAttribute("aria-valuenow"),
+              );
+              updateSlider(
+                slider.getBoundingClientRect().left +
+                  ((currentValue === 0 ? 50 : 0) / 100) * slider.offsetWidth,
+              );
+            });
+
+            // Initialize slider
             updateSlider(
               slider.getBoundingClientRect().left +
-                (value / 100) * slider.offsetWidth
+                (50 / 100) * slider.offsetWidth,
             );
-            e.preventDefault();
-          });
-
-          volumeIcon.addEventListener("click", () => {
-            const currentValue = parseInt(slider.getAttribute("aria-valuenow"));
-            updateSlider(
-              slider.getBoundingClientRect().left +
-                ((currentValue === 0 ? 50 : 0) / 100) * slider.offsetWidth
-            );
-          });
-
-          // Initialize slider
-          updateSlider(
-            slider.getBoundingClientRect().left +
-              (50 / 100) * slider.offsetWidth
-          );
-        } else {
-          f.classList.add("without-volume");
-        }
-        p(v, k),
-          p(f, b),
-          p(f, S),
-          ee(D, S, null),
-          p(f, Y),
-          p(f, C),
-          p(C, O),
-          (P = !0);
-      },
-      p(n, r) {
-        (e = n)[12] || 1 != e[0]
-          ? N && (N.d(1), (N = null))
-          : N || ((N = tt()), N.c(), N.m(t.parentNode, t)),
-          (!P || 1024 & r[0]) && T(a, "width", e[10] + "%"),
-          (!P || 98304 & r[0]) && T(o, "width", (e[15] ? e[16] : "100") + "%"),
-          I === (I = H(e)) && W
-            ? W.p(e, r)
-            : (W.d(1), (W = I(e)), W && (W.c(), W.m(i, null))),
-          (!P || 2048 & r[0]) && A !== (A = mt(e[11]) + "") && $(k, A);
-        const s = {};
-        (262144 & r[0]) | (128 & r[1]) &&
-          (s.$$scope = {
-            dirty: r,
-            ctx: e,
-          }),
-          D.$set(s),
-          (!P || 33052 & r[0]) &&
-            L !==
-              (L =
-                mt(
-                  e[15]
-                    ? e[4].isPrime
-                      ? e[8].slice(-1)[0]
-                      : e[2].maxAttempts * e[2].attemptInterval
-                    : e[3]
-                ) + "") &&
-            $(O, L);
-      },
-      i(e) {
-        P || (Z(D.$$.fragment, e), (P = !0));
-      },
-      o(e) {
-        q(D.$$.fragment, e), (P = !1);
-      },
-      d(e) {
-        N && N.d(e), e && y(t), e && y(n), W.d(), e && y(u), e && y(c), te(D);
-      },
-    }
-  );
-}
+          } else {
+            f.classList.add("without-volume");
+          }
+          p(v, k),
+            p(f, b),
+            p(f, S),
+            ee(D, S, null),
+            p(f, Y),
+            p(f, C),
+            p(C, O),
+            (P = !0);
+        },
+        p(n, r) {
+          (e = n)[12] || 1 != e[0]
+            ? N && (N.d(1), (N = null))
+            : N || ((N = tt()), N.c(), N.m(t.parentNode, t)),
+            (!P || 1024 & r[0]) && T(a, "width", e[10] + "%"),
+            (!P || 98304 & r[0]) &&
+              T(o, "width", (e[15] ? e[16] : "100") + "%"),
+            I === (I = H(e)) && W
+              ? W.p(e, r)
+              : (W.d(1), (W = I(e)), W && (W.c(), W.m(i, null))),
+            (!P || 2048 & r[0]) && A !== (A = mt(e[11]) + "") && $(k, A);
+          const s = {};
+          (262144 & r[0]) | (128 & r[1]) &&
+            (s.$$scope = {
+              dirty: r,
+              ctx: e,
+            }),
+            D.$set(s),
+            (!P || 33052 & r[0]) &&
+              L !==
+                (L =
+                  mt(
+                    e[15]
+                      ? e[4].isPrime
+                        ? e[8].slice(-1)[0]
+                        : e[2].maxAttempts * e[2].attemptInterval
+                      : e[3],
+                  ) + "") &&
+              $(O, L);
+        },
+        i(e) {
+          P || (Z(D.$$.fragment, e), (P = !0));
+        },
+        o(e) {
+          q(D.$$.fragment, e), (P = !1);
+        },
+        d(e) {
+          N && N.d(e), e && y(t), e && y(n), W.d(), e && y(u), e && y(c), te(D);
+        },
+      }
+    );
+  }
 
   function et(e) {
     let t, n, r, s, i, o;
@@ -2676,7 +2705,7 @@
           (r = w("a")),
           (s = _("here")),
           (o = _(
-            ", though, if you want to maintain your streak.\n                                We won't tell..."
+            ", though, if you want to maintain your streak.\n                                We won't tell...",
           )),
           M(r, "href", (i = e[1].url)),
           M(t, "class", "text-xs text-custom-line pt-1");
@@ -2698,11 +2727,11 @@
       c() {
         (t = w("div")),
           (t.innerHTML =
-             '<p><a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">Click Here for the full list of Mario Heardle songs. <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>'),
+            '<p><a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">Click Here for the full list of Mario Heardle songs. <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>'),
           M(
             t,
             "class",
-            "text-center p-3 flex flex-col items-center text-sm text-custom-line"
+            "text-center p-3 flex flex-col items-center text-sm text-custom-line",
           );
       },
       m(e, n) {
@@ -2987,7 +3016,7 @@
             M(
               t,
               "class",
-              "flex justify-center items-center text-custom-fg h-14 w-14 border-2 rounded-full relative overflow-hidden"
+              "flex justify-center items-center text-custom-fg h-14 w-14 border-2 rounded-full relative overflow-hidden",
             );
         },
         m(e, r) {
@@ -3152,7 +3181,7 @@
                       w > d * f.attemptInterval && M())
                   : (n(10, (v = (w / m) * 100)), w > m && M());
             });
-        }
+        },
       );
     }
     P(() => {
@@ -3190,7 +3219,7 @@
               16,
               (l = p.isPrime
                 ? (a[o - 1] / a.slice(-1)[0]) * 100
-                : (d / f.maxAttempts) * 100)
+                : (d / f.maxAttempts) * 100),
             ),
           384 & e.$$.dirty[0] && (u = a[o - 1]);
       }),
@@ -3262,7 +3291,7 @@
             resetAndPlay: 21,
           },
           null,
-          [-1, -1]
+          [-1, -1],
         );
     }
     get togglePlayState() {
@@ -3281,10 +3310,10 @@
   "undefined" != typeof globalThis
     ? globalThis
     : "undefined" != typeof window
-    ? window
-    : "undefined" != typeof global
-    ? global
-    : "undefined" != typeof self && self;
+      ? window
+      : "undefined" != typeof global
+        ? global
+        : "undefined" != typeof self && self;
   function yt(e) {
     var t = {
       exports: {},
@@ -3295,7 +3324,7 @@
     throw new Error(
       'Could not dynamically require "' +
         e +
-        '". Please configure the dynamicRequireTargets option of @rollup/plugin-commonjs appropriately for this require call to behave properly.'
+        '". Please configure the dynamicRequireTargets option of @rollup/plugin-commonjs appropriately for this require call to behave properly.',
     );
   }
   var wt = yt(function (e, t) {
@@ -3321,14 +3350,17 @@
                   r(t, e, s[e]);
                 })
               : Object.getOwnPropertyDescriptors
-              ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(s))
-              : e(Object(s)).forEach(function (e) {
-                  Object.defineProperty(
+                ? Object.defineProperties(
                     t,
-                    e,
-                    Object.getOwnPropertyDescriptor(s, e)
-                  );
-                });
+                    Object.getOwnPropertyDescriptors(s),
+                  )
+                : e(Object(s)).forEach(function (e) {
+                    Object.defineProperty(
+                      t,
+                      e,
+                      Object.getOwnPropertyDescriptor(s, e),
+                    );
+                  });
           }
           return t;
         }
@@ -3375,7 +3407,7 @@
             i(e) ||
             (function () {
               throw new TypeError(
-                "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
               );
             })()
           );
@@ -3389,9 +3421,9 @@
               "Map" === n || "Set" === n
                 ? Array.from(e)
                 : "Arguments" === n ||
-                  /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
-                ? o(e, t)
-                : void 0
+                    /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
+                  ? o(e, t)
+                  : void 0
             );
           }
         }
@@ -3438,8 +3470,8 @@
                 },
                 "string" == typeof n && {
                   class: n,
-                }
-              )
+                },
+              ),
             ).outerHTML;
           },
           d = function (e, t) {
@@ -3448,7 +3480,7 @@
                 bubbles: !0,
                 detail: t.feedback,
                 cancelable: !0,
-              })
+              }),
             );
           },
           h = function (e, t, n) {
@@ -3548,7 +3580,7 @@
                         };
                       }
                       throw new TypeError(
-                        "Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                        "Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
                       );
                     }
                     var o,
@@ -3600,7 +3632,7 @@
               {
                 index: n,
               },
-              e.feedback.results[n]
+              e.feedback.results[n],
             );
           },
           w = function (e) {
@@ -3697,8 +3729,8 @@
                                       },
                                       s.class && {
                                         class: s.class,
-                                      }
-                                    )
+                                      },
+                                    ),
                                   );
                                   s.element && s.element(r, e);
                                 }),
@@ -3744,10 +3776,10 @@
                     },
                     i && {
                       placeholder: i,
-                    }
+                    },
                   ),
-                  !e.wrapper && t({}, a)
-                )
+                  !e.wrapper && t({}, a),
+                ),
               ),
               e.wrapper &&
                 (e.wrapper = l(
@@ -3757,8 +3789,8 @@
                       around: e.input,
                       class: e.name + "_wrapper",
                     },
-                    a
-                  )
+                    a,
+                  ),
                 )),
               o &&
                 (e.list = l(
@@ -3772,8 +3804,8 @@
                     },
                     o.class && {
                       class: o.class,
-                    }
-                  )
+                    },
+                  ),
                 )),
               (function (e) {
                 var n,
@@ -3797,7 +3829,7 @@
                     },
                     e.resultsList && {
                       list: i ? t({}, i.list) : {},
-                    }
+                    },
                   )),
                   l = {
                     input: {
@@ -4132,7 +4164,7 @@
             M(
               c,
               "class",
-              "focus:outline-none focus:border-custom-positive w-full p-3 pl-9 placeholder:text-custom-line bg-custom-bg text-custom-fg border-custom-mg"
+              "focus:outline-none focus:border-custom-positive w-full p-3 pl-9 placeholder:text-custom-line bg-custom-bg text-custom-fg border-custom-mg",
             ),
             M(c, "id", "autoComplete"),
             M(c, "type", "search"),
@@ -4220,12 +4252,12 @@
           }),
           n(4, (r = "")))
         : void 0 !== r && "" !== r.trim()
-        ? (u("guess", {
-            guess: r,
-            isSkipped: !1,
-          }),
-          n(4, (r = "")))
-        : l.focus();
+          ? (u("guess", {
+              guess: r,
+              isSkipped: !1,
+            }),
+            n(4, (r = "")))
+          : l.focus();
     }
     P(() => {
       !(function () {
@@ -4341,7 +4373,7 @@
           M(
             s,
             "class",
-            "text-sm text-center uppercase text-custom-line font-semibold tracking-widest"
+            "text-sm text-center uppercase text-custom-line font-semibold tracking-widest",
           ),
           M(r, "class", "flex-1 pl-7"),
           (l.autofocus = !0),
@@ -4442,19 +4474,19 @@
             M(
               t,
               "class",
-              "modal-background p-3 flex justify-center svelte-1nyqrwd"
+              "modal-background p-3 flex justify-center svelte-1nyqrwd",
             ),
             M(
               i,
               "class",
-              "pointer-events-auto modal max-w-screen-xs w-full mx-auto top-20 relative rounded-sm "
+              "pointer-events-auto modal max-w-screen-xs w-full mx-auto top-20 relative rounded-sm ",
             ),
             M(i, "role", "dialog"),
             M(i, "aria-modal", "true"),
             M(
               s,
               "class",
-              "modal-background p-3 pointer-events-none svelte-1nyqrwd"
+              "modal-background p-3 pointer-events-none svelte-1nyqrwd",
             );
         },
         m(r, a) {
@@ -4560,7 +4592,7 @@
       c() {
         (n = w("div")),
           (n.innerHTML =
-          //Fiverr new line
+            //Fiverr new line
             '<p class="mb-3">Mario Heardle is a version of Heardle that features songs from across the entire Mario franchise.</p> <p class="mb-3">Volume Slider and Scroll Bar code by <a href="https://github.com/morgvanny">morgvanny</a>.</p> <p class="mb-3">Metadata code by <a href="https://www.fiverr.com/gema_designer">gema_designer</a>.</p>\n\n<p class="mb-3">The full list of songs is available <a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">here.</a> </p> \n\n<p class="mb-3"> If you have any technical issues, you can contact me @NinjiGalaxy on Bluesky, or by commenting on the previously linked Google Sheet. </p>'),
           //FNL
           M(n, "class", "text");
@@ -4588,19 +4620,19 @@
       c() {
         (n = w("div")),
           (r = w("a")),
-           (r.innerHTML =
-           '<span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Click here to play</p>Mario Heardle Infinite!'),
-           M(
-             r,
-             "class",
-             "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
-           ),
-           M(r, "href", "https://ninjigalaxy.github.io/mario-heardle-infinite/"),
-           M(r, "title", "Mario Heardle Infinite"),
+          (r.innerHTML =
+            '<span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Click here to play</p>Mario Heardle Infinite!'),
+          M(
+            r,
+            "class",
+            "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy",
+          ),
+          M(r, "href", "https://ninjigalaxy.github.io/mario-heardle-infinite/"),
+          M(r, "title", "Mario Heardle Infinite"),
           M(
             n,
             "class",
-            "text-center flex justify-center items-center flex-col "
+            "text-center flex justify-center items-center flex-col ",
           );
       },
       m(e, o) {
@@ -4674,7 +4706,7 @@
           T(
             d,
             "background",
-            "linear-gradient(to bottom, rgba(18,18,18,0), rgba(18,18,18,1)) no-repeat bottom"
+            "linear-gradient(to bottom, rgba(18,18,18,0), rgba(18,18,18,1)) no-repeat bottom",
           ),
           T(d, "background-size", "100% 100%"),
           M(n, "class", "relative");
@@ -4751,7 +4783,7 @@
       P(async function () {
         (async function () {
           const e = await fetch(
-            "https://wjsn-heardle.glitch.me/supporters.json"
+            "https://wjsn-heardle.glitch.me/supporters.json",
           );
           return await e.json();
         })().then((e) => {
@@ -4871,7 +4903,7 @@
           ":" +
           ("00" + t).slice(-2) +
           ":" +
-          ("00" + s).slice(-2))
+          ("00" + s).slice(-2)),
       ),
         i--,
         0 == e && 0 == t && 0 == s && location.reload(!0);
@@ -4969,7 +5001,7 @@
             M(
               m,
               "class",
-              "flex flex-col justify-center items-center mb-6 mx-3"
+              "flex flex-col justify-center items-center mb-6 mx-3",
             ),
             M(Y, "class", "flex justify-center items-center mb-3"),
             M(T, "class", "bg-custom-highlight py-3 pb-5 mx-3 rounded-t-md");
@@ -5070,10 +5102,10 @@
       return e[0][e[12]].isSkipped
         ? sn
         : e[0][e[12]].isCorrect || e[0][e[12]].isSkipped
-        ? e[0][e[12]].isCorrect
-          ? nn
-          : void 0
-        : rn;
+          ? e[0][e[12]].isCorrect
+            ? nn
+            : void 0
+          : rn;
     }
     let r = n(e),
       s = r && r(e);
@@ -5226,7 +5258,7 @@
         n = _(
           "You didn't get today's " +
             artist +
-            " Heardle. Better luck tomorrow! 💎"
+            " Heardle. Better luck tomorrow! 💎",
         );
       },
       m(e, t) {
@@ -5247,7 +5279,7 @@
           M(
             t,
             "class",
-            "tracking-widest uppercase text-xs text-custom-line p-3 pb-0 text-center"
+            "tracking-widest uppercase text-xs text-custom-line p-3 pb-0 text-center",
           );
       },
       m(e, n) {
@@ -5374,22 +5406,27 @@
             ? r.length < i.maxAttempts / 3
               ? (t += "🔊")
               : r.length < (i.maxAttempts / 3) * 2
-              ? (t += "🔉")
-              : r.length <= i.maxAttempts && (t += "🔈")
+                ? (t += "🔉")
+                : r.length <= i.maxAttempts && (t += "🔈")
             : (t += "🔇");
           for (let e = 0; e < i.maxAttempts; e++)
             r.length > e
               ? 1 == r[e].isCorrect
                 ? (t += "🟢")
                 : 1 == r[e].isSkipped
-                ? (t += "⚫")
-                : (t += "🔴")
+                  ? (t += "⚫")
+                  : (t += "🔴")
               : (t += "⚪");
-          let o = e + "\n\n" + t + "\n\n" + "https://ninjigalaxy.github.io/mario-heardle";
+          let o =
+            e +
+            "\n\n" +
+            t +
+            "\n\n" +
+            "https://ninjigalaxy.github.io/mario-heardle";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-              navigator.userAgent
+              navigator.userAgent,
             ) ||
             /Firefox/i.test(navigator.userAgent)
           )
@@ -5405,7 +5442,7 @@
                 }, 2e3),
                 navigator.clipboard.writeText(o))
               : Promise.reject(
-                  "There was a problem copying your result to the clipboard"
+                  "There was a problem copying your result to the clipboard",
                 );
           navigator
             .share({
@@ -5766,7 +5803,7 @@
             Y(
               t,
               "text-custom-positive",
-              e[17] == e[1] - 1 && 0 != e[4] && e[2]
+              e[17] == e[1] - 1 && 0 != e[4] && e[2],
             ),
           22 & n &&
             Y(t, "text-custom-negative", e[17] == e[1] && 0 == e[4] && e[2]);
@@ -5850,7 +5887,7 @@
           M(
             a,
             "class",
-            "text-center border-right text-xs pt-1 text-custom-line"
+            "text-center border-right text-xs pt-1 text-custom-line",
           ),
           M(t, "class", "flex flex-col items-stretch ");
       },
@@ -6155,7 +6192,7 @@
                 "\nArguments: " +
                 Array.prototype.slice.call(l).join("") +
                 "\n" +
-                new Error().stack
+                new Error().stack,
             ),
               (n = !1);
           }
@@ -6182,7 +6219,7 @@
           (this._dayOfMonthOrdinalParseLenient = new RegExp(
             (this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) +
               "|" +
-              /\d{1,2}/.source
+              /\d{1,2}/.source,
           ));
       }
       function O(e, t) {
@@ -6193,8 +6230,8 @@
             (o(e[n]) && o(t[n])
               ? ((r[n] = {}), f(r[n], e[n]), f(r[n], t[n]))
               : null != t[n]
-              ? (r[n] = t[n])
-              : delete r[n]);
+                ? (r[n] = t[n])
+                : delete r[n]);
         for (n in e) a(e, n) && !a(t, n) && o(e[n]) && (r[n] = f({}, r[n]));
         return r;
       }
@@ -6410,7 +6447,7 @@
               e._d["set" + (e._isUTC ? "UTC" : "") + t](
                 n,
                 e.month(),
-                Qe(n, e.month())
+                Qe(n, e.month()),
               ))
             : e._d["set" + (e._isUTC ? "UTC" : "") + t](n));
       }
@@ -6462,8 +6499,8 @@
               /\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,
               function (e, t, n, r, s) {
                 return t || n || r || s;
-              }
-            )
+              },
+            ),
         );
       }
       function Ie(e) {
@@ -6549,7 +6586,7 @@
         });
       var et =
           "January_February_March_April_May_June_July_August_September_October_November_December".split(
-            "_"
+            "_",
           ),
         tt = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
         nt = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/,
@@ -6563,8 +6600,8 @@
                 (this._months.isFormat || nt).test(t) ? "format" : "standalone"
               ][e.month()]
           : i(this._months)
-          ? this._months
-          : this._months.standalone;
+            ? this._months
+            : this._months.standalone;
       }
       function ot(e, t) {
         return e
@@ -6572,8 +6609,8 @@
             ? this._monthsShort[e.month()]
             : this._monthsShort[nt.test(t) ? "format" : "standalone"][e.month()]
           : i(this._monthsShort)
-          ? this._monthsShort
-          : this._monthsShort.standalone;
+            ? this._monthsShort
+            : this._monthsShort.standalone;
       }
       function at(e, t, n) {
         var r,
@@ -6592,11 +6629,11 @@
             (i = m([2e3, r])),
               (this._shortMonthsParse[r] = this.monthsShort(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase()),
               (this._longMonthsParse[r] = this.months(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase());
         return n
           ? "MMM" === t
@@ -6604,17 +6641,17 @@
               ? s
               : null
             : -1 !== (s = Ee.call(this._longMonthsParse, o))
-            ? s
-            : null
+              ? s
+              : null
           : "MMM" === t
-          ? -1 !== (s = Ee.call(this._shortMonthsParse, o)) ||
-            -1 !== (s = Ee.call(this._longMonthsParse, o))
-            ? s
-            : null
-          : -1 !== (s = Ee.call(this._longMonthsParse, o)) ||
-            -1 !== (s = Ee.call(this._shortMonthsParse, o))
-          ? s
-          : null;
+            ? -1 !== (s = Ee.call(this._shortMonthsParse, o)) ||
+              -1 !== (s = Ee.call(this._longMonthsParse, o))
+              ? s
+              : null
+            : -1 !== (s = Ee.call(this._longMonthsParse, o)) ||
+                -1 !== (s = Ee.call(this._shortMonthsParse, o))
+              ? s
+              : null;
       }
       function lt(e, t, n) {
         var r, s, i;
@@ -6634,11 +6671,11 @@
               !this._longMonthsParse[r] &&
               ((this._longMonthsParse[r] = new RegExp(
                 "^" + this.months(s, "").replace(".", "") + "$",
-                "i"
+                "i",
               )),
               (this._shortMonthsParse[r] = new RegExp(
                 "^" + this.monthsShort(s, "").replace(".", "") + "$",
-                "i"
+                "i",
               ))),
             n ||
               this._monthsParse[r] ||
@@ -6712,7 +6749,7 @@
           (this._monthsStrictRegex = new RegExp("^(" + s.join("|") + ")", "i")),
           (this._monthsShortStrictRegex = new RegExp(
             "^(" + r.join("|") + ")",
-            "i"
+            "i",
           ));
       }
       function pt(e) {
@@ -6785,8 +6822,8 @@
           a <= 0
             ? (o = pt((i = e - 1)) + a)
             : a > pt(e)
-            ? ((i = e + 1), (o = a - pt(e)))
-            : ((i = e), (o = a)),
+              ? ((i = e + 1), (o = a - pt(e)))
+              : ((i = e), (o = a)),
           {
             year: i,
             dayOfYear: o,
@@ -6802,8 +6839,8 @@
           o < 1
             ? (r = o + St((s = e.year() - 1), t, n))
             : o > St(e.year(), t, n)
-            ? ((r = o - St(e.year(), t, n)), (s = e.year() + 1))
-            : ((s = e.year()), (r = o)),
+              ? ((r = o - St(e.year(), t, n)), (s = e.year() + 1))
+              : ((s = e.year()), (r = o)),
           {
             week: r,
             year: s,
@@ -6853,17 +6890,17 @@
         return "string" != typeof e
           ? e
           : isNaN(e)
-          ? "number" == typeof (e = t.weekdaysParse(e))
-            ? e
-            : null
-          : parseInt(e, 10);
+            ? "number" == typeof (e = t.weekdaysParse(e))
+              ? e
+              : null
+            : parseInt(e, 10);
       }
       function Pt(e, t) {
         return "string" == typeof e
           ? t.weekdaysParse(e) % 7 || 7
           : isNaN(e)
-          ? null
-          : e;
+            ? null
+            : e;
       }
       function At(e, t) {
         return e.slice(t, 7).concat(e.slice(0, t));
@@ -6906,7 +6943,7 @@
           t[r] = ce(e);
         });
       var Lt = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
-          "_"
+          "_",
         ),
         Nt = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
         Ht = "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
@@ -6927,15 +6964,15 @@
         return !0 === e
           ? At(this._weekdaysShort, this._week.dow)
           : e
-          ? this._weekdaysShort[e.day()]
-          : this._weekdaysShort;
+            ? this._weekdaysShort[e.day()]
+            : this._weekdaysShort;
       }
       function Et(e) {
         return !0 === e
           ? At(this._weekdaysMin, this._week.dow)
           : e
-          ? this._weekdaysMin[e.day()]
-          : this._weekdaysMin;
+            ? this._weekdaysMin[e.day()]
+            : this._weekdaysMin;
       }
       function jt(e, t, n) {
         var r,
@@ -6954,15 +6991,15 @@
             (i = m([2e3, 1]).day(r)),
               (this._minWeekdaysParse[r] = this.weekdaysMin(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase()),
               (this._shortWeekdaysParse[r] = this.weekdaysShort(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase()),
               (this._weekdaysParse[r] = this.weekdays(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase());
         return n
           ? "dddd" === t
@@ -6970,29 +7007,29 @@
               ? s
               : null
             : "ddd" === t
-            ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
+              ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
+                ? s
+                : null
+              : -1 !== (s = Ee.call(this._minWeekdaysParse, o))
+                ? s
+                : null
+          : "dddd" === t
+            ? -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
+              -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
+              -1 !== (s = Ee.call(this._minWeekdaysParse, o))
               ? s
               : null
-            : -1 !== (s = Ee.call(this._minWeekdaysParse, o))
-            ? s
-            : null
-          : "dddd" === t
-          ? -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._minWeekdaysParse, o))
-            ? s
-            : null
-          : "ddd" === t
-          ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._minWeekdaysParse, o))
-            ? s
-            : null
-          : -1 !== (s = Ee.call(this._minWeekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
-          ? s
-          : null;
+            : "ddd" === t
+              ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
+                -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
+                -1 !== (s = Ee.call(this._minWeekdaysParse, o))
+                ? s
+                : null
+              : -1 !== (s = Ee.call(this._minWeekdaysParse, o)) ||
+                  -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
+                  -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
+                ? s
+                : null;
       }
       function Bt(e, t, n) {
         var r, s, i;
@@ -7013,15 +7050,15 @@
               !this._fullWeekdaysParse[r] &&
               ((this._fullWeekdaysParse[r] = new RegExp(
                 "^" + this.weekdays(s, "").replace(".", "\\.?") + "$",
-                "i"
+                "i",
               )),
               (this._shortWeekdaysParse[r] = new RegExp(
                 "^" + this.weekdaysShort(s, "").replace(".", "\\.?") + "$",
-                "i"
+                "i",
               )),
               (this._minWeekdaysParse[r] = new RegExp(
                 "^" + this.weekdaysMin(s, "").replace(".", "\\.?") + "$",
-                "i"
+                "i",
               ))),
             this._weekdaysParse[r] ||
               ((i =
@@ -7120,15 +7157,15 @@
           (this._weekdaysMinRegex = this._weekdaysRegex),
           (this._weekdaysStrictRegex = new RegExp(
             "^(" + l.join("|") + ")",
-            "i"
+            "i",
           )),
           (this._weekdaysShortStrictRegex = new RegExp(
             "^(" + a.join("|") + ")",
-            "i"
+            "i",
           )),
           (this._weekdaysMinStrictRegex = new RegExp(
             "^(" + o.join("|") + ")",
-            "i"
+            "i",
           ));
       }
       function Xt() {
@@ -7286,7 +7323,7 @@
               : "undefined" != typeof console &&
                 console.warn &&
                 console.warn(
-                  "Locale " + e + " not found. Did you forget to load it?"
+                  "Locale " + e + " not found. Did you forget to load it?",
                 )),
           an._abbr
         );
@@ -7298,7 +7335,7 @@
           if (((t.abbr = e), null != un[e]))
             T(
               "defineLocaleOverride",
-              "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."
+              "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info.",
             ),
               (r = un[e]._config);
           else if (null != t.parentLocale)
@@ -7370,18 +7407,19 @@
               n[Be] < 0 || n[Be] > 11
                 ? Be
                 : n[ze] < 1 || n[ze] > Qe(n[je], n[Be])
-                ? ze
-                : n[Ue] < 0 ||
-                  n[Ue] > 24 ||
-                  (24 === n[Ue] && (0 !== n[Ve] || 0 !== n[Je] || 0 !== n[Ke]))
-                ? Ue
-                : n[Ve] < 0 || n[Ve] > 59
-                ? Ve
-                : n[Je] < 0 || n[Je] > 59
-                ? Je
-                : n[Ke] < 0 || n[Ke] > 999
-                ? Ke
-                : -1),
+                  ? ze
+                  : n[Ue] < 0 ||
+                      n[Ue] > 24 ||
+                      (24 === n[Ue] &&
+                        (0 !== n[Ve] || 0 !== n[Je] || 0 !== n[Ke]))
+                    ? Ue
+                    : n[Ve] < 0 || n[Ve] > 59
+                      ? Ve
+                      : n[Je] < 0 || n[Je] > 59
+                        ? Je
+                        : n[Ke] < 0 || n[Ke] > 999
+                          ? Ke
+                          : -1),
             g(e)._overflowDayOfYear && (t < je || t > ze) && (t = ze),
             g(e)._overflowWeeks && -1 === t && (t = Ze),
             g(e)._overflowWeekday && -1 === t && (t = qe),
@@ -7592,15 +7630,15 @@
             null != t.d
               ? ((s = t.d) < 0 || s > 6) && (l = !0)
               : null != t.e
-              ? ((s = t.e + i), (t.e < 0 || t.e > 6) && (l = !0))
-              : (s = i)),
+                ? ((s = t.e + i), (t.e < 0 || t.e > 6) && (l = !0))
+                : (s = i)),
           r < 1 || r > St(n, i, o)
             ? (g(e)._overflowWeeks = !0)
             : null != l
-            ? (g(e)._overflowWeekday = !0)
-            : ((a = xt(n, r, s, i, o)),
-              (e._a[je] = a.year),
-              (e._dayOfYear = a.dayOfYear));
+              ? (g(e)._overflowWeekday = !0)
+              : ((a = xt(n, r, s, i, o)),
+                (e._a[je] = a.year),
+                (e._dayOfYear = a.dayOfYear));
       }
       function Gn(e) {
         if (e._f !== r.ISO_8601)
@@ -7651,12 +7689,12 @@
         return null == n
           ? t
           : null != e.meridiemHour
-          ? e.meridiemHour(t, n)
-          : null != e.isPM
-          ? ((r = e.isPM(n)) && t < 12 && (t += 12),
-            r || 12 !== t || (t = 0),
-            t)
-          : t;
+            ? e.meridiemHour(t, n)
+            : null != e.isPM
+              ? ((r = e.isPM(n)) && t < 12 && (t += 12),
+                r || 12 !== t || (t = 0),
+                t)
+              : t;
       }
       function jn(e) {
         var t,
@@ -7692,7 +7730,7 @@
             [t.year, t.month, n, t.hour, t.minute, t.second, t.millisecond],
             function (e) {
               return e && parseInt(e, 10);
-            }
+            },
           )),
             Rn(e);
         }
@@ -7723,19 +7761,19 @@
         u(t)
           ? (e._d = new Date(r.now()))
           : d(t)
-          ? (e._d = new Date(t.valueOf()))
-          : "string" == typeof t
-          ? Hn(e)
-          : i(t)
-          ? ((e._a = h(t.slice(0), function (e) {
-              return parseInt(e, 10);
-            })),
-            Rn(e))
-          : o(t)
-          ? Bn(e)
-          : c(t)
-          ? (e._d = new Date(t))
-          : r.createFromInputFallback(e);
+            ? (e._d = new Date(t.valueOf()))
+            : "string" == typeof t
+              ? Hn(e)
+              : i(t)
+                ? ((e._a = h(t.slice(0), function (e) {
+                    return parseInt(e, 10);
+                  })),
+                  Rn(e))
+                : o(t)
+                  ? Bn(e)
+                  : c(t)
+                    ? (e._d = new Date(t))
+                    : r.createFromInputFallback(e);
       }
       function Jn(e, t, n, r, s) {
         var a = {};
@@ -7759,7 +7797,7 @@
         "value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",
         function (e) {
           e._d = new Date(e._i + (e._useUTC ? " UTC" : ""));
-        }
+        },
       )),
         (r.ISO_8601 = function () {}),
         (r.RFC_2822 = function () {});
@@ -7768,14 +7806,14 @@
           function () {
             var e = Kn.apply(null, arguments);
             return this.isValid() && e.isValid() ? (e < this ? this : e) : v();
-          }
+          },
         ),
         qn = M(
           "moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",
           function () {
             var e = Kn.apply(null, arguments);
             return this.isValid() && e.isValid() ? (e > this ? this : e) : v();
-          }
+          },
         );
       function Xn(e, t) {
         var n, r;
@@ -7886,18 +7924,18 @@
         return null === s
           ? null
           : 0 ===
-            (r =
-              60 *
-                (n = ((s[s.length - 1] || []) + "").match(dr) || [
-                  "-",
-                  0,
-                  0,
-                ])[1] +
-              ce(n[2]))
-          ? 0
-          : "+" === n[0]
-          ? r
-          : -r;
+              (r =
+                60 *
+                  (n = ((s[s.length - 1] || []) + "").match(dr) || [
+                    "-",
+                    0,
+                    0,
+                  ])[1] +
+                ce(n[2]))
+            ? 0
+            : "+" === n[0]
+              ? r
+              : -r;
       }
       function fr(e, t) {
         var n, s;
@@ -8015,35 +8053,35 @@
                 M: e._months,
               })
             : c(e) || !isNaN(+e)
-            ? ((i = {}), t ? (i[t] = +e) : (i.milliseconds = +e))
-            : (o = $r.exec(e))
-            ? ((n = "-" === o[1] ? -1 : 1),
-              (i = {
-                y: 0,
-                d: ce(o[ze]) * n,
-                h: ce(o[Ue]) * n,
-                m: ce(o[Ve]) * n,
-                s: ce(o[Je]) * n,
-                ms: ce(lr(1e3 * o[Ke])) * n,
-              }))
-            : (o = Dr.exec(e))
-            ? ((n = "-" === o[1] ? -1 : 1),
-              (i = {
-                y: Yr(o[2], n),
-                M: Yr(o[3], n),
-                w: Yr(o[4], n),
-                d: Yr(o[5], n),
-                h: Yr(o[6], n),
-                m: Yr(o[7], n),
-                s: Yr(o[8], n),
-              }))
-            : null == i
-            ? (i = {})
-            : "object" == typeof i &&
-              ("from" in i || "to" in i) &&
-              ((s = Or(Kn(i.from), Kn(i.to))),
-              ((i = {}).ms = s.milliseconds),
-              (i.M = s.months)),
+              ? ((i = {}), t ? (i[t] = +e) : (i.milliseconds = +e))
+              : (o = $r.exec(e))
+                ? ((n = "-" === o[1] ? -1 : 1),
+                  (i = {
+                    y: 0,
+                    d: ce(o[ze]) * n,
+                    h: ce(o[Ue]) * n,
+                    m: ce(o[Ve]) * n,
+                    s: ce(o[Je]) * n,
+                    ms: ce(lr(1e3 * o[Ke])) * n,
+                  }))
+                : (o = Dr.exec(e))
+                  ? ((n = "-" === o[1] ? -1 : 1),
+                    (i = {
+                      y: Yr(o[2], n),
+                      M: Yr(o[3], n),
+                      w: Yr(o[4], n),
+                      d: Yr(o[5], n),
+                      h: Yr(o[6], n),
+                      m: Yr(o[7], n),
+                      s: Yr(o[8], n),
+                    }))
+                  : null == i
+                    ? (i = {})
+                    : "object" == typeof i &&
+                      ("from" in i || "to" in i) &&
+                      ((s = Or(Kn(i.from), Kn(i.to))),
+                      ((i = {}).ms = s.milliseconds),
+                      (i.M = s.months)),
           (r = new or(i)),
           ar(e) && a(e, "_locale") && (r._locale = e._locale),
           ar(e) && a(e, "_isValid") && (r._isValid = e._isValid),
@@ -8089,7 +8127,7 @@
                   t +
                   "(period, number) is deprecated. Please use moment()." +
                   t +
-                  "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."
+                  "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.",
               ),
               (s = n),
               (n = r),
@@ -8187,16 +8225,16 @@
         return n < -6
           ? "sameElse"
           : n < -1
-          ? "lastWeek"
-          : n < 0
-          ? "lastDay"
-          : n < 1
-          ? "sameDay"
-          : n < 2
-          ? "nextDay"
-          : n < 7
-          ? "nextWeek"
-          : "sameElse";
+            ? "lastWeek"
+            : n < 0
+              ? "lastDay"
+              : n < 1
+                ? "sameDay"
+                : n < 2
+                  ? "nextDay"
+                  : n < 7
+                    ? "nextWeek"
+                    : "sameElse";
       }
       function Er(e, t) {
         1 === arguments.length &&
@@ -8322,18 +8360,20 @@
               n,
               t
                 ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
-                : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ"
+                : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ",
             )
           : Y(Date.prototype.toISOString)
-          ? t
-            ? this.toDate().toISOString()
-            : new Date(this.valueOf() + 60 * this.utcOffset() * 1e3)
-                .toISOString()
-                .replace("Z", j(n, "Z"))
-          : j(
-              n,
-              t ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ"
-            );
+            ? t
+              ? this.toDate().toISOString()
+              : new Date(this.valueOf() + 60 * this.utcOffset() * 1e3)
+                  .toISOString()
+                  .replace("Z", j(n, "Z"))
+            : j(
+                n,
+                t
+                  ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
+                  : "YYYY-MM-DD[T]HH:mm:ss.SSSZ",
+              );
       }
       function es() {
         if (!this.isValid()) return "moment.invalid(/* " + this._i + " */)";
@@ -8397,7 +8437,7 @@
         "moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.",
         function (e) {
           return void 0 === e ? this.localeData() : this.locale(e);
-        }
+        },
       );
       function ls() {
         return this._locale;
@@ -8440,7 +8480,7 @@
             t = n(
               this.year(),
               this.month(),
-              this.date() - (this.isoWeekday() - 1)
+              this.date() - (this.isoWeekday() - 1),
             );
             break;
           case "day":
@@ -8483,7 +8523,7 @@
               n(
                 this.year(),
                 this.month(),
-                this.date() - (this.isoWeekday() - 1) + 7
+                this.date() - (this.isoWeekday() - 1) + 7,
               ) - 1;
             break;
           case "day":
@@ -8732,7 +8772,7 @@
           this.week(),
           this.weekday(),
           this.localeData()._week.dow,
-          this.localeData()._week.doy
+          this.localeData()._week.doy,
         );
       }
       function zs(e) {
@@ -8858,7 +8898,8 @@
       function ei(e) {
         var t =
           Math.round(
-            (this.clone().startOf("day") - this.clone().startOf("year")) / 864e5
+            (this.clone().startOf("day") - this.clone().startOf("year")) /
+              864e5,
           ) + 1;
         return null == e ? t : this.add(e - t, "d");
       }
@@ -9031,11 +9072,11 @@
         (li.years = M("years accessor is deprecated. Use year instead", gt)),
         (li.zone = M(
           "moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",
-          gr
+          gr,
         )),
         (li.isDSTShifted = M(
           "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",
-          xr
+          xr,
         ));
       var hi = P.prototype;
       function fi(e, t, n, r) {
@@ -9140,22 +9181,22 @@
               (1 === ce((e % 100) / 10)
                 ? "th"
                 : 1 === t
-                ? "st"
-                : 2 === t
-                ? "nd"
-                : 3 === t
-                ? "rd"
-                : "th")
+                  ? "st"
+                  : 2 === t
+                    ? "nd"
+                    : 3 === t
+                      ? "rd"
+                      : "th")
             );
           },
         }),
         (r.lang = M(
           "moment.lang is deprecated. Use moment.locale instead.",
-          pn
+          pn,
         )),
         (r.langData = M(
           "moment.langData is deprecated. Use moment.localeData instead.",
-          vn
+          vn,
         ));
       var _i = Math.abs;
       function xi() {
@@ -9453,7 +9494,7 @@
         (uo.localeData = ls),
         (uo.toIsoString = M(
           "toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)",
-          lo
+          lo,
         )),
         (uo.lang = as),
         F("X", 0, 0, "unix"),
@@ -9683,12 +9724,12 @@
       return "info" == e[10].name
         ? 0
         : "donate" == e[10].name
-        ? 1
-        : "results" == e[10].name
-        ? 2
-        : "help" == e[10].name
-        ? 3
-        : -1;
+          ? 1
+          : "results" == e[10].name
+            ? 2
+            : "help" == e[10].name
+              ? 3
+              : -1;
     }
     return (
       ~(t = a(e)) && (n = o[t] = i[t](e)),
@@ -9750,7 +9791,7 @@
         (function (e, t, n) {
           const r = e.$$.props[t];
           void 0 !== r && ((e.$$.bound[r] = n), n(e.$$.ctx[r]));
-        })(t, "guessInput", s)
+        })(t, "guessInput", s),
       ),
       t.$on("guess", e[15]),
       {
@@ -9862,7 +9903,7 @@
             "content",
             "Guess the " +
               artist +
-              " song from the intro in as few tries as possible"
+              " song from the intro in as few tries as possible",
           ),
           M(n, "rel", "apple-touch-icon"),
           M(n, "sizes", "180x180"),
@@ -9881,13 +9922,13 @@
           M(
             k,
             "class",
-            "max-w-screen-sm w-full mx-auto h-full flex flex-col justify-between overflow-auto"
+            "max-w-screen-sm w-full mx-auto h-full flex flex-col justify-between overflow-auto",
           ),
           M(v, "class", "w-full flex flex-col flex-grow relative"),
           M(
             c,
             "class",
-            "bg-custom-bg text-custom-fg overflow-auto flex flex-col"
+            "bg-custom-bg text-custom-fg overflow-auto flex flex-col",
           ),
           T(c, "height", e[3] + "px");
       },
@@ -10016,16 +10057,16 @@
         hasFinished: !1,
         hasStarted: !1,
       };
-      //FIVERR NEW LINE. DO NOT ENABLE CONSOLE.LOG, JUST THE ONE ABOVE IT.
-      setCurrentHeardle(l);
+    //FIVERR NEW LINE. DO NOT ENABLE CONSOLE.LOG, JUST THE ONE ABOVE IT.
+    setCurrentHeardle(l);
     // console.log("a", l);
     var c, d;
     void 0 !== document.hidden
       ? ((c = "hidden"), (d = "visibilitychange"))
       : void 0 !== document.msHidden
-      ? ((c = "msHidden"), (d = "msvisibilitychange"))
-      : void 0 !== document.webkitHidden &&
-        ((c = "webkitHidden"), (d = "webkitvisibilitychange")),
+        ? ((c = "msHidden"), (d = "msvisibilitychange"))
+        : void 0 !== document.webkitHidden &&
+          ((c = "webkitHidden"), (d = "webkitvisibilitychange")),
       void 0 === document.addEventListener ||
         void 0 === c ||
         document.addEventListener(
@@ -10033,7 +10074,7 @@
           function () {
             document[c] || a === x(Vt.startDate) || location.reload(!0);
           },
-          !1
+          !1,
         );
     let h,
       f,
@@ -10154,11 +10195,11 @@
               answer: e.detail.guess,
               isCorrect: s,
               isSkipped: r,
-            }))
+            })),
           ),
           //FIVERR NEW LINE
           evaluateGuessMetadata(v);
-          n(5, (f.guessList = v), f),
+        n(5, (f.guessList = v), f),
           localStorage.setItem("userStats", JSON.stringify(h)),
           (v.length != Vt.maxAttempts && 1 != s) ||
             ((o = s),
@@ -10228,16 +10269,16 @@
   });
 })();
 
-const button = document.createElement('button');
-button.innerText = 'Import Data';
+const button = document.createElement("button");
+button.innerText = "Import Data";
 
-button.style.position = 'fixed';
-button.style.bottom = '50px';
-button.style.left = '10px';
-button.style.zIndex = '1000';
-button.style.padding = '10px 15px';
-button.style.backgroundColor = '#28A745';
-button.style.color = 'white';
-button.style.border = 'none';
-button.style.borderRadius = '5px';
-button.style.cursor = 'pointer';
+button.style.position = "fixed";
+button.style.bottom = "50px";
+button.style.left = "10px";
+button.style.zIndex = "1000";
+button.style.padding = "10px 15px";
+button.style.backgroundColor = "#28A745";
+button.style.color = "white";
+button.style.border = "none";
+button.style.borderRadius = "5px";
+button.style.cursor = "pointer";
