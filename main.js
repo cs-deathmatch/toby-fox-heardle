@@ -1,6050 +1,758 @@
-  var app = (function () {
-  var artist = 'Toby Fox';
-  var twitter = 'cs_dust3';
+var app = (function () {
+  var artist = "Toby Fox";
+  var twitter = "cs_dust3";
   var startDate = "2025-06-13";
   const Cn = ue([
-    //list of all the searchable song titles
-"Megalovania - Undertale",
-"Bonetrousle - Undertale"
+      //list of all the searchable song titles
+
+      // undertale songs
+      "Once Upon a Time - Undertale",
+      "Start Menu - Undertale",
+      "Your Best Friend - Undertale",
+      "Fallen Down - Undertale",
+      "Ruins - Undertale",
+      "Uwa!! So Temperate♫ - Undertale",
+      "Anticipation - Undertale",
+      "Unnecessary Tension - Undertale",
+      "Enemy Approaching - Undertale",
+      "Ghost Fight - Undertale",
+      "Determination - Undertale",
+      "Home - Undertale",
+      "Home (Music Box) - Undertale",
+      "Heartache - Undertale",
+      "sans. - Undertale",
+      "Nyeh Heh Heh! - Undertale",
+      "Snowy - Undertale",
+      "Uwa!! So Holiday♫ - Undertale",
+      "Dogbass - Undertale",
+      "Mysterious Place - Undertale",
+      "Dogsong - Undertale",
+      "Snowdin Town - Undertale",
+      "Shop - Undertale",
+      "Bonetrousle - Undertale",
+      "Dating Start! - Undertale",
+      "Dating Tense! - Undertale",
+      "Dating Fight! - Undertale",
+      "Premonition - Undertale",
+      "Danger Mystery - Undertale",
+      "Undyne - Undertale",
+      "Waterfall - Undertale",
+      "Run! - Undertale",
+      "Quiet Water - Undertale",
+      "Memory - Undertale",
+      "Bird That Carries You Over A Disproportionately Small Gap - Undertale",
+      "Dummy! - Undertale",
+      "Pathetic House - Undertale",
+      "Spooktune - Undertale",
+      "Spookwave - Undertale",
+      "Ghouliday - Undertale",
+      "Chill - Undertale",
+      "Thundersnail - Undertale",
+      "Temmie Village - Undertale",
+      "Tem Shop - Undertale",
+      "NGAHHH!! - Undertale",
+      "Spear of Justice - Undertale",
+      "Ooo - Undertale",
+      "Alphys - Undertale",
+      "It's Showtime! - Undertale",
+      "Metal Crusher - Undertale",
+      "Another Medium - Undertale",
+      "Uwa!! So HEATS!!♫ - Undertale",
+      "Stronger Monsters - Undertale",
+      "Hotel - Undertale",
+      "Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything - Undertale",
+      "Confession - Undertale",
+      "Live Report - Undertale",
+      "Death Report - Undertale",
+      "Spider Dance - Undertale",
+      "Wrong Enemy !? - Undertale",
+      "Oh! One True Love - Undertale",
+      "Oh! Dungeon - Undertale",
+      "It's Raining Somewhere Else - Undertale",
+      "CORE Approach - Undertale",
+      "CORE - Undertale",
+      "Last Episode! - Undertale",
+      "Oh My... - Undertale",
+      "Death by Glamour - Undertale",
+      "For the Fans - Undertale",
+      "Long Elevator - Undertale",
+      "Undertale - Undertale",
+      "Song That Might Play When You Fight Sans - Undertale",
+      "The Choice - Undertale",
+      "Small Shock - Undertale",
+      "Barrier - Undertale",
+      "Bergentrückung - Undertale",
+      "ASGORE - Undertale",
+      "You Idiot - Undertale",
+      "Your Best Nightmare - Undertale",
+      "Finale - Undertale",
+      "An Ending - Undertale",
+      "She's Playing Piano - Undertale",
+      "Here We Are - Undertale",
+      "Amalgam - Undertale",
+      "Fallen Down (Reprise) - Undertale",
+      "Don't Give Up - Undertale",
+      "Hopes and Dreams - Undertale",
+      "Burn in Despair! - Undertale",
+      "SAVE the World - Undertale",
+      "His Theme - Undertale",
+      "Final Power - Undertale",
+      "Reunited - Undertale",
+      "Menu (Full) - Undertale",
+      "Respite - Undertale",
+      "Bring It In, Guys! - Undertale",
+      "Last Goodbye - Undertale",
+      "But the Earth Refused to Die - Undertale",
+      "Battle Against a True Hero - Undertale",
+      'Power of "NEO" - Undertale',
+      "MEGALOVANIA - Undertale",
+      "Good Night - Undertale",
+
+      // deltarune chapter 1 songs
+      "ANOTHER HIM - Deltarune",
+      "Beginning - Deltarune",
+      "School - Deltarune",
+      "Susie - Deltarune",
+      "The Door - Deltarune",
+      "Cliffs - Deltarune",
+      "The Chase - Deltarune",
+      "The Legend - Deltarune",
+      "Lancer - Deltarune",
+      "Rude Buster - Deltarune",
+      "Empty Town - Deltarune",
+      "Weird Birds - Deltarune",
+      "Field of Hopes and Dreams - Deltarune",
+      "Fanfare - Deltarune",
+      "Lantern - Deltarune",
+      "I'm Very Bad - Deltarune",
+      "Checker Dance - Deltarune",
+      "Quiet Autumn - Deltarune",
+      "Scarlet Forest - Deltarune",
+      "Thrash Machine - Deltarune",
+      "Vs. Lancer - Deltarune",
+      "Basement - Deltarune",
+      "Imminent Death - Deltarune",
+      "Vs. Susie - Deltarune",
+      "Card Castle - Deltarune",
+      "Rouxls Kaard - Deltarune",
+      "April 2012 - Deltarune",
+      "Hip Shop - Deltarune",
+      "Gallery - Deltarune",
+      "Chaos King - Deltarune",
+      "Darkness Falls - Deltarune",
+      "The Circus - Deltarune",
+      "THE WORLD REVOLVING - Deltarune",
+      "Friendship - Deltarune",
+      "THE HOLY - Deltarune",
+      "Your Power - Deltarune",
+      "A Town Called Hometown - Deltarune",
+      "You Can Always Come Home - Deltarune",
+      "Don't Forget by Laura Shigihara - Deltarune",
+      "Before the Story - Deltarune",
     ]),
     On = {
       subscribe: ue(
-        [
+        deterministicShuffle([
           {
-            url: "https://soundcloud.com/toby-radiation-fox/100-megalovania",
-            answer: "Megalovania - Undertale",
+            url: "https://soundcloud.com/toby-radiation-fox/001-once-upon-a-time",
+            answer: "Once Upon a Time - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/002-start-menu",
+            answer: "Start Menu - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/003-your-best-friend",
+            answer: "Your Best Friend - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/004-fallen-down",
+            answer: "Fallen Down - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/005-ruins",
+            answer: "Ruins - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/006-uwa-so-temperate",
+            answer: "Uwa!! So Temperate♫ - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/007-anticipation",
+            answer: "Anticipation - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/008-unnecessary-tension",
+            answer: "Unnecessary Tension - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/009-enemy-approaching",
+            answer: "Enemy Approaching - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/010-ghost-fight",
+            answer: "Ghost Fight - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/011-determination",
+            answer: "Determination - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/012-home",
+            answer: "Home - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/013-home-music-box",
+            answer: "Home (Music Box) - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/014-heartache",
+            answer: "Heartache - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/015-sans.",
+            answer: "sans. - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/016-nyeh-heh-heh!",
+            answer: "Nyeh Heh Heh! - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/017-snowy",
+            answer: "Snowy - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/018-uwa-so-holiday",
+            answer: "Uwa!! So Holiday♫ - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/019-dogbass",
+            answer: "Dogbass - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/020-mysterious-place",
+            answer: "Mysterious Place - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/021-dogsong",
+            answer: "Dogsong - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/022-snowdin-town",
+            answer: "Snowdin Town - Undertale",
+          },
+          {
+            url: "https://soundcloud.com/toby-radiation-fox/023-shop",
+            answer: "Shop - Undertale",
           },
           {
             url: "https://soundcloud.com/toby-radiation-fox/024-bonetrousle",
             answer: "Bonetrousle - Undertale",
           },
           {
-            url: "https://soundcloud.com/user-107491243-28699163/start-up-screen",
-            answer: "Start Up Screen - New Super Mario Bros. U",
+            url: "https://soundcloud.com/toby-radiation-fox/025-dating-start!",
+            answer: "Dating Start! - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/battle-mario-luigi-superstar-saga-2003",
-            answer: "Let's Go! (Battle) - Mario & Luigi: Superstar Saga (GBA)",
+            url: "https://soundcloud.com/toby-radiation-fox/026-dating-tense!",
+            answer: "Dating Tense! - Undertale",
           },
           {
-            url: "https://soundcloud.com/mario_crash/tokyo-blur-mario-kart-tour",
-            answer: "Tokyo Blur - Mario Kart Tour",
+            url: "https://soundcloud.com/toby-radiation-fox/027-dating-fight!",
+            answer: "Dating Fight! - Undertale",
           },
           {
-            url: "https://soundcloud.com/kooper-12238687/in-the-pipe-mario-party-2",
-            answer: "In The Pipe - Mario Party 2",
+            url: "https://soundcloud.com/toby-radiation-fox/028-premonition",
+            answer: "Premonition - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/50-world-e-castle",
-            answer: "World e Castle - Super Mario Advance 4: Super Mario Bros. 3",
+            url: "https://soundcloud.com/toby-radiation-fox/029-danger-mystery",
+            answer: "Danger Mystery - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/swimming-1?in=vgmplanet/sets/super-mario-all-stars-ost",
-            answer: "Underwater [Super Mario Bros.] - Super Mario All-Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/030-undyne",
+            answer: "Undyne - Undertale",
           },
           {
-            url: "https://soundcloud.com/user-687566218/crisp-climb-castle",
-            answer: "Crisp Climb Castle - Bowser's Fury",
+            url: "https://soundcloud.com/toby-radiation-fox/031-waterfall",
+            answer: "Waterfall - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/rogueport-town-of-thieves-paper-mario-the-thousand-year-door-1",
-            answer: "Rogueport - Paper Mario: The Thousand-Year Door (GameCube)",
+            url: "https://soundcloud.com/toby-radiation-fox/032-run!",
+            answer: "Run! - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/221-over-shiver-mountain",
-            answer: "Over Shiver Mountain - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/033-quiet-water",
+            answer: "Quiet Water - Undertale",
           },
           {
-            url: "https://soundcloud.com/dmg8bit/game-boy-super-mario-land-1-04-chai-kingdom",
-            answer: "Chai Kingdom - Super Mario Land",
+            url: "https://soundcloud.com/toby-radiation-fox/034-memory",
+            answer: "Memory - Undertale",
           },
           {
-            url: "https://soundcloud.com/vybenet/super-mario-sunshine-ost-ricco-harbor",
-            answer: "Ricco Harbor - Super Mario Sunshine",
+            url: "https://soundcloud.com/toby-radiation-fox/035-bird-that-carries-you-over",
+            answer:
+              "Bird That Carries You Over A Disproportionately Small Gap - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/dks-stone-statue",
-            answer: "DK's Stone Statue - Mario Party DS",
+            url: "https://soundcloud.com/toby-radiation-fox/036-dummy!",
+            answer: "Dummy! - Undertale",
           },
           {
-            url: "https://soundcloud.com/user-272592510/super-mario-rpg-legend-of-50",
-            answer: "Danger Abounds On The Journey (Mushroom Way) - Super Mario RPG: Legend Of The Seven Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/037-pathetic-house",
+            answer: "Pathetic House - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/peachs-castle-2",
-            answer: "Peach's Castle - Mario Sports Mix",
+            url: "https://soundcloud.com/toby-radiation-fox/038-spooktune",
+            answer: "Spooktune - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/wii-moo-moo-meadows-mario-kart",
-            answer: "Wii Moo Moo Meadows - Mario Kart 8",
+            url: "https://soundcloud.com/toby-radiation-fox/039-spookwave",
+            answer: "Spookwave - Undertale",
           },
           {
-            url: "https://soundcloud.com/fawfulhasfury/grasslands-all-the-way-mario-luigi-bowsers-inside-story",
-            answer: "Forever In The Plains (Bumpsy Plains) - Mario & Luigi: Bowser's Inside Story (DS)",
+            url: "https://soundcloud.com/toby-radiation-fox/040-ghouliday",
+            answer: "Ghouliday - Undertale",
           },
           {
-            url: "https://soundcloud.com/user-227502204-594364584/chill",
-            answer: "Chill - Dr. Mario (NES)",
+            url: "https://soundcloud.com/toby-radiation-fox/041-chill",
+            answer: "Chill - Undertale",
           },
           {
-            url: "https://soundcloud.com/user485151016/rainbow-road-mario-kart-double",
-            answer: "Rainbow Road - Mario Kart: Double Dash!!",
+            url: "https://soundcloud.com/toby-radiation-fox/042-thundersnail",
+            answer: "Thundersnail - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/tycoon-town",
-            answer: "Koopa's Tycoon Town - Mario Party 8",
+            url: "https://soundcloud.com/toby-radiation-fox/043-temmie-village",
+            answer: "Temmie Village - Undertale",
           },
           {
-            url: "https://soundcloud.com/tyler-helt/super-mario-kart-vanilla-lake",
-            answer: "Vanilla Lake - Super Mario Kart",
+            url: "https://soundcloud.com/toby-radiation-fox/044-tem-shop",
+            answer: "Tem Shop - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/13-bgm-09-1",
-            answer: "Staff Roll - Super Mario Bros. Deluxe",
+            url: "https://soundcloud.com/toby-radiation-fox/045-ngahhh",
+            answer: "NGAHHH!! - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/peachs-castle-super-mario",
-            answer: "Peach's Castle (Mushroom Kingdom) - Super Mario Odyssey",
+            url: "https://soundcloud.com/toby-radiation-fox/046-spear-of-justice",
+            answer: "Spear of Justice - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/waltz-of-the-boos",
-            answer: "Waltz Of The Boos (Ghostly Galaxy) - Super Mario Galaxy",
+            url: "https://soundcloud.com/toby-radiation-fox/047-ooo",
+            answer: "Ooo - Undertale",
           },
           {
-            url: "https://soundcloud.com/origami-king-one/tranquil-pipes-teahouse-paper-mario-the-origami-king-2020",
-            answer: "Tranquil Pipes Teahouse - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/048-alphys",
+            answer: "Alphys - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/lots-of-toys",
-            answer: "Toy Dream - Mario Party 5",
+            url: "https://soundcloud.com/toby-radiation-fox/049-it's-showtime!",
+            answer: "It's Showtime! - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/gritzy-desert",
-            answer: "Gritzy Desert - Mario & Luigi: Partners In Time",
+            url: "https://soundcloud.com/toby-radiation-fox/050-metal-crusher",
+            answer: "Metal Crusher - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/09a-dire-dire-docks",
-            answer: "Dire Dire Docks/Jolly Roger Bay - Super Mario 64",
+            url: "https://soundcloud.com/toby-radiation-fox/051-another-medium",
+            answer: "Another Medium - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/07-cube",
-            answer: "Cube (Cough) - Dr. Mario 64",
+            url: "https://soundcloud.com/toby-radiation-fox/052-uwa-so-heats",
+            answer: "Uwa!! So HEATS!!♫ - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/coin-rush-dlc-shop",
-            answer: "Coin Rush DLC Shop - New Super Mario Bros. 2",
+            url: "https://soundcloud.com/toby-radiation-fox/053-stronger-monsters",
+            answer: "Stronger Monsters - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/2-20-flopside",
-            answer: "Flopside - Super Paper Mario",
+            url: "https://soundcloud.com/toby-radiation-fox/054-hotel",
+            answer: "Hotel - Undertale",
           },
           {
-            url: "https://soundcloud.com/dmg8bit/game-boy-super-mario-land-2-star-maze",
-            answer: "Star Maze (Space Zone) - Super Mario Land 2: 6 Golden Coins",
+            url: "https://soundcloud.com/toby-radiation-fox/055-can-you-really-call-this-a",
+            answer:
+              "Can You Really Call This A Hotel, I Didn't Receive A Mint On My Pillow Or Anything - Undertale",
           },
           {
-            url: "https://soundcloud.com/kereta-simit/kitto-egao-ga-ichiban-sa",
-            answer: "Always Smiling - Dance Dance Revolution: Mario Mix",
+            url: "https://soundcloud.com/toby-radiation-fox/056-confession",
+            answer: "Confession - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/funky-stadium",
-            answer: "Funky Stadium - Mario Kart Wii",
+            url: "https://soundcloud.com/toby-radiation-fox/057-live-report",
+            answer: "Live Report - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/04-overworld",
-            answer: "Ground - Super Mario Advance (Super Mario Bros. 2)",
+            url: "https://soundcloud.com/toby-radiation-fox/058-death-report",
+            answer: "Death Report - Undertale",
           },
           {
-            url: "https://soundcloud.com/simplepro/pipe-land-super-mario-bros-3",
-            answer: "Pipe Land (World 7) - Super Mario Bros. 3",
+            url: "https://soundcloud.com/toby-radiation-fox/059-spider-dance",
+            answer: "Spider Dance - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/lava-underground",
-            answer: "Volcano Underground - New Super Mario Bros. Wii",
+            url: "https://soundcloud.com/toby-radiation-fox/060-wrong-enemy",
+            answer: "Wrong Enemy !? - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/sudden-death",
-            answer: "Sudden Death - Mario Strikers Charged",
+            url: "https://soundcloud.com/toby-radiation-fox/061-oh-one-true-love",
+            answer: "Oh! One True Love - Undertale",
           },
           {
-            url: "https://soundcloud.com/vincent-carver-886525968/mario-cup-extended",
-            answer: "Mario Cup - Mario Kart Arcade GP",
+            url: "https://soundcloud.com/toby-radiation-fox/062-oh-dungeon",
+            answer: "Oh! Dungeon - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/dont-look-down",
-            answer: "Don't Look Down (Buzzstormer, Fun Run, etc) - Mario Party 7",
+            url: "https://soundcloud.com/toby-radiation-fox/063-its-raining-somewhere-else",
+            answer: "It's Raining Somewhere Else - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/hoohoo-village-mario-luigi-superstar-saga-2003",
-            answer: "Beanish People (Hoohoo Village) - Mario & Luigi: Superstar Saga (GBA)",
+            url: "https://soundcloud.com/toby-radiation-fox/064-core-approach",
+            answer: "CORE Approach - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/clock-tower",
-            answer: "Clock Tower - Super Mario 3D Land",
+            url: "https://soundcloud.com/toby-radiation-fox/065-core",
+            answer: "CORE - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/the-floating-town-glitzville-paper-mario-the-thousand-year-door-2004",
-            answer: "Glitzville - Paper Mario: The Thousand-Year Door (GameCube)",
+            url: "https://soundcloud.com/toby-radiation-fox/066-last-episode",
+            answer: "Last Episode! - Undertale",
           },
           {
-            url: "https://soundcloud.com/fawfulhasfury/deep-castle-mario-luigi-bowsers-inside-story",
-            answer: "The Castle Depths - Mario & Luigi: Bowser's Inside Story (DS)",
+            url: "https://soundcloud.com/toby-radiation-fox/067-oh-my",
+            answer: "Oh My... - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/82-the-snow-plains-vs-mode",
-            answer: "The Snow Plains (Mario Vs. Luigi) - New Super Mario Bros. (DS)",
+            url: "https://soundcloud.com/toby-radiation-fox/068-death-by-glamour",
+            answer: "Death by Glamour - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/swimming-2",
-            answer: "Underwater - Super Mario World",
+            url: "https://soundcloud.com/toby-radiation-fox/069-for-the-fans",
+            answer: "For the Fans - Undertale",
           },
           {
-            url: "https://soundcloud.com/user-802838595/breezy-mushrise-park",
-            answer: "Breezy Mushrise Park - Mario & Luigi: Dream Team",
+            url: "https://soundcloud.com/toby-radiation-fox/070-long-elevator",
+            answer: "Long Elevator - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/daisy-hills",
-            answer: "Daisy Hills - Mario Kart 7",
+            url: "https://soundcloud.com/toby-radiation-fox/071-undertale",
+            answer: "Undertale - Undertale",
           },
           {
-            url: "https://soundcloud.com/nintendobeats/sprixie-princess-theme",
-            answer: "Sprixie Princess Theme (Stamp House) - Super Mario 3D World",
+            url: "https://soundcloud.com/toby-radiation-fox/072-song-that-might-play-when",
+            answer: "Song That Might Play When You Fight Sans - Undertale",
           },
           {
-            url: "https://soundcloud.com/vincent-carver-886525968/bon-dance-street",
-            answer: "Bon Dance Street - Mario Kart Arcade GP DX",
+            url: "https://soundcloud.com/toby-radiation-fox/073-the-choice",
+            answer: "The Choice - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/star-hill",
-            answer: "Star Hill - Mario & Luigi: Partners In Time",
+            url: "https://soundcloud.com/toby-radiation-fox/074-small-shock",
+            answer: "Small Shock - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/the-lava-pit",
-            answer: "The Lava Pit - Mario Strikers Charged",
+            url: "https://soundcloud.com/toby-radiation-fox/075-barrier",
+            answer: "Barrier - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/25-waluigis-island",
-            answer: "Waluigi's Island - Mario Party 3",
+            url: "https://soundcloud.com/toby-radiation-fox/076-bergentrückung",
+            answer: "Bergentrückung - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/penningtons-mystery-paper-mario-the-thousand-year-door-2004",
-            answer: "Detective Pennington's On The Case - Paper Mario: The Thousand-Year Door (GameCube)",
+            url: "https://soundcloud.com/toby-radiation-fox/077-asgore",
+            answer: "ASGORE - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/welcome-yoster-island",
-            answer: "Welcome To Yo'ster Isle! - Super Mario RPG: Legend Of The Seven Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/078-you-idiot",
+            answer: "You Idiot - Undertale",
           },
           {
-            url: "https://soundcloud.com/origami-king-one/shogun-studios-paper-mario-the-origami-king-2020",
-            answer: "Shogun Studios - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/079-your-best-nightmare",
+            answer: "Your Best Nightmare - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/lost-levels-title",
-            answer: "Title Screen [Super Mario Bros.: The Lost Levels] - Super Mario All-Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/080-finale",
+            answer: "Finale - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/gcn-sherbet-land-mario-kart-8",
-            answer: "GCN Sherbet Land - Mario Kart 8",
+            url: "https://soundcloud.com/toby-radiation-fox/081-an-ending",
+            answer: "An Ending - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/bouncing-around",
-            answer: "Bouncing Around (Dust Buddies, Globe Gunners, etc) - Mario Party DS",
+            url: "https://soundcloud.com/toby-radiation-fox/082-she's-playing-piano",
+            answer: "She's Playing Piano - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/ds-twilight-house",
-            answer: "DS Twilight House - Mario Kart Wii",
+            url: "https://soundcloud.com/toby-radiation-fox/083-here-we-are",
+            answer: "Here We Are - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/desert-ruins-2",
-            answer: "Desert Ruins - Super Mario 3D Land",
+            url: "https://soundcloud.com/toby-radiation-fox/084-amalgam",
+            answer: "Amalgam - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/14-sunset-wilds",
-            answer: "Sunset Wilds - Mario Kart: Super Circuit",
+            url: "https://soundcloud.com/toby-radiation-fox/085-fallen-down-(reprise)",
+            answer: "Fallen Down (Reprise) - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/bowser-jr-boulevard",
-            answer: "Bowser Jr. Boulevard - Mario Sports Mix",
+            url: "https://soundcloud.com/toby-radiation-fox/086-dont-give-up",
+            answer: "Don't Give Up - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/ending-395873102",
-            answer: "Ending [Super Mario Bros. 2] - Super Mario All-Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/087-hopes-and-dreams",
+            answer: "Hopes and Dreams - Undertale",
           },
           {
-            url: "https://soundcloud.com/neil-winters-753009113/mario-strikers-battle-league-super-bell-hill",
-            answer: "Mushroom Hill (Super Mario 3D World ~ Super Bell Hill) - Mario Strikers: Battle League",
+            url: "https://soundcloud.com/toby-radiation-fox/088-burn-in-despair",
+            answer: "Burn in Despair! - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/still-the-road-is-full-of",
-            answer: "Danger Aplenty On The Journey (Bandit's Way) - Super Mario RPG: Legend Of The Seven Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/089-save-the-world",
+            answer: "SAVE the World - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/02-world-music-2",
-            answer: "Easton Kingdom - Super Mario Land",
+            url: "https://soundcloud.com/toby-radiation-fox/090-his-theme",
+            answer: "His Theme - Undertale",
           },
           {
-            url: "https://soundcloud.com/mk8d-dlc-full-ost_hq/shroom-ridge-ds-mario-kart-8",
-            answer: "DS Shroom Ridge (Wave 1) - MK8DX Booster Course Pass Waves 1-3",
+            url: "https://soundcloud.com/toby-radiation-fox/091-final-power",
+            answer: "Final Power - Undertale",
           },
           {
-            url: "https://soundcloud.com/natian_15-seami/giddy-sky-2-super-princess",
-            answer: "Giddy Sky 2 - Super Princess Peach",
+            url: "https://soundcloud.com/toby-radiation-fox/092-reunited",
+            answer: "Reunited - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/06a-koopa-troopa-beach",
-            answer: "Koopa Troopa Beach - Mario Kart 64",
+            url: "https://soundcloud.com/toby-radiation-fox/093-menu-full",
+            answer: "Menu (Full) - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/2-01-starshine-beach-galaxy",
-            answer: "Starshine Beach Galaxy - Super Mario Galaxy 2",
+            url: "https://soundcloud.com/toby-radiation-fox/094-respite",
+            answer: "Respite - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmc/the-breeze-of-petal-meadows-paper-mario-the-thousand-year-door-2004",
-            answer: "Petal Meadows - Paper Mario: The Thousand-Year Door (GameCube)",
+            url: "https://soundcloud.com/toby-radiation-fox/095-bring-it-in,-guys!",
+            answer: "Bring It In, Guys! - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/map-yoshi-park",
-            answer: "Map: Yoshi Park - Mario Super Sluggers",
+            url: "https://soundcloud.com/toby-radiation-fox/096-last-goodbye",
+            answer: "Last Goodbye - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/spectacular-finale",
-            answer: "Spectacular Finale - Paper Mario: Sticker Star",
+            url: "https://soundcloud.com/toby-radiation-fox/097-but-the-earth-refused-to-die",
+            answer: "But the Earth Refused to Die - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/1-06-super-paper-mario",
-            answer: "Title Screen - Super Paper Mario",
+            url: "https://soundcloud.com/toby-radiation-fox/098-battle-against-a-true-hero",
+            answer: "Battle Against a True Hero - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/main-title-4",
-            answer: "Hello! Time Travelers (Title Screen) - Mario & Luigi: Partners In Time",
+            url: "https://soundcloud.com/toby-radiation-fox/099-power-of-neo",
+            answer: 'Power of "NEO" - Undertale',
           },
           {
-            url: "https://soundcloud.com/natian_15-seami/title-theme-super-princess",
-            answer: "Title Screen - Super Princess Peach",
+            url: "https://soundcloud.com/toby-radiation-fox/100-megalovania",
+            answer: "MEGALOVANIA - Undertale",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/1-title-theme-1",
-            answer: "Title Screen - Dr. Mario (NES)",
+            url: "https://soundcloud.com/toby-radiation-fox/101-good-night",
+            answer: "Good Night - Undertale",
           },
+
+          // deltarune chapter 1
           {
-            url: "https://soundcloud.com/vgmc/mario-kart-8-theme-mario-kart",
-            answer: "Title Screen - Mario Kart 8",
+            url: "https://soundcloud.com/toby-radiation-fox/001-another-him",
+            answer: "ANOTHER HIM - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/your-dream-adventure",
-            answer: "Your Dream Adventure! (Title Screen) - Mario & Luigi: Dream Team",
+            url: "https://soundcloud.com/toby-radiation-fox/002-beginning",
+            answer: "Beginning - Deltarune",
           },
           {
-            url: "https://soundcloud.com/neil-winters-753009113/mario-strikers-battle-league-title-screen",
-            answer: "Title Screen - Mario Strikers: Battle League",
+            url: "https://soundcloud.com/toby-radiation-fox/003-school",
+            answer: "School - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-three/ninji-skills-paper-mario-the-origami-king-2020",
-            answer: "Ninji Skills - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/004-susie",
+            answer: "Susie - Deltarune",
           },
           {
-            url: "https://soundcloud.com/ssbu-ost/delfino-plaza-remix",
-            answer: "Delfino Plaza (Super Mario Sunshine) - Super Smash Bros. Ultimate",
+            url: "https://soundcloud.com/toby-radiation-fox/005-the-door",
+            answer: "The Door - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/try-try-again",
-            answer: "Try, Try Again (Battle) - Mario & Luigi: Dream Team",
+            url: "https://soundcloud.com/toby-radiation-fox/006-cliffs",
+            answer: "Cliffs - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/feed-petey-level-2",
-            answer: "Feed Petey: Level 2 - Mario Sports Mix",
+            url: "https://soundcloud.com/toby-radiation-fox/007-the-chase",
+            answer: "The Chase - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/overworld-6",
-            answer: "Ground [Super Mario Bros. 2] - Super Mario All-Stars",
+            url: "https://soundcloud.com/toby-radiation-fox/008-the-legend",
+            answer: "The Legend - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/koopa-cape",
-            answer: "Koopa Cape - Mario Kart Wii",
+            url: "https://soundcloud.com/toby-radiation-fox/009-lancer",
+            answer: "Lancer - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/51-map-5-koopas-seaside-soiree",
-            answer: "Koopa's Seaside Soiree - Mario Party 4",
+            url: "https://soundcloud.com/toby-radiation-fox/010-rude-buster",
+            answer: "Rude Buster - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-one/paper-mario-the-origami-king-paper-mario-the-origami-king-2020",
-            answer: "Title Screen - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/011-empty-town",
+            answer: "Empty Town - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-one/autumn-mountain-battle-paper-mario-the-origami-king-2020",
-            answer: "Battle (Autumn Mountain) - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/012-weird-birds",
+            answer: "Weird Birds - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-two/shangri-spa-paper-mario-the-origami-king-2020",
-            answer: "Shangri Spa - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/013-field-of-hopes-and-dreams",
+            answer: "Field of Hopes and Dreams - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-one/toads-bbq-foodeatery-paper-mario-the-origami-king-2020",
-            answer: "Toad's BBQ Foodeatery - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/014-fanfare-from-rose-of",
+            answer: "Fanfare (From Rose Of Winter) - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-three/origami-castle-paper-mario-the-origami-king-2020",
-            answer: "Origami Castle - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/015-lantern",
+            answer: "Lantern - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-one/overlook-mountain-paper-mario-the-origami-king-2020",
-            answer: "Overlook Mountain - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/016-i'm-very-bad",
+            answer: "I'm Very Bad - Deltarune",
           },
           {
-            url: "https://soundcloud.com/origami-king-three/staff-credits-paper-mario-the-origami-king-2020",
-            answer: "Staff Roll - Paper Mario: The Origami King",
+            url: "https://soundcloud.com/toby-radiation-fox/017-checker-dance",
+            answer: "Checker Dance - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/05-welcome-to-mario-land",
-            answer: "Welcome To Mario Land (Main Menu) - Mario Party 2",
+            url: "https://soundcloud.com/toby-radiation-fox/018-quiet-autumn",
+            answer: "Quiet Autumn - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vincent-carver-886525968/sky-arena",
-            answer: "Sky Arena - Mario Kart Arcade GP DX",
+            url: "https://soundcloud.com/toby-radiation-fox/019-scarlet-forest",
+            answer: "Scarlet Forest - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/mushroom-gorge",
-            answer: "Mushroom Gorge - Mario Kart Wii",
+            url: "https://soundcloud.com/toby-radiation-fox/020-thrash-machine",
+            answer: "Thrash Machine - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/sherbet-land",
-            answer: "Sherbet Land - Mario Hoops 3-On-3",
+            url: "https://soundcloud.com/toby-radiation-fox/021-vs-lancer",
+            answer: "Vs. Lancer - Deltarune",
           },
           {
-            url: "https://soundcloud.com/user-910172339/super-mario-party-ost-party-4",
-            answer: "Party Plaza - Super Mario Party",
+            url: "https://soundcloud.com/toby-radiation-fox/022-basement",
+            answer: "Basement - Deltarune",
           },
           {
-            url: "https://soundcloud.com/laparkita28/cavi-cape-dx-mario-and-luigi-bowsers-inside-story-bowser-jrs-journey-ost",
-            answer: "A Gentle Breeze At Cavi Cape - Mario & Luigi: Bowser's Inside Story + Bowser Jr.'s Journey",
+            url: "https://soundcloud.com/toby-radiation-fox/023-imminent-death",
+            answer: "Imminent Death - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/deep-dark-galaxy",
-            answer: "Deep Dark Galaxy - Super Mario Galaxy",
+            url: "https://soundcloud.com/toby-radiation-fox/024-vs-susie",
+            answer: "Vs. Susie - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/14-underground-theme",
-            answer: "Underground - New Super Mario Bros. (DS)",
+            url: "https://soundcloud.com/toby-radiation-fox/025-card-castle",
+            answer: "Card Castle - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/09-que-que",
-            answer: "Que Que (Sneeze) - Dr. Mario 64",
+            url: "https://soundcloud.com/toby-radiation-fox/026-rouxls-kaard",
+            answer: "Rouxls Kaard - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/memory-4",
-            answer: "Memory 4 - Super Paper Mario",
+            url: "https://soundcloud.com/toby-radiation-fox/027-april-2012",
+            answer: "April 2012 - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/wigglers-garden",
-            answer: "Wiggler's Garden - Mario Party DS",
+            url: "https://soundcloud.com/toby-radiation-fox/028-hip-shop",
+            answer: "Hip Shop - Deltarune",
           },
           {
-            url: "https://soundcloud.com/mk8d-dlc-full-ost_hq/choco-mountain-n64-mario-kart",
-            answer: "N64 Choco Mountain (Wave 1) - MK8DX Booster Course Pass Waves 1-3",
+            url: "https://soundcloud.com/toby-radiation-fox/029-gallery",
+            answer: "Gallery - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/gba-sky-garden",
-            answer: "GBA Sky Garden - Mario Kart DS",
+            url: "https://soundcloud.com/toby-radiation-fox/030-chaos-king",
+            answer: "Chaos King - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/jungle-3",
-            answer: "Jungle - New Super Mario Bros. Wii",
+            url: "https://soundcloud.com/toby-radiation-fox/031-darkness-falls",
+            answer: "Darkness Falls - Deltarune",
           },
           {
-            url: "https://soundcloud.com/civ-nohp/main-title-paper-mario-2000",
-            answer: "Title Screen - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/032-the-circus",
+            answer: "The Circus - Deltarune",
           },
           {
-            url: "https://soundcloud.com/civ-nohp/ghost-gulping-paper-mario-2000",
-            answer: "Ghost Gulping - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/033-the-world-revolving",
+            answer: "THE WORLD REVOLVING - Deltarune",
           },
           {
-            url: "https://soundcloud.com/iruy-otudser/cloudy-climb-paper-mario-2000",
-            answer: "Cloudy Climb - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/034-friendship",
+            answer: "Friendship - Deltarune",
           },
           {
-            url: "https://soundcloud.com/civ-nohp/shooting-star-summit-paper-mario-2000",
-            answer: "Shooting Star Summit - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/035-the-holy",
+            answer: "THE HOLY - Deltarune",
           },
           {
-            url: "https://soundcloud.com/civ-nohp/main-menu-paper-mario-2000",
-            answer: "Main Menu - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/036-your-power",
+            answer: "Your Power - Deltarune",
           },
           {
-            url: "https://soundcloud.com/civ-nohp/welcome-to-yoshis-village-2-paper-mario-2000",
-            answer: "Welcome To Yoshi's Village - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/037-a-town-called-hometown",
+            answer: "A Town Called Hometown - Deltarune",
           },
           {
-            url: "https://soundcloud.com/civ-nohp/cold-reception-in-shiver-city-paper-mario-2000",
-            answer: "Cold Reception In Shiver City - Paper Mario (N64)",
+            url: "https://soundcloud.com/toby-radiation-fox/038-you-can-always-come-home",
+            answer: "You Can Always Come Home - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmc/gba-cheese-land-mario-kart-8",
-            answer: "GBA Cheese Land - Mario Kart 8",
+            url: "https://soundcloud.com/toby-radiation-fox/039-laura-shigihara-dont",
+            answer: "Don't Forget by Laura Shigihara - Deltarune",
           },
           {
-            url: "https://soundcloud.com/vgmplanet/06-bgm-06-786664261",
-            answer: "Octopus - Game & Watch Gallery",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/cold-start-hot-finish",
-            answer: "Cold Start, Hot Finish - Mario + Rabbids Kingdom Battle",
-          },
-          {
-            url: "https://soundcloud.com/mk8d-dlc-full-ost_hq/coconut-mall-wii-mario-kart-8",
-            answer: "Wii Coconut Mall (Wave  1) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/sunshine-seaside",
-            answer: "Pipeline Lagoon/Sunshine Seaside (Above Water) - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/its-battle-time",
-            answer: "Battle - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/stadium-bowser-castle",
-            answer: "Bowser Castle - Mario Super Sluggers",
-          },
-          {
-            url: "https://soundcloud.com/user-484249316/mario-kart-tour-los-angeles-laps",
-            answer: "Los Angeles Laps - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/gusty-garden-galaxy",
-            answer: "Gusty Garden Galaxy - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/03a-3-raceways-wario-stadium",
-            answer: "Luigi/Mario/Royal Raceway/Wario Stadium - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mario-kart-channel",
-            answer: "Mario Kart Channel - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/lets-do-the-fooka-fooka",
-            answer: "Let's Get Fluffy! (Nimbus Land) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vincent-carver-886525968/pacman-cup-extended",
-            answer: "Pac-Man Cup - Mario Kart Arcade GP",
-          },
-          {
-            url: "https://soundcloud.com/tyler-helt/super-mario-kart-mario-circuit-theme",
-            answer: "Mario Circuit - Super Mario Kart",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/shroobs",
-            answer: "Shroobs! (Prologue) - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/ssbu-ost/ground-theme-super-mario-bros-64",
-            answer: "Peach's Castle - Super Smash Bros. (N64)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/petey-piranha",
-            answer: "Petey Piranha's Theme - Mario Strikers Charged",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-13-world-1-2",
-            answer: "World 1 & 2 - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/ar-cade-gaming/mario-kart-double-dash-music-main-theme",
-            answer: "Title Screen - Mario Kart: Double Dash!!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/08-star-lift",
-            answer: "Star Lift - Mario Party 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Null",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Null",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Null",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Null",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Null",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Null",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/underwater-theme-new-super-mario-bros-remix",
-            answer: "Underwater Theme (New Super Mario Bros.) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/karurosu-844572453/mario-kart-7-soundtrack-8",
-            answer: "Piranha Plant Slide/Piranha Plant Pipeway - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/dustin-hotman/03-world-1-super-mario-3d-land",
-            answer: "World 1 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/marmalade-valley-paper-mario-color-splash-2016",
-            answer: "Marmalade Valley - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/smbx-equipo-estelar/1-running-about",
-            answer: "Ground - Super Mario Bros. (1985)",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/final-bowser-fight-super-mario-bros-3",
-            answer: "Bowser Battle - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/ship-battle-with-cortez-paper-mario-the-thousand-year-door-2004",
-            answer: "Battle ~ Cortez - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/the-tile-pool-super-paper-mario-2007",
-            answer: "The Tile Pool - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/user409121565/mario-kart-ds-ost-peach",
-            answer: "Peach Gardens - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/silver-friends/daisy-cruiser-mario-super",
-            answer: "Daisy Cruiser - Mario Super Sluggers",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mount-volbono-town-super-mario",
-            answer: "Peronza Plaza (Luncheon Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/mlg-troll/green-star",
-            answer: "Green Star - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-910172339/mario-party-8-ost-treetop",
-            answer: "DK's Treetop Temple - Mario Party 8",
-          },
-          {
-            url: "https://soundcloud.com/chiptune-human/super-mario-maker-2-editor-ost-smw-ground-mix-by-vini64",
-            answer: "Ground [Super Mario World] (Edit) - Super Mario Maker",
-          },
-          {
-            url: "https://soundcloud.com/user-910172339/mario-kart-8-deluxe-ost-sydney-sprint",
-            answer: "Tour Sydney Sprint (Wave 2) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/popple-battle-mario-luigi-superstar-saga-2003",
-            answer: "The Marvelous Duo (Popple Battle) - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/ssbu-ost/main-theme-new-super-mario-bros",
-            answer: "Main Theme (New Super Mario Bros.) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw2-chef",
-            answer: "Chef - Game & Watch Gallery 2",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/world-7-meringue-clouds",
-            answer: "Meringue Clouds (World 7) - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-three/battle-with-king-olly-thinking-paper-mario-the-origami-king-2020",
-            answer: "Battle With King Olly - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/ground-theme-new-super-mario-bros-u",
-            answer: "Ground Theme (New Super Mario Bros. U) - Mario & Sonic At The Rio 2016 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/sunshine-isles",
-            answer: "Sunshine Isles - Super Mario 64 DS",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/ice-mountain",
-            answer: "Ice Mountain (Freezeflame Galaxy) - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/camek-neptunia-mk3/main-battle-theme-mario-luigi-partners-in-time-2005",
-            answer: "Attack The Enemy (Battle) - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/sky-smb1",
-            answer: "Sky [Super Mario Bros.] - Super Mario Maker 2",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-686682564/110-mario-paint-medley",
-            answer: "Mario Paint Medley - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/user-910172339/super-mario-party-ost-title",
-            answer: "Main Theme - Super Mario Party",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/gcn-luigis-mansion-mario-kart",
-            answer: "GCN Luigi's Mansion - Mario Kart 8 Deluxe",
-          },
-          {
-            url: "https://soundcloud.com/fawfulhasfury/have-a-nice-talk-mario-luigi-bowsers-inside-story",
-            answer: "Persistant Joy (Have A Nice Talk) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/conkdor-canyon",
-            answer: "Conkdor Canyon - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/mininightmare/super-pipe-house",
-            answer: "Super Pipe House - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/dream-equestrian-moo-moo-meadows",
-            answer: "Dream Equestrian: (Moo Moo Meadows ~ Mario Kart Wii) - Mario & Sonic at the London 2012 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/aneas-pierce/36-the-canyon-world-6",
-            answer: "World 6 (Mountain) - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/card-battle-paper-mario-color-splash-2016",
-            answer: "Card Battle - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/dunnno/thwomp-desert",
-            answer: "Thwomp Desert - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/boggly-woods-paper-mario-the-thousand-year-door-2004",
-            answer: "Boggly Woods - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/tyler-helt/mario-kart-tour-vancouver-velocity",
-            answer: "Vancouver Velocity - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/lineland-road",
-            answer: "Lineland Road - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz2/wild-glide-galaxy",
-            answer: "Wild Glide Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user647851845/party-preperations-mario-4",
-            answer: "Main Menu - Mario Party 10",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/bone-dry-dunes-mario-kart-8",
-            answer: "Bone Dry Dunes - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/mid-boss-mayhem",
-            answer: "Mid Boss Mayhem - Mario + Rabbids Kingdom Battle",
-          },
-          {
-            url: "https://soundcloud.com/adrian-fernandez-842998753/super-princess-peach-fury-volcano-act-1-2",
-            answer: "Fury Volcano 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/march-ahead-paper-mario-2000",
-            answer: "March Ahead - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/aquatis-gd/super-mario-sunshine-ost-pianta-village",
-            answer: "Pianta Village - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/user-229883391/super-mario-world-fortress",
-            answer: "Castle - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/user-910172339/mario-luigi-partners-664174776",
-            answer: "Toad Town - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/geko-xeno/battle-mario-kart-super",
-            answer: "Battle - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/user-910172339/mario-luigi-dream-18740899",
-            answer: "Panic Pit - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/wario",
-            answer: "Wario's Theme - Mario Strikers Charged",
-          },
-          {
-            url: "https://soundcloud.com/dylan-walter-156875824/mario-party-superstars-ost-4",
-            answer: "Title Screen [Mario Party 2] - Mario Party Superstars",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/space-junk-road",
-            answer: "Space Junk Road - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/luma",
-            answer: "Luma - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/the-fiery-stronghold",
-            answer: "The Fiery Stronghold - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/rosalina-in-the-observatory-3",
-            answer: "Rosalina In The Observatory - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/melty-molten-galaxy",
-            answer: "Melty Molten Galaxy - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/egg-planet",
-            answer: "Egg Planet (Good Egg Galaxy) - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/super-mario-galaxy",
-            answer: "Staff Roll - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/main-theme-super-mario-bros-remix",
-            answer: "Ground Theme (Super Mario Bros.) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/hax-766019189/sherbet-land-mario-kart-double-dash-music-extended-audiotrimmercom",
-            answer: "Sherbet Land - Mario Kart: Double Dash!!",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/excitebike-arena-mario-kart-8",
-            answer: "Excitebike Arena - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/neil-winters-753009113/mario-strikers-battle-league-new-super-mario-bros",
-            answer: "Mushroom Hill (New Super Mario Bros. ~ Ground) - Mario Strikers: Battle League",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/mount-lineland-super-paper-mario-2007",
-            answer: "Mount Lineland - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/everybody-party",
-            answer: "Everybody Party (Dinger Derby, Coney Island, etc) - Mario Party 5",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/super-bell-subway-mario-kart-8",
-            answer: "Super Bell Subway - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw4-rain-shower-modern-mode",
-            answer: "Rain Shower - Game & Watch Gallery 4",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/beach-overworld-new-super-mario-bros",
-            answer: "Beach - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/geko-xeno/ribbon-road-mario-kart-super",
-            answer: "Ribbon Road - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/tyler-helt/super-mario-kart-donut-plains-theme",
-            answer: "Donut Plains - Super Mario Kart",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/castaway-bay",
-            answer: "Castaway Bay - Mario Party 6",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/title-screen",
-            answer: "Title Screen - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/hax-766019189/luigis-mansion-dark-moon-gloomy-manor",
-            answer: "Gloomy Manor - Luigi's Mansion: Dark Moon",
-          },
-          {
-            url: "https://soundcloud.com/karurosu-844572453/mario-kart-7-soundtrack-rock",
-            answer: "Rock Rock Mountain/Alpine Pass - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/sunny-driftwood-shore",
-            answer: "Sunny Driftwood Shore - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/lets-go-down-the-wine-river",
-            answer: "Let's Take The Midas River - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/fuzzys-stole-my-shell-paper-mario-2000",
-            answer: "Fuzzies Stole My Shell - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/desert-smw",
-            answer: "Desert [Super Mario World] - Super Mario Maker 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/game-boy-horror-luigis-mansion",
-            answer: "Chatting With Professor E. Gadd - Luigi's Mansion (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/gba-shy-guy-beach",
-            answer: "GBA Shy Guy Beach - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/world-5",
-            answer: "World 5 (Beach) - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mystery-of-the-glitz-pit-paper-mario-the-thousand-year-door-2004",
-            answer: "The Glitz Pit - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/neil-winters-753009113/mario-kart-live-home-circuit-track-building",
-            answer: "Track Building - Mario Kart Live: Home Circuit",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/port-prisma-paper-mario-color-splash-2016",
-            answer: "Port Prisma - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/26-bgm-14",
-            answer: "You Vs. Boo - Super Mario Bros. Deluxe",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-702509486",
-            answer: "Showdown With Cackletta! - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/2-23-world-s",
-            answer: "World S - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/dimentio-charming-magician-super-paper-mario-2007",
-            answer: "Dimentio, Charming Magician - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/main-theme-new-super-mario-bros-wii-remix",
-            answer: "Snow Theme (New Super Mario Bros. Wii) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/sizzling-stakes",
-            answer: "Around And Around (Sizzling Stakes, Tow The Line, etc) - Super Mario Party",
-          },
-          {
-            url: "https://soundcloud.com/aj1ayrtonclimax/merry-mountain-soundtrack-mario-kart-tour-winter-tour-2020",
-            answer: "Merry Mountain - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/24-creepy-cavern",
-            answer: "Creepy Cavern - Mario Party 3",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/world-9-superstar-road",
-            answer: "Superstar Road (World 9) - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/dusk-at-excess-express-paper-mario-the-thousand-year-door-2004",
-            answer: "Excess Express (Evening) - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/shroom-ridge",
-            answer: "Shroom Ridge - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/bob-omb-dodge-level-2",
-            answer: "Bob Omb Dodge: Level 2 - Mario Sports Mix",
-          },
-          {
-            url: "https://soundcloud.com/spryzen-edits/ghost-house-new-super-mario-bros-wii",
-            answer: "Ghost House - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/mario-kart-64-theme",
-            answer: "Title Screen - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-390758306/102-main-theme-luigis-mansion",
-            answer: "Luigi's Mansion Theme - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/officialnintendo/n64royalraceway",
-            answer: "N64 Royal Raceway - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-687566218/forgotten-isle",
-            answer: "Forgotten Isle (Lost Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/file-select-6",
-            answer: "File Select - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/its-a-dead-heat",
-            answer: "It's A Dead Heat (Alpine Assault, Cosmic Slalom, etc) - Mario Party 8",
-          },
-          {
-            url: "https://soundcloud.com/the-crafty-army/luigis-mansion-3-music-boilerworks",
-            answer: "Boilerworks - Luigi's Mansion 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-11-yoshi-star-galaxy",
-            answer: "Yoshi Star Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/dozing-sands-secret",
-            answer: "Dozing Sands Secret - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/snow-smb1",
-            answer: "Snow [Super Mario Bros.] - Super Mario Maker 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ice-land",
-            answer: "Ice Land (World 6) [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/snow-road-paper-mario-2000",
-            answer: "Snow Road - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/instant-replay?in=vgmplanet/sets/mario-super-sluggers-ost",
-            answer: "Instant Replay - Mario Super Sluggers",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/snowball-park",
-            answer: "Snowball Park - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-390758306/106-fever",
-            answer: "Fever (Dr. Mario) - Super Smash Bros. Melee",
-          },
-          {
-            url: "https://soundcloud.com/fawfulhasfury/beachside-dream-mario-luigi-bowsers-inside-story",
-            answer: "Beachside Dreaming (Plack Beach) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/rainbow-road-1",
-            answer: "Rainbow Road - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/credits-pt-1",
-            answer: "Staff Roll Pt.1 - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/credits-pt-2",
-            answer: "Staff Roll Pt.2 - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-ost-rainbow-castle",
-            answer: "Mario's Rainbow Castle - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/05-main-theme",
-            answer: "Main Theme (Bob Omb Battlefield/Whomp's Fortress) - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/the-wastelands",
-            answer: "The Wastelands - Mario Strikers Charged",
-          },
-          {
-            url: "https://soundcloud.com/laparkita28/bumpsy-plains-dx-mario-and-luigi-bowsers-inside-story-bowser-jrs-journey-ost",
-            answer: "Forever In The Plains (Bumpsy Plains) - Mario & Luigi: Bowser's Inside Story + Bowser Jr.'s Journey",
-          },
-          {
-            url: "https://soundcloud.com/ssbu-ost/airship-theme-super-mario-bros-3",
-            answer: "Airship Theme (Super Mario Bros. 3) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/welcome-to-the-lakitu-info",
-            answer: "Welcome To The Lakitu Info Center! - Mario & Luigi: Paper Jam",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/battle-stadium-mario-kart-8",
-            answer: "Battle Stadium - Mario Kart 8 Deluxe",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/thwomp-ruins-mario-kart-8",
-            answer: "Thwomp Ruins - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-975348116",
-            answer: "DS Peach Gardens (Wave 3) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/gcn-yoshi-circuit-mario-kart-8",
-            answer: "GCN Yoshi Circuit - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/animal-crossing-summer-mario",
-            answer: "Animal Crossing (Summer) - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-sky-1",
-            answer: "GBA Sky Garden (Wave 1) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/staff-credits-mario-kart-8",
-            answer: "Staff Roll - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/happy-adventure-delightful",
-            answer: "Fun Adventure, Cheerful Adventure - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-617567186",
-            answer: "Vim Factory - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/hisstocrat",
-            answer: "Hisstocrat - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/a-song-of-ice-and-desert",
-            answer: "A Song Of Ice And Desert - Mario + Rabbids Kingdom Battle",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/observatory-luigis-mansion",
-            answer: "Observatory - Luigi's Mansion (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/2-02-the-open-plane-the",
-            answer: "The Bitlands - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/daffodil-peak-paper-mario-color-splash-2016",
-            answer: "Daffodil Peak - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/09-bgm-09-968999200",
-            answer: "How To Play - Mario's Picross",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/world-7-cloud-world",
-            answer: "World 7 (Sky) - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/jazzy",
-            answer: "Jazzy (Catch You Letter, Dust 'Til Dawn, etc) - Mario Party 6",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-14-the-starship-sails",
-            answer: "The Starship Sails - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/03-fever",
-            answer: "Fever - Dr. Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/storm-the-x-naut-fortress-paper-mario-the-thousand-year-door-2004",
-            answer: "X-Naut Fortress - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/break-at-piillo-castle",
-            answer: "Break At Pi'illo Castle - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/snes-donut-plains-3-mario-kart",
-            answer: "SNES Donut Plains 3 - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/world-1",
-            answer: "World 1 (Grass) - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/option",
-            answer: "Options - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/subcon-level-b",
-            answer: "Underground - Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/dmg8bit/game-boy-super-mario-land-2-the-moon",
-            answer: "The Moon (Space Zone) - Super Mario Land 2: 6 Golden Coins",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/casino-delfino-medley",
-            answer: "Casino - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/hands-on-hall",
-            answer: "Hands On Hall - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vincent-carver-886525968/aerial-road",
-            answer: "Aerial Road - Mario Kart Arcade GP DX",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/18-play-a-mini-game",
-            answer: "Minigame Rules - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/world-mushroom",
-            answer: "World Mushroom - New Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/kirb-nep-adventure-rst02/toad-trainworks-paper-mario-color-splash-2016",
-            answer: "Toad Trainworks - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/beanbean-castle-mario-luigi-superstar-saga-2003",
-            answer: "Castle Of Beans - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/dusty-dune-galaxy",
-            answer: "Dusty Dune Galaxy - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/showtime",
-            answer: "Showtime! (Battle As Bowser) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/13-saved-game",
-            answer: "Choose Your Pipe (File Select) - Super Mario Land 2: 6 Golden Coins",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/17-normal-level-1",
-            answer: "Ground - Super Mario Advance 4: Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/20-beanbean-fields",
-            answer: "The Kingdom Called Beanbean (Beanbean Fields) - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/12-cheese-land",
-            answer: "Cheese Land - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/23-stage-music-4",
-            answer: "Seashore (Turtle Zone/Macro Zone) - Super Mario Land 2: 6 Golden Coins",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/49-scaning-an-e-card",
-            answer: "Scanning An e-Card - Super Mario Advance 4: Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw3-mario-bros-normal-direction",
-            answer: "Mario Bros. - Game & Watch Gallery 3",
-          },
-          {
-            url: "https://soundcloud.com/tyler-helt/mario-kart-tour-berlin-byways-2",
-            answer: "Berlin Byways - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/special-world-1",
-            answer: "Special World 1 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/sets/paper-mario-the-thousand-year",
-            answer: "Title Screen - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/sky-sea",
-            answer: "Secret Course ~ Sky And Sea - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/56-mini-game-stadium",
-            answer: "Mini Game Stadium - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/beach-bowl-galaxy",
-            answer: "Beach Bowl Galaxy/Sea Slide Galaxy - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/41-haunted-mansion?in=vgmplanet/sets/new-super-mario-bros-ost",
-            answer: "Ghost House - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/rhythmic-hoop-super-mario-bros-main-theme",
-            answer: "Rhythmic Hoop: Ground Theme (Super Mario Bros.) - Mario & Sonic At The Rio 2016 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mixed-up-scramble",
-            answer: "Mixed-Up Scramble (Battle) - Mario & Luigi: Paper Jam",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/cool-as-a-cucumber",
-            answer: "Cool As A Cucumber (Camp Ukiki, Spin Doctor, etc) - Mario Party 7",
-          },
-          {
-            url: "https://soundcloud.com/user-687566218/choose-your-adventure",
-            answer: "Choose Your Adventure - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/luigis-mansion",
-            answer: "Luigi's Mansion - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/fort-fire-bros",
-            answer: "Fort Fire Bros. - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/ice-super-mario-odyssey-2017",
-            answer: "Ice Caves - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/dry-dry-desert-trek-paper-mario-2000",
-            answer: "Dry Dry Desert Trek - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/overworld-5",
-            answer: "Ground [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/76-sort-or-splode-bob-omb-squad",
-            answer: "Sort Or 'Splode - Super Mario 64 DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/pinna-park-beach",
-            answer: "Pinna Park Beach - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/smart-gaming-166773353/lethal-lava-land",
-            answer: "Lethal Lava Land/Shifting Sand Land - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/the-dark-and-gloomy-twilight-town-paper-mario-the-thousand-year-door-2004",
-            answer: "Twilight Town - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/2-20-slimy-spring-galaxy",
-            answer: "Slimy Spring Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/ahmad-viper/bowsers-theme-mario-strikers",
-            answer: "Bowser's Theme - Mario Strikers: Battle League",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/2-22-gap-of-crag",
-            answer: "Gap Of Crag - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-286118343/02-luigi-raceway-mario-kart-64",
-            answer: "Luigi Raceway (Mario Kart 64) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/19-bgm-11-1",
-            answer: "File Select - Super Mario Bros. Deluxe",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/rules-on-dreamy-mountain",
-            answer: "Rules On Dreamy Mountain - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/3ds-music-park-mario-kart-8",
-            answer: "3DS Music Park/3DS Melody Motorway - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/battle-fanfare-a-paper-mario-2000",
-            answer: "Battle - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/feelin-cyber",
-            answer: "Feelin' Cyber (Ion The Prize, Mario Matrix, etc) - Mario Party 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/2-09-haunty-halls-galaxy",
-            answer: "Haunty Halls Galaxy/Boo Moon Galaxy (Super Mario World ~ Ghost House) - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/underground-cave-connection",
-            answer: "Underground Cave Connection - Paper Mario: Sticker Star",
-          },
-          {
-            url: "https://soundcloud.com/kirb-nep-adventure-rst02/prisma-museum-paper-mario-color-splash-2016",
-            answer: "Prisma Museum - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/04a-moo-moo-farm-yoshi-valley",
-            answer: "Moo Moo Farm/Yoshi Valley - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/vanilla-dome",
-            answer: "Vanilla Dome - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/world-2-desert-world",
-            answer: "World 2 (Desert) - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/forest-smw",
-            answer: "Forest [Super Mario World] - Super Mario Maker 2",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/captain-toad-goes-forth",
-            answer: "Captain Toad Goes Forth - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/sunshine-airport-mario-kart-8",
-            answer: "Sunshine Airport - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/listen-up-now",
-            answer: "Listen Up, Now - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/airship-4",
-            answer: "Airship [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/doc-vgm/title-screen-super-mario-bros-35-soundtrack",
-            answer: "Main Menu - Super Mario Bros. 35",
-          },
-          {
-            url: "https://soundcloud.com/awildzapdos/do-the-mario",
-            answer: "Do The Mario! - The Super Mario Bros. Super Show",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/luigis-tiring-story-paper-mario-the-thousand-year-door-2004",
-            answer: "Super Luigi - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/airship-smw",
-            answer: "Airship [Super Mario World] - Super Mario Maker",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/athletic-2",
-            answer: "Athletic [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/wii-dk-summit",
-            answer: "Wii DK Summit/Wii DK's Snowboard Cross (Wave 4) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/the-underwhere-super-paper-mario-2007",
-            answer: "The Underwhere - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/35-world-2-the-desert",
-            answer: "World 2 (Desert) - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/dont-freeze",
-            answer: "Don't Freeze (Polar Extreme, Mob Sleds, etc) - Mario Party 9",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/menu-714014520",
-            answer: "File Select - Luigi's Mansion (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mount-wario-mario-kart-8",
-            answer: "Mount Wario - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/3ds-dk-jungle-mario-kart-8",
-            answer: "3DS DK Jungle - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/17-yoshi-desert",
-            answer: "Yoshi Desert - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/warios-gold-mine",
-            answer: "Wario's Gold Mine - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/bgm03-syssltl-1",
-            answer: "Main Menu - Mario Kart Arcade GP",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/yoshis-island",
-            answer: "Yoshi's Island (Wave 4) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-sunshine-932457683",
-            answer: "Noki Bay - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-2-ost-red",
-            answer: "Flip-Swap Galaxy/Flip-Out Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/staff-roll-889781434",
-            answer: "Staff Roll - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/theme-donkey-kong-country-1994",
-            answer: "Title Screen - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/dk-rap",
-            answer: "DK Rap ~ Composed by Grant Kirkhope and George Andreas - Donkey Kong 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/map-part-1",
-            answer: "World Map - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/palm-tree-paradise-wario-land-4",
-            answer: "Palm Tree Paradise - Wario Land 4",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/main-menu-722161517",
-            answer: "Main Menu - Mario Golf (N64)",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-342578510/12-main-theme-yoshis-new",
-            answer: "Main Theme (Yoshi's New Island) - Super Smash Bros. Ultimate",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/icy-battle-ballet",
-            answer: "Icy Battle Ballet - Mario + Rabbids: Sparks Of Hope",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mangrove-cove-donkey-kong",
-            answer: "Mangrove Cove - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/cookatiel-battle-super-mario",
-            answer: "Cooking Cookatiel - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/02-kitchen-island",
-            answer: "Kitchen Island (World Map) - Wario Land: Super Mario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/fluffin-puffin-babysitting",
-            answer: "Fluffin' Puffin' Babysitting - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/briantyler/welcome-to-the-mushroom",
-            answer: "Welcome To The Mushroom Kingdom - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/penguin-iceberg-court-1",
-            answer: "Penguin Iceberg - Mario Tennis Open",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/golden-hammer",
-            answer: "Golden Hammer - Wrecking Crew",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/darkmoon-caverns-diddy-kong-racing-1997",
-            answer: "Darkmoon Caverns - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/a07-main-menu",
-            answer: "Main Menu - WarioWare, Inc.: Mega Microgame$!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/06-flower-garden",
-            answer: "Flower Field - Super Mario Advance 3: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/chain-chomp-roulette",
-            answer: "Chain Chomp Wheel/Chain Chomp Roulette - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/riding-plessie-across-lake",
-            answer: "Plessie Ride! - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/an-unrivaled-battle-8-bit-mega-star-power-super-paper-mario-2007",
-            answer: "An Unrivaled Battle (8-Bit Mega Star Power) - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/gba-snow-land-mario-kart-tour",
-            answer: "GBA Snow Land - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mario-stadium-2",
-            answer: "Mario Stadium - Mario Sports Mix",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/05-world-select",
-            answer: "World Select - Super Mario Advance 4: Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-hyrule",
-            answer: "Hyrule Circuit - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-track-1-75738691",
-            answer: "Title Screen - Wario's Woods (NES)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/heres-some-weapons",
-            answer: "The Weapons Show Up - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/smart-gaming-166773353/cave-dungeon",
-            answer: "Hazy Maze Cave/Wet Dry World - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/world-5-snow-new-super-mario-bros",
-            answer: "World 5 (Snow) - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-ost-megaleg",
-            answer: "Megaleg - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/storm-beach",
-            answer: "Storm Beach - Donkey Kong Country Returns",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/peach-gardens",
-            answer: "Peach Gardens - Mario Golf World Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/castle-fortress",
-            answer: "Castles & Forts - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/title-screen-mario-clash",
-            answer: "Title Screen - Mario Clash",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/syrups-theme",
-            answer: "Syrup's Theme - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/b04-donkey-kong-donkey-kong",
-            answer: "Donkey Kong (25m) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/bonneton-super-mario-odyssey",
-            answer: "Bonneton (Cap Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/yokoshimomura-music/prologue-on-the-back-of-the",
-            answer: "On The Back Of The Darkmess Manta (Prologue) - Mario + Rabbids: Sparks Of Hope",
-          },
-          {
-            url: "https://soundcloud.com/ahmad-viper/luigis-theme-mario-strikers",
-            answer: "Luigi's Theme - Mario Strikers: Battle League",
-          },
-          {
-            url: "https://soundcloud.com/briantyler/karts",
-            answer: "Karts! - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/lazy-day-lollygag",
-            answer: "Lazy Day Lollygag (Picture This, World Piece, etc) - Mario Party 7",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-wii-2",
-            answer: "Wii Grumble Volcano - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-one/event-battle-paper-mario-the-origami-king-2020",
-            answer: "Event Battle - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/hoos-wood-2-super-princess",
-            answer: "Hoo's Wood 2 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/stilt-village",
-            answer: "Stilt Village - Donkey Kong Country 3: Dixie Kong's Double Trouble!",
-          },
-          {
-            url: "https://soundcloud.com/kereta-simit/pi-ro-ri",
-            answer: "Piroli (Famicom Disk System ~ BIOS) - Dance Dance Revolution: Mario Mix",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ashleys-song-english",
-            answer: "Ashley's Song - WarioWare: Touched!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-double-870529764",
-            answer: "Balloon Battle - Mario Kart: Double Dash!!",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/windmill-hills-donkey-kong",
-            answer: "Windmill Hills - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-ost-adventure",
-            answer: "Adventure Begins - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-ost-star-4",
-            answer: "Star Ball - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/yoshi-and-cookies",
-            answer: "Yoshi & Cookies - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/lets-try",
-            answer: "Let's Try! (File Select) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/enemy-battle",
-            answer: "Hammer Bros. [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-sunshine-ost-pinna",
-            answer: "Pinna Park - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw2-parachute",
-            answer: "Parachute - Game & Watch Gallery 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/ancient-lake-diddy-kong-racing-1997",
-            answer: "Ancient Lake - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/bobbery-hoonsey/boss-hog-donkey-kong-jungle",
-            answer: "Boss Hog - Donkey Kong Jungle Beat",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/sprawling-savannah",
-            answer: "Sprawling Savannah - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/glory-0",
-            answer: "Title Screen - Wario World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/06-bgm-06-8946953?in=vgmplanet/sets/mario-vs-donkey-kong-ost",
-            answer: "Mini Mario Level - Mario vs. Donkey Kong (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-256646521",
-            answer: "Neo Bowser Castle - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/tour-amsterdam-drift",
-            answer: "Tour Amsterdam Drift (Wave 4) - MX8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-2-791021694",
-            answer: "Slipsand Galaxy/Clockwork Ruins Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/smart-gaming-166773353/slider",
-            answer: "Slider (Tick Tock Clock/Rainbow Ride) - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-348625568",
-            answer: "Crisis Of The Red And Green (Boss Battle) - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/e05-flower-garden-yoshi-touch",
-            answer: "Flower Field (Yoshi Touch & Go) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ntr-uorj-jpn-014f",
-            answer: "Main Menu - WarioWare D.I.Y.",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-3-ost-chilly",
-            answer: "Chilly Waters - Mario Party 3",
-          },
-          {
-            url: "https://soundcloud.com/fortunestreetost/peachs-castle",
-            answer: "Peach's Castle (Super Mario RPG) - Fortune Street",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/ground-theme-new-super-mario-bros-wii",
-            answer: "Ground Theme (New Super Mario Bros. Wii) - Mario & Sonic at the Rio 2016 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/23a-baby-bowsers-lullaby",
-            answer: "Baby Bowser's Lullaby - Yoshi's Story",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/simian-segue-donkey-kong",
-            answer: "Simian Segue (World Map) - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/01-out-of-the-woods-day",
-            answer: "Out Of The Woods (Day) - Wario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/underground-7",
-            answer: "Underground - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/18-lakeside-park",
-            answer: "Lakeside Park - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/buoy-base-galaxy-super-mario-galaxy-remix",
-            answer: "Buoy Base Galaxy (Super Mario Galaxy) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/jungle-japes-1",
-            answer: "Jungle Japes - Donkey Kong 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/perplex-express",
-            answer: "Shy Guy's Perplex Express - Mario Party 8",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/title-screen",
-            answer: "Title Screen - Wrecking Crew '98",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/toad-cafe-paper-mario-color-splash-2016",
-            answer: "Toad Cafe - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/underground-theme",
-            answer: "Underground - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-2-766591247",
-            answer: "Flipsville Galaxy/Chomp Works Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mt-rugged-theme",
-            answer: "Mt. Rugged - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/user-407531921/dkc3-gba-ost-17-water-world",
-            answer: "Water World - Donkey Kong Country 3 (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/world-5-1",
-            answer: "World 5 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/99-song-of-happiness",
-            answer: "Song Of Happiness - Yoshi's Story",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/11-stop-that-train",
-            answer: "Stop That Train! - Wario Land II",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/bonus-room-blitz-donkey-kong",
-            answer: "Bonus Room Blitz - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/relaxed",
-            answer: "Relaxed (Rocky Road, Snow Whirled, etc) - Mario Party 6",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ds-delfino-square",
-            answer: "DS Delfino Square - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/shy-but-deadly",
-            answer: "Shy But Deadly - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-ds-2",
-            answer: "DS Wario Stadium - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/rock-candy-mines",
-            answer: "Rock-Candy Mines - Mario Golf World Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/b03-donkey-kong-medley-donkey",
-            answer: "Opening: Donkey Kong - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/svsatt1004/bonny-greens",
-            answer: "Bonny Greens - Mario Golf: Super Rush",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-bowsers-426577731",
-            answer: "Beachside Dreaming (Inside Bowser) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/twilight-trail-paper-mario-the-thousand-year-door-2004",
-            answer: "Twilight Trail - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/smart-gaming-166773353/snow-mountain",
-            answer: "Cool, Cool Mountain/Snowman's Land - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/creep-blue-sea",
-            answer: "Creep Blue Sea - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/flyswatter-level-1-1",
-            answer: "Gnat Attack - Mario Paint",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/swimming",
-            answer: "Underwater [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mountain-mania-donkey-kong-country-tropical-freeze-2014",
-            answer: "Mountain Mania - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/gba-boo-lake-mario-kart-tour",
-            answer: "GBA Boo Lake - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/cheep-cheep-beach-mario-kart-ds",
-            answer: "Cheep Cheep Beach (Mario Kart DS) - Mario & Sonic at the Rio 2016 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/player-select-167617726",
-            answer: "Player Select [Super Mario Bros. 2] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/bayou-boogie-donkey-kong",
-            answer: "Bayou Boogie - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/yold-ruins-super-paper-mario-2007",
-            answer: "Yold Ruins - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/13-game-point-break-point",
-            answer: "Game Point ~ Break Point - Mario Tennis (N64)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy-2/underground-ambient",
-            answer: "Underground - Captain Toad: Treasure Tracker",
-          },
-          {
-            url: "https://soundcloud.com/redfox-64/haunted-towers",
-            answer: "Haunted Towers - Luigi's Mansion: Dark Moon",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/ds-mario-circuit",
-            answer: "DS Mario Circuit (Wave 4) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-bowsers-496151723",
-            answer: "Resting In Toad Town - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/world-4-ocean-world",
-            answer: "World 4 (Beach) - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/jelly-jamboree-donkey-kong-country-tropical-freeze-2014",
-            answer: "Jelly Jamboree - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/briantyler/drivin-me-bananas",
-            answer: "Drivin' Me Bananas - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw3-egg",
-            answer: "Egg - Game & Watch Gallery 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/d65-drifting-away-full-version",
-            answer: "Drifting Away - WarioWare, Inc.: Mega Microgame$!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-kart-ost-ghost-1",
-            answer: "Ghost Valley - Super Mario Kart",
-          },
-          {
-            url: "https://soundcloud.com/yokoshimomura-music/warmth-amongst-the-snow",
-            answer: "Warmth Amongst The Snow - Mario + Rabbids: Sparks Of Hope",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/gang-plank-galleon-donkey-kong",
-            answer: "Gang-Plank Galleon - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/squeaky-clean-sprint-mario",
-            answer: "Squeaky Clean Sprint (Wave 5) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/mario-circuit-mario-kart-double-dash-remix",
-            answer: "Mario Circuit (Mario Kart: Double Dash!!) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/yoshis-island-world-6",
-            answer: "Title Screen - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-mario",
-            answer: "Mario Circuit - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-985302766",
-            answer: "Yoshi Village - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/09-ship",
-            answer: "Ship - Donkey Kong '94",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/the-merry-marry-bell-rings",
-            answer: "The Bell Rings Out At Marrymore - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/nintendobeats/beep-block-skyway",
-            answer: "Beep Block Skyway - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/koopa-park-1",
-            answer: "Koopa Park - Mario Golf (N64)",
-          },
-          {
-            url: "https://soundcloud.com/neil-winters-753009113/mario-strikers-battle-league-inside-the-castle-walls",
-            answer: "Royal Castle (Super Mario 64 ~ Peach's Castle) - Mario Strikers: Battle League",
-          },
-          {
-            url: "https://soundcloud.com/fortunestreetost/bowsers-castle",
-            answer: "Bowser's Castle (New Super Mario Bros.) - Fortune Street",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-390758306/081-paper-mario-medley",
-            answer: "Blue Skies, White Clouds (Paper Mario: Sticker Star) - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/dry-dry-ruins",
-            answer: "Dry Dry Ruins - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/chiptune-human/super-mario-maker-2-editor-ost-nsmbu-ground-mix-by-vini64",
-            answer: "Ground [New Super Mario Bros. U] (Edit) - Super Mario Maker",
-          },
-          {
-            url: "https://soundcloud.com/yell0wsuit/overworld-theme",
-            answer: "Ground - Super Mario Run",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-sunshine-570516307",
-            answer: "Sirena Beach - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/bowser-medley",
-            answer: "Bowser's Theme - Mario Strikers Charged",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-505321516",
-            answer: "Sweet Surfin' (Gwarhar Lagoon) - Mario & Luigi: Superstar Saga + Bowser's Minions",
-          },
-          {
-            url: "https://soundcloud.com/alidee-music/mario-brothers-rap",
-            answer: "Mario Brothers Rap - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/g46-four-seasons-full-version",
-            answer: "Four Seasons - WarioWare, Inc.: Mega Microgame$!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost",
-            answer: "Cloudtop Cruise - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/gcn-daisy-cruiser-mario-kart-8",
-            answer: "GCN Daisy Cruiser (Wave 5) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/foulwater-falls-1",
-            answer: "Foulwater Falls/Gurgle Gurch - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/world-4-forest-new-super-mario-bros",
-            answer: "World 4 (Jungle) - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw2-vermin",
-            answer: "Vermin - Game & Watch Gallery 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/title-680640747",
-            answer: "Title Screen - Mario's Super Picross",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mining-melancholy-donkey-kong",
-            answer: "Kannon's Klanking (Mining Melancholy) - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/3-underground",
-            answer: "Underground - Super Mario Bros. (1985)",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/hot-top-volcano-diddy-kong-racing-1997",
-            answer: "Hot Top Volcano - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-nintendo/012-wrecking-crew-medley-for-3ds-wii-u",
-            answer: "Wrecking Crew Medley - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/04-world-music-4",
-            answer: "Marine Pop, Sky Pop! - Super Mario Land",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-865440142",
-            answer: "Challenging Actions! - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/a20-mario-circuit-super-mario",
-            answer: "Mario Circuit (Super Mario Kart) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/thrill-gear-flight",
-            answer: "Thrill! Gear Flight - Donkey Kong Country Returns",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-30-footlight-lane",
-            answer: "Puffprod Peaks/Footlight Lane/Super Galaxy - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/e06-wildlands-yoshis-island-ds",
-            answer: "Wildlands (Yoshi's Island DS) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/life-in-the-mines-donkey-kong",
-            answer: "Life In The Mines - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/casino-minigames",
-            answer: "Casino Minigames - Super Mario 64 DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/title-602957323",
-            answer: "Title Screen [Super Mario Bros. 2] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/figure-skating-pairs-main-theme-remix",
-            answer: "Figure Skating Pairs (Birabuto Kingdom/Ending ~ Super Mario Land) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/yokoshimomura-music/uphill-battle",
-            answer: "Uphill Battle - Mario + Rabbids: Sparks Of Hope",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/main-menu-897081434",
-            answer: "Main Menu - WarioWare: Touched!",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-173456116/07-the-map-page-bonus-level",
-            answer: "The Map Page / Bonus Level (Donkey Kong Country) - Super Smash Bros. Ultimate",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/15-overworld",
-            answer: "Ground - Super Mario World: Super Mario Advance 2",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/up-shuttlethread-pass",
-            answer: "Up Shuttletread Pass - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/the-great-boggly-tree-paper-mario-the-thousand-year-door-2004",
-            answer: "The Great Tree - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-2-ost-pipe",
-            answer: "Pipe Room - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/nostalgic-underground-bitlands-underground-super-paper-mario-2007",
-            answer: "Nostalgic Underground - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-one/graffiti-underground-paper-mario-the-origami-king-2020",
-            answer: "Graffiti Underground - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-gcn",
-            answer: "GCN Dry Dry Desert - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mt-dynamite",
-            answer: "Mt. Dynamite - Donkey Kong Barrel Blast",
-          },
-          {
-            url: "https://soundcloud.com/mula-chan/cheep-cheep-lagoon",
-            answer: "Cheep Cheep Lagoon/Cheep Cheep Cape - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/peachs-castle",
-            answer: "Peach's Castle - Mario Kart Arcade GP DX",
-          },
-          {
-            url: "https://soundcloud.com/papermariofangirl/give-me-a-lift-paper-mario",
-            answer: "Give Me A Lift - Paper Mario: Sticker Star",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-one/big-sho-theater-paper-mario-the-origami-king-2020",
-            answer: "Big Sho' Theater - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/file-select-7",
-            answer: "File Select - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/egads-luigis-mansion",
-            answer: "Professor E. Gadd's Lab - Luigi's Mansion (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/world-8-lava-new-super-mario-bros",
-            answer: "World 8 (Lava) - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/glittertown-1",
-            answer: "Glittertown/Neon City (Wario World ~ Greenhorn Ruins) - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/overworld-9",
-            answer: "Ground - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/desert-overworld-new-super-mario-bros",
-            answer: "Desert - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/menu",
-            answer: "Main Menu - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/ghost-house-coin-rush",
-            answer: "Ghost House (Coin Rush) - Super Mario Run",
-          },
-          {
-            url: "https://soundcloud.com/1074/super-mario-bros-3-athletic-theme",
-            answer: "Athletic - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/castle-theme-new-super-mario-bros",
-            answer: "Castle - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/spryzen-edits/final-bowser-new-super-mario-bros-wii",
-            answer: "Final Bowser - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/28-bgm-16",
-            answer: "Vs. Race - Super Mario Bros. Deluxe",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-2-ost-horror-land",
-            answer: "Horror Land - Mario Party 2",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/spooky-scraps-dont-get-spooked",
-            answer: "Spooky Scraps! Don't Get Spooked! - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/53-moonlight-mansion-stage",
-            answer: "Moonlight Mansion (Luigi's Mansion ~ Main Theme) - Mini Mario & Friends: amiibo Challenge",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/boo-valley",
-            answer: "Boo Valley - Mario Golf (N64)",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/a-stroll-in-the-cemetery",
-            answer: "A Stroll In The Cemetary - Mario + Rabbids Kingdom Battle",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/haunted-house-3",
-            answer: "Ghost House - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ntr-uorj-jpn-014e",
-            answer: "Title Screen - WarioWare D.I.Y.",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/m01-warioware-inc-warioware",
-            answer: "WarioWare, Inc. - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/user-45513595/penny-song-english",
-            answer: "Penny's Song - WarioWare: Get It Together!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/k41-pyoro-1",
-            answer: "Pyoro - WarioWare, Inc.: Mega Microgame$!",
-          },
-          {
-            url: "https://soundcloud.com/wariowaresmoothmoves/tomorrow-hill-international",
-            answer: "Tomorrow Hill - WarioWare: Smooth Moves",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mona-pizzas-song-eng-twisted",
-            answer: "Mona Pizza's Song (WarioWare: Twisted!) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/wariowaresmoothmoves/wii-dancing",
-            answer: "Wii Dancing (Wario Dance Company) - WarioWare: Smooth Moves",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/double-cherry-pass",
-            answer: "Double Cherry Pass - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/r05-mario-golf-mario-tennis",
-            answer: "Mario Golf ~ Mario Tennis - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-ost-the",
-            answer: "The Library - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/bustling-noisily",
-            answer: "Bustling Noisily (Hotel Goomba, Pushy Penguins, etc) - Mario Party 5",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw4-marios-cement-factory-modern-1",
-            answer: "Mario's Cement Factory - Game & Watch Gallery 4",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/showdown-with-wart-super-mario",
-            answer: "Wart - Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/athens-dash-mario-kart-tour",
-            answer: "Athens Dash - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/hello-happy-kingdom",
-            answer: "Hello, Happy Kingdom (Mushroom Kingdom) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/fight-against-a-stronger",
-            answer: "Battling Strongish Monsters (Boss Battle) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/hard-working-moles-are-good",
-            answer: "A Working Mole Is A Happy Mole (Moleville) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/barrel-volcano",
-            answer: "Barrel Volcano - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/goodbye-geno",
-            answer: "Farewell, Geno - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/seeing-dreams-through-the",
-            answer: "The Wishes From The Stars - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/happy-parade-delightful-parade",
-            answer: "Fun Parade, Cheerful Parade (Staff Roll) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/briantyler/superstars",
-            answer: "Superstars - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-2-ost-dig",
-            answer: "Digga Leg - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/yoshis-island-results-screen",
-            answer: "Results (Yoshi's Island) (Wave 4) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-173456116/32-gear-getaway",
-            answer: "Gear Getaway (Donkey Kong Country Returns) - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/snowball-scrimmage-sherbet-land",
-            answer: "Snowball Scrimmage: (Sherbet Land ~ Mario Kart 64) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/tyler-helt/mario-kart-tour-sydney-sprint",
-            answer: "Sydney Sprint - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/bowsers-castle-7",
-            answer: "Bowser's Castle (World 8) - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/koopa-land-theme",
-            answer: "A Boss Approaches - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/ruined-dragon-battle-super",
-            answer: "Rebuffing The Ruined Dragon - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/le-lenny-1/the-yoshi-clan",
-            answer: "Yoshi Clan - Yoshi's New Island",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-ost-star",
-            answer: "The Star Festival (Grand Finale Galaxy) - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/shop-super-mario-odyssey-2017",
-            answer: "Crazy Cap - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/gba-snow-land",
-            answer: "GBA Snow Land (Wave 2) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/grassland-groove-donkey-kong",
-            answer: "Grassland Groove - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/07a-love-is-in-the-air",
-            answer: "Love Is In The Air - Yoshi's Story",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-2-548525460",
-            answer: "Starship Mario - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-ost-birthday-cake",
-            answer: "Peach's Birthday Cake - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-n64",
-            answer: "N64 Toad's Turnpike - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-45513595/character-selection",
-            answer: "Character Select - WarioWare: Get It Together!",
-          },
-          {
-            url: "https://soundcloud.com/camek-neptunia-mk3/pit-of-100-trials-super-paper-mario-2007",
-            answer: "Pit Of 100 Trials - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/main-menu-2",
-            answer: "File Select - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/night-at-excess-express-paper-mario-the-thousand-year-door-2004",
-            answer: "Excess Express (Night) - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/42-all-clear",
-            answer: "Level Goal - Wario Land II",
-          },
-          {
-            url: "https://soundcloud.com/yokoshimomura-music/the-galaxy-awaits-main-menu",
-            answer: "The Galaxy Awaits (Main Menu) - Mario + Rabbids: Sparks Of Hope",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy-2/universal-unary-unison-space",
-            answer: "Universal Unary Unison (Space) - Captain Toad: Treasure Tracker",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw1-oil-panic",
-            answer: "Oil Panic - Game & Watch Gallery",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/starborn-valley-trail-paper-mario-2000",
-            answer: "Starborn Valley Trail - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/gba-boo-lake",
-            answer: "GBA Boo Lake (Wave 3) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-galaxy-ost-battle",
-            answer: "Battlerock Galaxy/Dreadnought Galaxy - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/daisy-circuit-mario-kart-wii-remix",
-            answer: "Daisy Circuit (Mario Kart Wii) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/in-a-snow-bound-land-donkey",
-            answer: "In A Snowbound Land - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/main-theme-super-mario-bros-3-remix",
-            answer: "Ground Theme (Super Mario Bros. 3) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/spryzen-edits/world-3-snow-land-new-super-mario-bros-wii",
-            answer: "World 3 (Snow) - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/gleam-glacier-2-super-princess",
-            answer: "Gleam Glacier 2 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-wii-ost-dk-summit",
-            answer: "DK Summit/DK's Snowboard Cross - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/tour-vancouver-velocity",
-            answer: "Tour Vancouver Velocity (Wave 5) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/user-407531921/dkc3-gba-ost-11-frosty-frolics",
-            answer: "Frosty Frolics - Donkey Kong Country 3 (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/dream-figure-skating-ground-theme",
-            answer: "Dream Figure Skating: (Ground Theme ~ Super Mario Bros.) - Mario & Sonic At The Olympic Winter Games (Wii)",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/world-4-frosted-glacier",
-            answer: "Frosted Glacier - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/snow-smb3",
-            answer: "Snow [Super Mario Bros. 3] - Super Mario Maker 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/frosty-village-diddy-kong-racing-1997",
-            answer: "Frosty Village - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/ice-cave-chant-donkey-kong",
-            answer: "Ice Cave Chant - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/06-ending-credits",
-            answer: "Staff Roll - Super Mario Land",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/title-screen-super-mario-bros",
-            answer: "Title Screen - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/overworld-super-mario-bros",
-            answer: "Grassland (Ground) - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/wonder-effect-super-mario-bros",
-            answer: "Bendy Boing Wonder - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/challenge-super-mario-bros",
-            answer: "Badge Challenge - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/castle-super-mario-bros-wonder",
-            answer: "Palace - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/beach-super-mario-bros-wonder",
-            answer: "Coast (Beach) - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/mecha-king-bob-omb-blast",
-            answer: "Mecha King Bob Omb Blast - Mario + Rabbids: Sparks Of Hope Post-Launch Compilation",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/wii-moonview-highway-1",
-            answer: "Wii Moonview Highway (Wave 5) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/33-egg-launch-land-stage-theme",
-            answer: "Egg Launch Land (Yoshi's Island ~ Flower Field) - Mini Mario & Friends: amiibo Challenge",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/fruit-factory-donkey-kong-country-tropical-freeze-2014",
-            answer: "Fruity Factory - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/sunglow-ridge-paper-mario-color-splash-2016",
-            answer: "Sunglow Ridge - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/tour-madrid-drive-mario-kart-8",
-            answer: "Tour Madrid Drive (Wave 6) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/stonecarving-city-1",
-            answer: "Stonecarving City/Launchpad Labyrinth - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/motley-bossblob-super-mario-3d-world-2013",
-            answer: "Motley Boss Blob - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/knitty-knotty-windmill-hill",
-            answer: "Knitty-Knotty Windmill - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/supersmashbrosforwiiu/mario-bros-medley-super-smash-bros-wii-u",
-            answer: "Mario Bros. Medley - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/papermariofangirl/snifit-or-whiffit-paper-mario",
-            answer: "Snifit Or Whiffit! - Paper Mario: Sticker Star",
-          },
-          {
-            url: "https://soundcloud.com/dylan-walter-156875824/mario-party-superstars-ost",
-            answer: "Toad's Shop Bop! [Mario Party 1] - Mario Party Superstars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/world-8",
-            answer: "World 8 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/into-the-fairy-tale",
-            answer: "Into The Fairy Tale (Book It!, Soap Surfers, etc) - Mario Party DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/choose-your-racer",
-            answer: "Choose Your Racer - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/superlegend64/gcn-dk-mountain-mario-kart-8",
-            answer: "GCN DK Mountain (Wave 6) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz2/megahammer",
-            answer: "Megahammer - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-6",
-            answer: "Twisted Mansion - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-682860781",
-            answer: "Holli Jolli Village - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/12-dual-scream",
-            answer: "Dual Scream Ringtone - Luigi's Mansion: Dark Moon",
-          },
-          {
-            url: "https://soundcloud.com/fortunestreetost/forest-interlude",
-            answer: "Forest Interlude - Donkey Kong Country 2 (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw2-title-screen",
-            answer: "Title Screen - Game & Watch Gallery 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/start-of-the-adventure",
-            answer: "Start Of The Adventure (Title Screen) - Mario & Luigi: Paper Jam",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/in-the-clouds-1",
-            answer: "In The Clouds - Yoshi's Island DS",
-          },
-          {
-            url: "https://soundcloud.com/spryzen-edits/new-super-mario-bros-wii-overworld",
-            answer: "Ground - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/dk-jungle-2",
-            answer: "DK Jungle - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz/kingfin",
-            answer: "Kingfin - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/thebonezonedeluxe/graphics-editor-main-tools-warioware-diy",
-            answer: "Graphics Creation - WarioWare D.I.Y.",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/79-mini-game-theme-6",
-            answer: "Let's Get A Move On [Mario Party 3] - Mario Party Advance",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/kingdom-way",
-            answer: "Kingdom Way - Mario Kart Arcade GP DX",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/25a-mario-brothers-court",
-            answer: "Mario Brothers Court - Mario Tennis (N64)",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/todays-story",
-            answer: "Today's Story - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/16-unknown-song-07",
-            answer: "Peach's Castle - Mario Golf (GBC)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/03a-yoshis-song",
-            answer: "Yoshi's Song - Yoshi's Story",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/title-59628088",
-            answer: "Title Screen - Mario & Wario",
-          },
-          {
-            url: "https://soundcloud.com/bobbery-hoonsey/battle-for-storm-hill-donkey",
-            answer: "Battle For Storm Hill - Donkey Kong Jungle Beat",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-684146292",
-            answer: "Don't Dwell On Danger (Tee Hee Valley) - Mario & Luigi: Superstar Saga + Bowser's Minions",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/donkey-kong-country-tropical",
-            answer: "Title Screen - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/jib-jig-donkey-kong-country-2",
-            answer: "Jib Jig - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/breeze-stage",
-            answer: "Breeze Stage (Lakitu) - Tetris Attack",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/14-bgm-14-815097368",
-            answer: "Mystic Forest A - Mario vs. Donkey Kong (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/yoshi-falls",
-            answer: "Yoshi Falls - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/014-toy-block-tower",
-            answer: "Toy Block Tower - Wario Land 4",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-2-ost-laboratory",
-            answer: "Laboratory (Settings) - Mario Party 2",
-          },
-          {
-            url: "https://soundcloud.com/nachohjk/smw2-yoshis-island-ost-overworld",
-            answer: "Ground - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/neon-nation",
-            answer: "Neon Heights - Mario Party 7",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/block-plaza",
-            answer: "Block Plaza - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw4-boxing-modern-mode",
-            answer: "Boxing - Game & Watch Gallery 4",
-          },
-          {
-            url: "https://soundcloud.com/user-274753087/bowsers-villa-1-super-princess",
-            answer: "Bowser's Villa 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/10-above-the-clouds-night",
-            answer: "Above The Clouds (Night) - Wario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-342578510/04-obstacle-course-yoshis",
-            answer: "Athletic (Yoshi's Island) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/bowser-castle",
-            answer: "Bowser Castle - Super Mario Kart",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/northern-kremisphere",
-            answer: "Northern Kremisphere - Donkey Kong Country 3: Dixie Kong's Double Trouble!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mikes-song-english",
-            answer: "Mike's Song - WarioWare: Touched!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-ost-where-am-i",
-            answer: "Where To? (World Map) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/chase-the-bunnies",
-            answer: "Chase The Bunnies! - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/the-crafty-army/main-theme-luigis-mansion-3-soundtrack",
-            answer: "Main Theme (Title Screen) - Luigi's Mansion 3",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/title-super-mario-3d-word-2013",
-            answer: "Title Screen - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/002-title-screen",
-            answer: "Title Screen - WarioWare: Twisted!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/title-screen-801453330",
-            answer: "Title Screen - New Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/01-bgm-01-387315370",
-            answer: "Title Screen - Mario's Picross",
-          },
-          {
-            url: "https://soundcloud.com/user-45513595/title-screen",
-            answer: "Title Screen - WarioWare: Get It Together!",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/title-854539008",
-            answer: "Title Screen - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-900815746/031-king-bowser-super-mario",
-            answer: "King Bowser (Super Mario Bros. 3) - Super Smash Bros. Ultimate",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-238104412",
-            answer: "Stardust Fields - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-70-sunbaked-desert",
-            answer: "Sunbaked Desert (World 4) - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/wigglers-sleepy-time",
-            answer: "Wiggler's Sleepy Time - Paper Mario: Sticker Star",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/dark-land-super-mario-bros-3",
-            answer: "Dark Land (World 8) - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/dream-ski-cross-marioluigi-circuit",
-            answer: "Dream Ski Cross: (Mario/Luigi Circuit ~ Mario Kart Wii) - Mario & Sonic At The Olympic Winter Games (Wii)",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/hot-head-bop-donkey-kong",
-            answer: "Hot Head Bop - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-54142580",
-            answer: "Rose Town - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/nicol-s-r-p/64-ladida-plains-1-super",
-            answer: "Ladida Plains 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/hoos-wood-1-super-princess",
-            answer: "Hoo's Wood 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/shriek-mansion-1-super",
-            answer: "Shriek Mansion 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/giddy-sky-1-super-princess",
-            answer: "Giddy Sky 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/under-the-starry-night-super",
-            answer: "Under The Starry Night - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/user-274753087/bowsers-villa-1-super-princess",
-            answer: "Bowser's Villa 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/staff-roll-super-princess",
-            answer: "Staff Roll - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/yarn-yoshi-takes-shape",
-            answer: "Yarn Yoshi Takes Shape! (Main Theme) - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/world-8-peachs-castle",
-            answer: "Peach's Castle (World 8) - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-85-deep-magma-bog",
-            answer: "Deep Magma Bog (World 6) - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/drip-drop-galaxy",
-            answer: "Drip Drop Galaxy - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-34-world-4",
-            answer: "World 4 - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/gba-yoshi-desert-mario-kart",
-            answer: "GBA Yoshi Desert - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-bowser-castle-3-sness",
-            answer: "SNES Bowser Castle 3 (Wave 6) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/user-883793491/hotel-mario-main-theme",
-            answer: "UHAHAHAHAHA. Nice of the princess to invite us over for a picnic ey, Luigi? I hope she made lotsa spaghetti! Luigi, look! It's from Bowser. Dear pesky plumbers, the koopalings and I have taken over the Mushroom Kingdom. The princess is now a permanent guest at one of my seven Koopa hotels. I dare you to find her if you can. We gotta find the princess! And YOU gotta help us. If you need instructions on how to get through the hotels, check out the enclosed instruction book. - Hotel Mario",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/piranha-plant-pipeline-mario",
-            answer: "Piranha Plant Pipeline - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/new-donk-city-band-performance",
-            answer: "The Band's All Here (Super Mario Bros. ~ Ground) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/jay-carranza-98135448/warioware-gold-ost-1-37-work",
-            answer: "Work Those Muscles! (5-Volt Stage) - WarioWare Gold",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/bounceabout-woods",
-            answer: "Bounceabout Woods - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-27-slide",
-            answer: "Tall Trunk Galaxy: Slider (Super Mario 64) - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-one/chestnut-valley-paper-mario-the-origami-king-2020",
-            answer: "Chestnut Valley - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-173456116/24-king-k-rool-ship-deck-2",
-            answer: "King K. Rool ~ Ship Deck 2 (Donkey Kong Country) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/donkey-kong-returns",
-            answer: "Donkey Kong Returns (Title Screen) - Donkey Kong Country Returns",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/underchomp-battle-super-paper-mario-2007",
-            answer: "Underchomp Battle - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/briantyler/fighting-tooth-and-veil",
-            answer: "Fighting Tooth And Veil - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/highway-showdown-super-mario-3d-world-2013",
-            answer: "Bowser's Highway Showdown - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-342578510/08-yoshis-story-melee",
-            answer: "Yoshi's Song (Yoshi's Story) - Super Smash Bros. Melee",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/menu-remix-10",
-            answer: "Remix 10 Menu - Super Mario Run",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-61-jump-jump-jump",
-            answer: "Jump! Jump! Jump! - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/flower-garden-2",
-            answer: "Flower Garden - Yoshi's Island DS",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/speed-golf-wildweather-woods",
-            answer: "Wildweather Woods (Speed Golf) - Mario Golf: Super Rush",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/mario-stadium-court",
-            answer: "Mario Stadium - Mario Tennis Open",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-64-ost-haunted",
-            answer: "Big Boo's Haunt - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/athletic-leaf-beat",
-            answer: "Athletic (Leaf Beat) - New Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/museum-warioware-move-it-ost",
-            answer: "Museum - WarioWare: Move It!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-319697223",
-            answer: "Mario Kart TV - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/file-select-146489884",
-            answer: "File Select - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-wii-1",
-            answer: "Wii Wario's Gold Mine - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/neil-winters-753009113/mario-strikers-battle-league-island-swing",
-            answer: "Jungle Retreat (Donkey Kong Country ~ DK Island Swing) - Mario Strikers: Battle League",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-876935501",
-            answer: "Hello, Happy Kingdom (Mushroom Kingdom) - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/whoa-zone-super-paper-mario-2007",
-            answer: "Whoa Zone - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/17-tidal-coast-sea-turtle",
-            answer: "Tidal Coast, Sea Turtle Rocks, Beneath The Waves - Wario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/groove-pipe-snowboard-mushroom-bridge",
-            answer: "Groove Pipe Snowboard: (Mushroom Bridge/City ~ Mario Kart: Double Dash!!) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-32-wonder-effect-silent",
-            answer: "Flippy Float Wonder - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/haunted-hideaway",
-            answer: "King Boo's Haunted Hideaway - Mario Party 8",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/fortress-boss-super-mario-bros-3",
-            answer: "Boss Battle - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-26-tall-trunk-galaxy",
-            answer: "Tall Trunk Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/another-crazy-match",
-            answer: "Another Crazy Match (Fast Food Frenzy, Track Star, etc) - Mario Party DS",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/k-rool-duel",
-            answer: "K. Rool Duel - Donkey Kong 64",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/the-palace-intro-super-mario-strikers",
-            answer: "The Palace Intro - Super Mario Strikers",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/02-welcome-to-crocodile-isle",
-            answer: "Welcome To Crocodile Isle (World Map) - Donkey Kong Land 2",
-          },
-          {
-            url: "https://soundcloud.com/tokaru-mizagone/mario-party-island-tourmain",
-            answer: "Main Menu - Mario Party: Island Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/forest-stage",
-            answer: "Forest Stage (Poochy) - Tetris Attack",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/bowsers-lava-lake-keep-super-mario-3d-world-2013",
-            answer: "Bowser's Lava Lake Keep - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/1-title-theme-2",
-            answer: "Title Screen - Yoshi (NES)",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/aquatic-ambiance-donkey-kong",
-            answer: "Aquatic Ambiance - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/04-escape-from-the-woods",
-            answer: "Escape From The Woods - Wario Land II",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/secret-course",
-            answer: "Secret Course (Super Mario Bros. Theme) - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-717867105",
-            answer: "Bowser's Castle - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/menu-theme-1",
-            answer: "Main Menu - Mario Superstar Baseball",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/funky-the-main-monkey-donkey",
-            answer: "Funky The Main Monkey - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/toad-highlands-1?in=vgmplanet/sets/mario-golf-ost",
-            answer: "Toad Highlands - Mario Golf (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/wifi-menu",
-            answer: "WiFi Menu - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-wii-ost-wi-fi-menu",
-            answer: "WiFi Menu - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ntr-uorj-jpn-015f",
-            answer: "Distribution Center - WarioWare D.I.Y.",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/wi-fi-menu",
-            answer: "WiFi Menu - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/spectator-race",
-            answer: "Spectating - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-wi-fi",
-            answer: "Selection Screen (Online) - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-683819479",
-            answer: "Spectating - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/super-bell-hill-super-maio-3d-world-2013",
-            answer: "Super Bell Hill - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-vs-donkey-kong-936287376",
-            answer: "Slippery Summit B - Mario vs. Donkey Kong (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-remake-ost-9",
-            answer: "Danger Abounds On The Journey (Mushroom Way) - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-72-desert",
-            answer: "Desert - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/18-normal-level-2",
-            answer: "Athletic - Super Mario Advance 4: Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-double-27152855",
-            answer: "Baby Park - Mario Kart: Double Dash!!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-596755739",
-            answer: "Cackletta, The Fiercest Foe - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/dk-island-swing-donkey-kong-country",
-            answer: "DK Island Swing (Donkey Kong Country) - Mario & Sonic at the Rio 2016 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/36-mario-bros-bonus-round",
-            answer: "Bonus Round - Mario Bros. (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/ahmad-viper/marios-theme-mario-strikers",
-            answer: "Mario's Theme - Mario Strikers: Battle League",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/phantom-metal-mayhem",
-            answer: "Phantom, Metal Mayhem - Mario + Rabbids: Sparks Of Hope Post-Launch Compilation",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/special-course",
-            answer: "Special Course - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/world-7",
-            answer: "World 7 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/slipshod-slopes-1",
-            answer: "Slipshod Slopes/Freezing Fields - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw2-helmet-level-1",
-            answer: "Helmet - Game & Watch Gallery 2",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/squeaky-clean-sprint-mario-1",
-            answer: "Squeaky Clean Sprint - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-3-ost-free-play",
-            answer: "Free Play Room - Mario Party 3",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/giant-land-super-mario-bros-3",
-            answer: "Giant Land (World 4) - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/castle-bleck-super-paper-mario-2007",
-            answer: "Castle Bleck - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-13-piranha-plants-on-parade",
-            answer: "Piranha Plants On Parade - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/07a-banshee-boardwalk",
-            answer: "Banshee Boardwalk - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/fawfulhasfury/minigame-mario-luigi-bowsers-inside-story",
-            answer: "Minigame - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-wii-daisy-circuit-wii",
-            answer: "Wii Daisy Circuit (Wave 6) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/37-candys-theme",
-            answer: "Candy's Theme - DK: Jungle Climber",
-          },
-          {
-            url: "https://soundcloud.com/user647851845/whimsical-waters-theme-1-mario",
-            answer: "Whimsical Waters - Mario Party 10",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/08-shy-guy-beach-cheep-cheep",
-            answer: "Shy Guy Beach/Cheep Cheep Island - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-58-snow",
-            answer: "Snow - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/fortress-theme-new-super-mario-bros",
-            answer: "Tower - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-683362789",
-            answer: "The Bell Rings Out At Marrymore - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/treetop-tumble",
-            answer: "Treetop Tumble - Donkey Kong Country 3: Dixie Kong's Double Trouble!",
-          },
-          {
-            url: "https://soundcloud.com/yoshis-cookie-osts/1p-music-type-c",
-            answer: "Music Type C - Yoshi's Cookie (NES)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/sky-presents",
-            answer: "Rainbow Dream - Mario Party 5",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/16-big-bridge-bank-of-the-wild",
-            answer: "Big Bridge, Bank Of The Wild River, Steep Canyon - Wario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/fawfulhasfury/tough-guy-alert-mario-luigi-bowsers-inside-story",
-            answer: "Tough Guy Alert! (Boss Battle) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/ice-land-super-mario-bros-3",
-            answer: "Ice Land (World 6) - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/final-battle-with-bowser",
-            answer: "Final Battle With Bowser - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-2-ost-keepin-on",
-            answer: "Keepin' On The Path (Speed Hockey, Shock Drop Or Roll, etc) - Mario Party 2",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/bgm_bg_a",
-            answer: "Flower Field - Yoshi Touch & Go",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/showdown-with-fury-bowser",
-            answer: "Showdown With Fury Bowser - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-los-angeles-laps-tour",
-            answer: "Tour Los Angeles Laps (Wave 5) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/02-title",
-            answer: "Title Screen - Donkey Kong '94",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-342578510/09-yoshis-tale",
-            answer: "Ending (Yoshi's Story) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/ntr-uorj-jpn-0156",
-            answer: "Assembly Dojo - WarioWare D.I.Y.",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-86-lava",
-            answer: "Lava - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/monsoon-jungle-wario-land-4",
-            answer: "Monsoon Jungle - Wario Land 4",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/08-bgm-08-65422112",
-            answer: "Time Trial - Mario's Picross",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/major-burrows",
-            answer: "Major Burrows - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/big-bang",
-            answer: "Big Bang! (Boss Battle) - Mario & Luigi: Paper Jam",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/busted-bayou-donkey-kong-country-tropical-freeze-2014",
-            answer: "Busted Bayou - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/bowsers-castle-5",
-            answer: "Bowser's Castle - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-51-petal-isles",
-            answer: "Petal Isles - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/main-theme-51258080",
-            answer: "Main Theme (Level Select) - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/fawfulhasfury/grasslands-all-the-way-inside-bowser-mario-luigi-bowsers-inside-story",
-            answer: "Forever In The Plains (Inside Bowser) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/form-explanation-warioware",
-            answer: "Form Explanation - WarioWare: Move It!",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw3-turtle-bridge",
-            answer: "Turtle Bridge - Game & Watch Gallery 3",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-173456116/10-jungle-level-64",
-            answer: "Kongo Jungle - Super Smash Bros. (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vbwario/19-level-theme-3",
-            answer: "Level Theme 3 (Underwater) - Virtual Boy Wario Land",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/a-powerful-enemy-emerges-boss-battle-super-paper-mario-2007",
-            answer: "A Powerful Enemy Emerges (Boss Battle) - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/henry-stickmin-805451431/merry-go-round",
-            answer: "Merry Go Round - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-391655592",
-            answer: "Super Mario House - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-272592510/mario-kart-wii-gba-battle-course-3",
-            answer: "GBA Battle Course 3 - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-ost-docaty",
-            answer: "Moleville Mountain Rail - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/fluff",
-            answer: "Fluff (Buddy Bounce, Bumper Bubbles) - Mario Party 9",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/world-3-beach-new-super-mario-bros",
-            answer: "World 3 (Beach) - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/crankys-theme-donkey-kong",
-            answer: "Cranky's Theme - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/clockwork-castle",
-            answer: "Clockwork Castle - Mario Party 6",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-9",
-            answer: "Rainbow Road - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/credits-super-mario-64-remix",
-            answer: "Staff Roll (Super Mario 64) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/04-bgm-04-251255422",
-            answer: "World 1 (Simian Segue) - DK: King Of Swing",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/04-stage-theme-i",
-            answer: "Main Theme - Wario Land: Super Mario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/19-track-19-30891404",
-            answer: "Hammer Bros. - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/gba-peach-circuit-mario-kart",
-            answer: "GBA Peach Circuit - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/delfino-plaza-1",
-            answer: "Isle Delfino - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-604662823",
-            answer: "SNES Mario Circuit 3 (Wave 2) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/user-407531921/dkc3-gba-ost-14-treetop-tumble",
-            answer: "Treetop Tumble - Donkey Kong Country 3 (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/21a-toads-turnpike",
-            answer: "Toad's Turnpike - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-67000745",
-            answer: "Let's Get Fluffy! (Nimbus Land) - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/character-select-7",
-            answer: "Character Select - Mario Super Sluggers",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/wish-of-the-princess-paper-mario-2000",
-            answer: "Wish Of The Princess - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/phantom-returns-act-1-overture",
-            answer: "Phantom Returns, Act 1 - Mario + Rabbids: Sparks Of Hope Post-Launch Compilation",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/phantom-returns-act-3-the",
-            answer: "Phantom Returns, Act 3 - Mario + Rabbids: Sparks Of Hope Post-Launch Compilation",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/forest-interlude-donkey-kong",
-            answer: "Forest Interlude - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/04-menu",
-            answer: "Main Menu - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/lava-lake-super-mario-3d-world-2013",
-            answer: "Simmering Lava Lake - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-900815746/047-egg-planet",
-            answer: "Egg Planet (Good Egg Galaxy ~ Super Mario Galaxy) - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/08-cliffy-peak",
-            answer: "Cliffy Peak - DK: Jungle Climber",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-ost-battle-canyon",
-            answer: "Wario's Battle Canyon - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/heavy-metal-mecha-bowser",
-            answer: "Heavy Metal Mecha-Bowser - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-vs-donkey-kong-713723050",
-            answer: "Title Screen - Mario vs. Donkey Kong (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-173727950",
-            answer: "Thwomp Caverns - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/data-robot-1",
-            answer: "Data Robot - Mario Paint",
-          },
-          {
-            url: "https://soundcloud.com/henry-stickmin-805451431/super-mario-64-soundtrack-017-metal-mario",
-            answer: "Metal Mario - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/user-277857493/rocket-road-mario-party-island",
-            answer: "Rocket Road - Mario Party: Island Tour",
-          },
-          {
-            url: "https://soundcloud.com/jackblack-sc/peaches",
-            answer: "Peaches - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/athletic-3",
-            answer: "Athletic - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/01-bgm-01-25512327",
-            answer: "Mario Toy Company A - Mario vs. Donkey Kong (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/malevolent-magikoopa-kamek-1",
-            answer: "Malevolent Magikoopa, Kamek Battle - Paper Mario: Sticker Star",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-34-wiggler-race",
-            answer: "Wiggler Race! - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/incrediblyinane/ttyd-2024-main-theme",
-            answer: "Title Screen - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/princess-peach-showtime/peach-march",
-            answer: "Peach March (Trailer Theme) - Princess Peach: Showtime!",
-          },
-          {
-            url: "https://soundcloud.com/mlg-troll/squizzard",
-            answer: "Squizzard - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/pandemonium",
-            answer: "Pandemonium (Flinger Painting, Hazard Hold, etc) - Mario Party 9",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/megagame-muscles-english",
-            answer: "Megagame Muscles - WarioWare: Move It!",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/match-results-super-mario-strikers",
-            answer: "Match Results - Super Mario Strikers",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/puzzle-room-wario-land-4",
-            answer: "Puzzle Room - Wario Land 4",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-63-airship",
-            answer: "Airship - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/forest-frenzy-donkey-kong",
-            answer: "Forest Frenzy - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-ost-go",
-            answer: "Shopping At Seaside Town - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-390758306/066-title-theme-super-mario",
-            answer: "Title Theme (Super Mario Maker) - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/marcovicp/special-world-8-super-mario-3d-land",
-            answer: "Special World 8 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/smbx-equipo-estelar/7-bowsers-castle",
-            answer: "Castle - Super Mario Bros. (1985)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-kart-8-deluxe-ost-mute",
-            answer: "Mute City - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-sunshine-350322830",
-            answer: "Corona Mountain - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-one/olivia-having-fun-paper-mario-the-origami-king-2020",
-            answer: "Olivia Having Fun - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/craft-island",
-            answer: "Craft Island - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/battle-chapter-6-paper-mario",
-            answer: "Battle ~ Chapter 6 - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/race-results-mario-kart-tour",
-            answer: "Race Results - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/knifewife/how-to-play-minigames-from8",
-            answer: "How To Play Minigames - Mario Party 8",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/september-donkey-konga-european-version",
-            answer: "September - Donkey Konga",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/new-donk-city-cafe-super-mario",
-            answer: "Pausing By The Poolside (Super Mario World ~ Ground) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-456082107",
-            answer: "Koopaseum - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/water-land-super-mario-bros-3",
-            answer: "Water Land (World 3) - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/yoshiheardle/title-screen-tetris-attack",
-            answer: "Title Screen - Tetris Attack",
-          },
-          {
-            url: "https://soundcloud.com/wario-land-shake-it/stonetooth-cave-its-all-mine",
-            answer: "Stonetooth Cave/Its All Mine (Escape) - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-390758306/099-title-theme-mario-tennis",
-            answer: "Title Screen - Mario Tennis Aces",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/menu-mario-tennis-gbc",
-            answer: "Main Menu - Mario Tennis (GBC)",
-          },
-          {
-            url: "https://soundcloud.com/henry-stickmin-805451431/opening",
-            answer: "Opening - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/honeylune-ridge-collapse-super",
-            answer: "Honeylune Ridge: Collapse (Moon Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/tag-the-flowers-super-princess",
-            answer: "Tag The Flowers - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/wariowaresmoothmoves/form-baton-international",
-            answer: "Form Baton Tutorial - WarioWare: Smooth Moves",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-21-wonder-effect-walkin-on",
-            answer: "Medley Mix Wonder - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/princess-peach-showtime/leave-the-sleuthing-to-me",
-            answer: "Leave The Sleuthing To Me (Detective Peach) - Princess Peach: Showtime!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/world-9-special-world",
-            answer: "World 9 (Space) - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/mula-chan/wario-shipyard",
-            answer: "Wario's Shipyard/Wario's Galleon - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/kirbymassattackost/world-2",
-            answer: "World 2 - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/yoshis-cookie-osts/counting-the-cookies",
-            answer: "Versus Type B - Yoshi's Cookie (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/petalberg-paper-mario-the",
-            answer: "Petalburg - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-nintendo/wrecking-crew-medley",
-            answer: "Wrecking Crew Medley - Super Smash Bros. Ultimate",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-two/yellow-streamer-battle-paper-mario-the-origami-king-2020",
-            answer: "Yellow Streamer Battle - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/warioheardle/greenhorn-forest",
-            answer: "Greenhorn Forest - Wario World",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-ost-can-it-be-done",
-            answer: "Can It Be Done? (Ground Pound, Face Lift) - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-2-ost-going",
-            answer: "Going Somewhere (Bobsled Run, Sky Pilots, etc) - Mario Party 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-party-3-ost-still-going",
-            answer: "Still Going (Last 5 Turns) - Mario Party 3",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/69-fortunes-turn",
-            answer: "Fortunes Turn (Reversal Of Fortune) - Mario Party 4",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/an-adventurer",
-            answer: "Pirate Dream - Mario Party 5",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/blissful",
-            answer: "Blissful (Clean Team, Mowtown, etc) - Mario Party 6",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/sail-the-canals",
-            answer: "Grand Canal - Mario Party 7",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/bonus-stage",
-            answer: "Bonus Stage - Wrecking Crew",
-          },
-          {
-            url: "https://soundcloud.com/henry-stickmin-805451431/koopas-road",
-            answer: "Bowser's Road - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/the-violet-isles-paper-mario-color-splash-2016",
-            answer: "The Violet Isles - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/title-screen-bowsers-fury",
-            answer: "Title Screen - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/world-6-super-mario-3d-world-2013",
-            answer: "World 6 (Sky) - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/user-229883391/wrinkly-64",
-            answer: "Wrinkly 64 (Super Mario 64 ~ Peach's Castle) - Donkey Kong Country 3: Dixie Kong's Double Trouble!",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/battle-arenas",
-            answer: "Battle Arenas - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/briantyler/strange-new-world",
-            answer: "Strange New World - The Super Mario Bros. Movie",
-          },
-          {
-            url: "https://soundcloud.com/warioland123/world-map-day",
-            answer: "World Map (Day) - Wario Land 3",
-          },
-          {
-            url: "https://soundcloud.com/kirbymassattackost/rainbow-park",
-            answer: "Rainbow Park - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/haunted-chase-donkey-kong",
-            answer: "Haunted Chase - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-79-pumpkin-party",
-            answer: "Pumpkin Party - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/user-84280809/overture-super-mario-galaxy-ost",
-            answer: "Title Screen - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/1-75-ninji-disco",
-            answer: "Ninji Disco - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/daxmynz/versus-menu-screen-new-super-mario-bros",
-            answer: "Minigames Menu - New Super Mario Bros. (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-vs-donkey-kong-632758229",
-            answer: "Merry Mini Land A - Mario vs. Donkey Kong (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/yoshiheardle/title-screen-yoshis-safari",
-            answer: "Grass Land - Yoshi's Safari",
-          },
-          {
-            url: "https://soundcloud.com/bobbery-hoonsey/sky-donkey-kong-land-ost",
-            answer: "Chimpanzee Clouds - Donkey Kong Land",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/the-excess-express-dusk-paper",
-            answer: "Excess Express (Day) - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/chepfoorie/yoshis-island-ds-flower-field",
-            answer: "Flower Field (Athletic) - Yoshi's Island DS",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz2/fated-battle",
-            answer: "Fated Battle - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-809879301",
-            answer: "We Can't Lose! (Boss Battle) - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-26269933",
-            answer: "Princess Shroob Battle - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/fawfulhasfury/the-grand-finale-mario-luigi-bowsers-inside-story",
-            answer: "The Grand Finale - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/cole-h-942086636/44-victory-in-the-dream-world",
-            answer: "Victory In The Dream World (Dream Battle) - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-paper-jam-3",
-            answer: "Final Battle - Mario & Luigi: Paper Jam",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-luigi-608159371",
-            answer: "This Is Minion Turf! (Battle) (Bowser's Minions) - Mario & Luigi: Superstar Saga + Bowser's Minions",
-          },
-          {
-            url: "https://soundcloud.com/the-bruhboy/destroy-the-dark-power-dark",
-            answer: "Destroy the Dark Power! - Mario & Luigi: Bowser's Inside Story + Bowser Jr.'s Journey",
-          },
-          {
-            url: "https://soundcloud.com/geko-xeno/boo-lake-broken-pier-mario",
-            answer: "Boo Lake/Broken Pier - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/island-activities",
-            answer: "Island Activities (Pianta Pool, Pier Pressure, etc) - Mario Party 9",
-          },
-          {
-            url: "https://soundcloud.com/warioheardle/hawt-spot-dance-floor-warioware-touched",
-            answer: "Hawt Spot Dance Floor - WarioWare: Touched!",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-rpg-remake-ost-3",
-            answer: "Welcome To Yo'ster Isle! - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/papermariofangirl/the-lush-forest-paper-mario",
-            answer: "The Lush Forest - Paper Mario: Sticker Star",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-342578510/03-yoshis-island-for-3ds-wii-u",
-            answer: "Flower Field / Opening Melody (Yoshi's Island) - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/token-tango-donkey-kong",
-            answer: "Token Tango - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/henry-stickmin-805451431/powerful-mario",
-            answer: "Powerful Mario - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/fresh-as-mint",
-            answer: "Fresh As Mint (Hanger Management, Rail Riders, etc) - Mario Party DS",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/mario-and-luigi-564738279",
-            answer: "Yoob's Belly - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-wario/ashleys-song",
-            answer: "Ashley's Song (WarioWare: Touched!) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/drive-to-work-on-instinct",
-            answer: "Drive To Work On Instinct - Super Mario Bros. (1993)",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/luigis-theme-paper-mario-the",
-            answer: "Super Luigi - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/intro-theme-credits-super-mario-strikers",
-            answer: "Opening/Staff Roll - Super Mario Strikers",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/super-mario-party-83127102",
-            answer: "Mega Wiggler's Tree Party - Super Mario Party Jamboree",
-          },
-          {
-            url: "https://soundcloud.com/anime404/mario-luigi-brothership-music-shipshape-island",
-            answer: "Shipshape Island - Mario & Luigi: Brothership",
-          },
-          {
-            url: "https://soundcloud.com/user-229883391/rockface-rumble",
-            answer: "Rockface Rumble - Donkey Kong Country 3: Dixie Kong's Double Trouble!",
-          },
-          {
-            url: "https://soundcloud.com/chiptune-human/super-mario-maker-2-editor-9",
-            answer: "Ground [Super Mario Bros.] (Edit) - Super Mario Maker",
-          },
-          {
-            url: "https://soundcloud.com/user-203973585/cannon-cove-stage-theme",
-            answer: "Cannon Cove C - Mario vs. Donkey Kong: Mini-Land Mayhem!",
-          },
-          {
-            url: "https://soundcloud.com/dmg8bit/game-boy-super-mario-land-1-02-muda-kingdom",
-            answer: "Muda Kingdom - Super Mario Land",
-          },
-          {
-            url: "https://soundcloud.com/nicol-s-reyes-palma/49-lakitu-valley-mario-golf",
-            answer: "Lakitu Valley - Mario Golf: Toadstool Tour",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/toad-scramble-world-1-mario-party-star-rush",
-            answer: "Toad Scramble (World 1) - Mario Party: Star Rush",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/main-menu-867453822",
-            answer: "Main Menu - Mario & Sonic at the London 2012 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/yoshi-kid-theme-1-paper-mario",
-            answer: "Yoshi Kid's Theme - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-614200534-787705898/the-dance-hall-dj",
-            answer: "DJ Phantasmagloria Battle - Luigi's Mansion 3",
-          },
-          {
-            url: "https://soundcloud.com/kereta-simit/korogaru-koin-no-yoo-ni",
-            answer: "Pirate Dance (Super Mario World ~ Ground) - Dance Dance Revolution: Mario Mix",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/welcome-to-crocodile-isle",
-            answer: "Welcome To Crocodile Isle (World Map) - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/user-624399807/mario-party-superstars-ost",
-            answer: "Friendly Competition [Mario Party 8] (Paint Misbehavin') - Mario Party Superstars",
-          },
-          {
-            url: "https://soundcloud.com/user-675036643/koopa-junior-bgm",
-            answer: "Boss Battle - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/jr-street-mario-hoops-3-on-3",
-            answer: "Jr. Street - Mario Hoops 3-On-3",
-          },
-          {
-            url: "https://soundcloud.com/user-516585460/mario-sports-mix-main-menu",
-            answer: "Main Menu - Mario Sports Mix",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/bowsers-blazing-beats-full",
-            answer: "Bowser's Blazing Beats - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vbwario/mario-power-tennis-mario-classic-court-exhibition",
-            answer: "Mario Classic Court (Mario Bros. Theme) - Mario Power Tennis",
-          },
-          {
-            url: "https://soundcloud.com/wario-land-shake-it/title-screen",
-            answer: "Title Screen - Wario Land: Shake It!",
-          },
-          {
-            url: "https://soundcloud.com/spryzen-edits/beach-theme-new-super-mario-bros-wii",
-            answer: "Beach - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/the-bullet-bill-brigade-super-mario-3d-world-2013",
-            answer: "Bowser's Bullet Bill Brigade - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/yoshiheardle/yo-yo-yoshi-yoshis-story",
-            answer: "Yo Yo Yoshi - Yoshi's Story",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/select-your-character-super",
-            answer: "Player Select - Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/princess-peach-showtime/snow-village",
-            answer: "Snow Village - Princess Peach: Showtime!",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/dream-snowball-fight-snow-mountain",
-            answer: "Dream Snowball Fight: (Cool Cool Mountain ~ Super Mario 64) - Mario & Sonic At The Olympic Winter Games (Wii)",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/icicle-golem-finale",
-            answer: "Icicle Golem Finale - Mario + Rabbids Kingdom Battle",
-          },
-          {
-            url: "https://soundcloud.com/warioheardle/shivering-mountains-mountain",
-            answer: "Shivering Mountains - Wario World",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/a-little-light-snowfall",
-            answer: "A Little Light Snowfall - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/slippenglide-island-mario-luigi-brothership",
-            answer: "Slippenglide Island - Mario & Luigi: Brothership",
-          },
-          {
-            url: "https://soundcloud.com/user-107491243-28699163/frosted-glacier-overworld",
-            answer: "Snow - New Super Mario Bros. U",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy-2/title-screen",
-            answer: "Title Screen - Mario no Photopi",
-          },
-          {
-            url: "https://soundcloud.com/anime404/mario-luigi-brothership-battle-theme",
-            answer: "Battle - Mario & Luigi: Brothership",
-          },
-          {
-            url: "https://soundcloud.com/vincent-thompson-763471057/18-bonus-screen-bgm",
-            answer: "Bonus - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/romeo-lopez-734877597/bouncy-beanstalk-walk-yoshis",
-            answer: "Bouncy Beanstalk Walk - Yoshi's New Island",
-          },
-          {
-            url: "https://soundcloud.com/the-blj-elite/koopas-lava-castle",
-            answer: "Koopa's Lava Castle (Worlds 1 & 5) - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/princess-peach-showtime/time-for-tea-patissiere-peach",
-            answer: "Time For Tea? (Patissiere Peach) - Princess Peach: Showtime!",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/tostarena-town-super-mario",
-            answer: "Tostarena Town (Sand Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/swing-mario-party-10",
-            answer: "Swing! (Rapid River Race) - Mario Party 10",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/title-theme-diddy-kong-racing-1997",
-            answer: "Title Screen - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/lake-super-mario-bros-wonder",
-            answer: "Lake - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/vgmc/mangrove-cove-underwater",
-            answer: "Mangrove Cove (Underwater) - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/fort-flaptrap",
-            answer: "Fort Flaptrap - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/thegreatnepyrus/mario-and-luigi-partners-in-time-ost-007-danger",
-            answer: "Serious Trouble - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/jakeypants-62297368/diy-shop-warioware-diy",
-            answer: "D.I.Y. Shop - WarioWare D.I.Y.",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/mario-party-the-top-100-8",
-            answer: "Everybody Party [Mario Party 5] (Dinger Derby, Coney Island, etc) - Mario Party: The Top 100",
-          },
-          {
-            url: "https://soundcloud.com/kereta-simit/jump-jump-jump",
-            answer: "Jump! Jump! Jump! (Super Mario Bros. 3 ~ Athletic) - Dance Dance Revolution: Mario Mix",
-          },
-          {
-            url: "https://soundcloud.com/incrediblyinane/ttyd-twilight-town",
-            answer: "Twilight Town - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/user-625232827/let-the-game-begin-mario-party-2",
-            answer: "Let The Game Begin (Minigame Rules) - Mario Party 2",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/sweet-sweet-canyon-mario-kart",
-            answer: "Sweet Sweet Canyon - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/warioheardle/greenhorn-ruins",
-            answer: "Greenhorn Ruins - Wario World",
-          },
-          {
-            url: "https://soundcloud.com/1074/yoshis-island-music-box-theme",
-            answer: "Opening Melody - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/rome-aventi-mario-kart-tour",
-            answer: "Rome Avanti - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/yoshis-mountain-race-super-mario-party-jamboree",
-            answer: "Yoshi's Mountain Race - Super Mario Party Jamboree",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/elegy-sad-song-super-mario-rpg-switch",
-            answer: "Elegy (Sad Song) - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/ladida-plains-2-super-princess",
-            answer: "Ladida Plains 2 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/yoshiheardle/yoshis-stage",
-            answer: "Yoshi's Stage - Tetris Attack",
-          },
-          {
-            url: "https://soundcloud.com/hax-766019189/luigis-mansion-dark-moon-evershade-valley",
-            answer: "Evershade Valley - Luigi's Mansion: Dark Moon",
-          },
-          {
-            url: "https://soundcloud.com/dylan-walter-156875824/mario-party-superstars-ost-9",
-            answer: "Title Screen [Mario Party 1] - Mario Party Superstars",
-          },
-          {
-            url: "https://soundcloud.com/3nintendo/mission-mode",
-            answer: "Mission Mode - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/warp-zone-super-mario-bros-3",
-            answer: "Warp Zone (World 9) - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/user-84280809/king-bowser",
-            answer: "King Bowser - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/dk-island-swing",
-            answer: "DK Island Swing - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/a-party-at-peachs-castle-paper-mario-2000",
-            answer: "A Party At Peach's Castle - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vbwario/mario-power-tennis-peach-dome-court-exhibition",
-            answer: "Peach Dome Court - Mario Power Tennis",
-          },
-          {
-            url: "https://soundcloud.com/spryzen-edits/world-5-forest-land-new-super-mario-bros-wii",
-            answer: "World 5 (Jungle) - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/cheeseboy2251/piranha-plant-cove-mario-kart",
-            answer: "Piranha Plant Cove - Mario Kart Tour",
-          },
-          {
-            url: "https://soundcloud.com/incrediblyinane/petal-meadows-paper-mario-the-thousand-year-door-2024",
-            answer: "Petal Meadows - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/curling?in=superninjigalaxy/sets/november-2k24-update",
-            answer: "Curling - Mario & Sonic At The Olympic Winter Games (Wii)",
-          },
-          {
-            url: "https://soundcloud.com/ssbu-ost/main-theme-super-mario-64-remix",
-            answer: "Main Theme (Super Mario 64) - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/silly-person-52110284/17-toadwood-forest",
-            answer: "Toadwood Forest - Mario & Luigi: Partners In Time",
-          },
-          {
-            url: "https://soundcloud.com/user-863001080-627828770/main-theme-yoshis-crafted-world",
-            answer: "Main Theme - Yoshi's Crafted World",
-          },
-          {
-            url: "https://soundcloud.com/user-272592510/super-mario-rpg-legend-of-30",
-            answer: "Greetings From The Pipes (Pipe Vault) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/koopa-beach",
-            answer: "Koopa Beach - Super Mario Kart",
-          },
-          {
-            url: "https://soundcloud.com/gerardomr8/donkey-kong-country-tropical-freeze-soundtrack-twilight-terror",
-            answer: "Twilight Terror (Stickerbush Symphony Returns) - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/geko-xeno/bowser-castle-mario-kart-super",
-            answer: "Bowser Castle - Mario Kart: Super Circuit",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/jazzy-mario-party-6-mario-party-superstars",
-            answer: "Jazzy [Mario Party 6] (Catch You Letter) - Mario Party Superstars",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/mini-mario-level-mario-vs-donkey-kong-switch",
-            answer: "Mini Mario Level - Mario vs. Donkey Kong (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/savannah-super-mario-bros-1",
-            answer: "Savanna - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/anime404/mario-luigi-brothership-florall-island",
-            answer: "Florall Island - Mario & Luigi: Brothership",
-          },
-          {
-            url: "https://soundcloud.com/yell0wsuit2/fight-against-an-armed-boss",
-            answer: "Battling A Weapon Boss - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/fuzzy-time-mine-super-mario-3d-world-2013",
-            answer: "Fuzzy Time Mine - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw2-ball",
-            answer: "Ball - Game & Watch Gallery 2",
-          },
-          {
-            url: "https://soundcloud.com/medi101/mvdk2-pipe-works-i",
-            answer: "Pipe Works A - Mario vs. Donkey Kong 2: March Of The Minis",
-          },
-          {
-            url: "https://soundcloud.com/fortunestreetost/super-mario-bros-ground-theme",
-            answer: "Super Mario Bros. Theme - Fortune Street",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/kalimari-desert",
-            answer: "Kalimari Desert - Mario Kart 64",
-          },
-          {
-            url: "https://soundcloud.com/charles-couckee-65363841/mario-luigi-bowsers-580878294",
-            answer: "The Giant (Giant Battle) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/equestrian-1",
-            answer: "Equestrian - Mario & Sonic at the Rio 2016 Olympic Games",
-          },
-          {
-            url: "https://soundcloud.com/warioheardle/woods-mario-wario",
-            answer: "Woods - Mario & Wario",
-          },
-          {
-            url: "https://soundcloud.com/mario-vs-donkey-kong/knitting-diagram-i-am-a-teacher-super-mario-sweater",
-            answer: "Knitting Diagram - I Am A Teacher: Super Mario Sweater",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/222-airship-theme-super-mario-bros-super-mario-maker-1-and-2-soundtrack",
-            answer: "Airship [Super Mario Bros.] - Super Mario Maker",
-          },
-          {
-            url: "https://soundcloud.com/isaac-hammer/welcome-to-the-beanbean",
-            answer: "The Kingdom Called Beanbean (Beanbean Fields) - Mario & Luigi: Superstar Saga + Bowser's Minions",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/hurry-up-wario-land-4",
-            answer: "Hurry Up! - Wario Land 4",
-          },
-          {
-            url: "https://soundcloud.com/smpjamboree/marios-rainbow-castle",
-            answer: "Mario's Rainbow Castle [Mario Party 1] - Super Mario Party Jamboree",
-          },
-          {
-            url: "https://soundcloud.com/vgsoundz2/melty-monster-galaxy",
-            answer: "Melty Monster Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/papergirl3/super-koopa-bros-world-1-paper",
-            answer: "Super Bowser Bros. ~ World 1 - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/game-point-mario-tennis-gbc",
-            answer: "Game Point - Mario Tennis (GBC)",
-          },
-          {
-            url: "https://soundcloud.com/marshyyyyy/yamamuras-dojo-super-mario-maker-2",
-            answer: "Yamamura's Dojo - Super Mario Maker 2",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-wario/mikes-song",
-            answer: "Mike's Song (WarioWare: Touched!) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/fortunestreetost/aquatic-ambiance",
-            answer: "Aquatic Ambiance - Donkey Kong Country (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/nintendorewind/main-theme-mario-party-9",
-            answer: "Title Screen - Mario Party 9",
-          },
-          {
-            url: "https://soundcloud.com/user647851845/bowsers-turn-mario-party-10",
-            answer: "Bowser's Turn - Mario Party 10",
-          },
-          {
-            url: "https://soundcloud.com/5nintendo/snes-rainbow-road",
-            answer: "SNES Rainbow Road - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/wild-woods-mario-kart-8-deluxe",
-            answer: "Wild Woods - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-two/shroom-city-paper-mario-the-origami-king-2020",
-            answer: "Shroom City - Paper Mario: The Origami King",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/wario-palace-mario-superstar-baseball",
-            answer: "Wario Palace - Mario Superstar Baseball",
-          },
-          {
-            url: "https://soundcloud.com/silly-person-52110284/16-uh-oh-sand-flow",
-            answer: "Uh Oh, Sand Flow! (Doop Doop Dunes) - Mario & Luigi: Paper Jam",
-          },
-          {
-            url: "https://soundcloud.com/vgmhoarder/king-boo-battle-luigis-mansion",
-            answer: "King Boo Battle - Luigi's Mansion (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/final-showdown-with-fury",
-            answer: "Final Showdown With Fury Bowser - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/garethcokerofficial/fight-songs-from-the-flower",
-            answer: "Fight Songs From The Flower Planet - Mario + Rabbids: Sparks Of Hope",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/warios-gold-mine-mario-kart-wii-remix",
-            answer: "Wario's Gold Mine (Mario Kart Wii) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/princess-peach-showtime/entrancing-prelude-main-menu",
-            answer: "Entrancing Prelude (Main Menu) - Princess Peach: Showtime!",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/riding-a-jaxi-super-mario",
-            answer: "Jaxi Joyride (Sand Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/incrediblyinane/ttyd-champ-battle-full-mix",
-            answer: "Battle ~ The Champ (Rawk Hawk) - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/picross-all-stars/donkey-kong-jungle-b",
-            answer: "Donkey Kong Jungle B - Mario vs. Donkey Kong (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/i-earrape-for-fun/mario-party-ds-ost-contemplation",
-            answer: "Contemplation (Dress For Success, Trace Cadets) - Mario Party DS",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/looping-steps-super-mario-64",
-            answer: "The Endless Stairs - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/gcn-waluigi-stadium-mario-kart",
-            answer: "GCN Waluigi Stadium (Wave 4) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/vincent-thompson-763471057/5-map-4-native-star",
-            answer: "Star Road - Super Mario World",
-          },
-          {
-            url: "https://soundcloud.com/yoshiheardle/title-screen-yoshis-safari",
-            answer: "Title Screen - Yoshi's Safari",
-          },
-          {
-            url: "https://soundcloud.com/incrediblyinane/ttyd-vivian-theme",
-            answer: "Vivian's Theme - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/adrian-fernandez-842998753/baby-bowser-yoshis-island",
-            answer: "Baby Bowser Battle - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/super-paper-camek/proof-of-existence",
-            answer: "Proof Of Existance - Super Paper Mario",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/athletic-super-mario-world-super-mario-advance-2",
-            answer: "Athletic - Super Mario World: Super Mario Advance 2",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/surfing",
-            answer: "Surfing - Mario & Sonic at the Olympic Games Tokyo 2020",
-          },
-          {
-            url: "https://soundcloud.com/yoshis-cookie-osts/action-type-c",
-            answer: "Action Type C - Yoshi's Cookie (Nintendo Puzzle Collection)",
-          },
-          {
-            url: "https://soundcloud.com/lamont-lol/the-super-mario-bros-super-show-rap-hd-remaster",
-            answer: "Mario Brothers Rap - The Super Mario Bros. Super Show",
-          },
-          {
-            url: "https://soundcloud.com/princess-peach-showtime/welcome-to-sparkle-theater",
-            answer: "Welcome To Sparkle Theater - Princess Peach: Showtime!",
-          },
-          {
-            url: "https://soundcloud.com/mario-vs-donkey-kong/twilight-valley-a",
-            answer: "Twilight Valley A - Mario vs. Donkey Kong: Tipping Stars",
-          },
-          {
-            url: "https://soundcloud.com/mario-vs-donkey-kong/title-screen-dk-king-of-swing",
-            answer: "Title Screen - DK: King Of Swing",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/underwater-super-mario-bros-4",
-            answer: "Underwater - Super Mario Bros. Wonder",
-          },
-          {
-            url: "https://soundcloud.com/picross-all-stars/giant-land-super-mario-bros-3",
-            answer: "Giant Land (World 4) [Super Mario Bros. 3] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy-2/piranha-creeper-dash-cave",
-            answer: "Piranha Creeper Dash - Captain Toad: Treasure Tracker",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/bowsers-factory",
-            answer: "Bowser's Factory - Mario Kart Arcade GP DX",
-          },
-          {
-            url: "https://soundcloud.com/incrediblyinane/ttyd-chapter-1-battle-full-mix",
-            answer: "Battle ~ Chapter 1 - Paper Mario: The Thousand-Year Door (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/charles-couckee-65363841/mario-luigi-bowsers-inside",
-            answer: "Bowser's Stolen Castle - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/kereta-simit/kue-te-baya-mario",
-            answer: "Hammer Dance (Super Mario Bros. 3 ~ Ground) - Dance Dance Revolution: Mario Mix",
-          },
-          {
-            url: "https://soundcloud.com/mlg-troll/puzzle-plank-galaxy",
-            answer: "Puzzle Plank Galaxy - Super Mario Galaxy 2",
-          },
-          {
-            url: "https://soundcloud.com/dylan-dylan-298845181/family-super-mario-galaxy",
-            answer: "Family - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/airship-bgm-super-mario-bros-3",
-            answer: "Airship - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/origami-king-one/toad-town-ghost-town-paper-mario-the-origami-king-2020",
-            answer: "Toad Town (Ghost Town) - Paper Mario: The Origami King",
-          },
-          {
-          url: "https://soundcloud.com/beep-blox/spaceport-alpha-diddy-kong-racing",
-          answer: "Spaceport Alpha - Diddy Kong Racing",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/file-select-super-mario-64-ost",
-            answer: "File Select - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/user409121565/circuit-theme-mario-kart",
-            answer: "Luigi/Mario/Yoshi Circuit - Mario Kart: Double Dash!!",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/treetop-rock-1",
-            answer: "Treetop Rock - Donkey Kong Country (SNES)",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/lake-lapcat",
-            answer: "Lake Lapcat - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/kirby-comix/special-area-yoshis-crafted",
-            answer: "Hidden Hills - Yoshi's Crafted World",
-          },
-          {
-            url: "https://soundcloud.com/pokeseal-domaniat/under-the-ice-mario-pinball",
-            answer: "Under The Ice - Mario Pinball Land",
-          },
-          {
-            url: "https://soundcloud.com/user-272592510/super-mario-rpg-legend-of-32",
-            answer: "Beware Of Forest Mushrooms (Forest Maze) - Super Mario RPG: Legend Of The Seven Stars",
-          },
-          {
-            url: "https://soundcloud.com/megawoofy/electrodrome-mario-kart-8",
-            answer: "Electrodrome - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/kirbymassattackost/block-land",
-            answer: "Block Land - Super Mario 3D Land",
-          },
-          {
-            url: "https://soundcloud.com/saxophones/game-wario-ost-ashleys-revolution",
-            answer: "Ashley (Stage 1) - Game & Wario",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy-2/captain-toad-treasure-tracker",
-            answer: "Title Screen - Captain Toad: Treasure Tracker",
-          },
-          {
-            url: "https://soundcloud.com/grant-kirkhope-official/phantom-razzmatazz",
-            answer: "Phantom, Razzmatazz - Mario + Rabbids: Sparks Of Hope Post-Launch Compilation",
-          },
-          {
-            url: "https://soundcloud.com/yoshiheardle/stage-boss-super-mario-world-2",
-            answer: "Stage Boss - Super Mario World 2: Yoshi's Island",
-          },
-          {
-            url: "https://soundcloud.com/tylerthetyrrific/let-me-go-back-to-my-home",
-            answer: "Let Me Go Back To My Home - Donkey Kong Country (Animated Series)",
-          },
-          {
-            url: "https://soundcloud.com/user409121565/mario-kart-ds-ost-delfino",
-            answer: "Delfino Square - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/civ-nohp/flower-fields-rondo-paper-mario-2000",
-            answer: "Flower Fields Rondo - Paper Mario (N64)",
-          },
-          {
-            url: "https://soundcloud.com/user-277857493/kameks-tantalizing-tower-1-super-mario-party",
-            answer: "Kamek's Tantalizing Tower/Tantalizing Tower Toys - Super Mario Party",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-286118343/04-waluigi-pinball-mario-kart",
-            answer: "Waluigi Pinball (Mario Kart DS) - Super Smash Bros. Brawl",
-          },
-          {
-            url: "https://soundcloud.com/warioheardle/sweatmore-peak-wario-master-of-disguise",
-            answer: "Sweatmore Peak - Wario: Master Of Disguise",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/gusty-garden-galaxy-super-mario-galaxy-remix",
-            answer: "Gusty Garden Galaxy (Super Mario Galaxy) - Mario & Sonic at the Sochi 2014 Olympic Winter Games",
-          },
-          {
-            url: "https://soundcloud.com/natian_15-seami/wavy-beach-1-super-princess",
-            answer: "Wavy Beach 1 - Super Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/dappa-fuster/new-donk-city-daytime-metro",
-            answer: "New Donk City (Metro Kingdom) - Super Mario Odyssey",
-          },
-          {
-            url: "https://soundcloud.com/brayden-mentzer-846297716/2-02-poppin-planks-mp3",
-            answer: "Lift Beach - Donkey Kong Country Returns",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/cool-as-a-cucumber-mario-party-superstars",
-            answer: "Cool As A Cucumber [Mario Party 7] (Spin Doctor) - Mario Party Superstars",
-          },
-          {
-            url: "https://soundcloud.com/charles-couckee-65363841/mario-luigi-bowsers-316369436",
-            answer: "Meet Me At Wonder Woods (Dimble Wood) - Mario & Luigi: Bowser's Inside Story (DS)",
-          },
-          {
-            url: "https://soundcloud.com/super-mario-rpg-switch/grandpa-and-the-upbeat",
-            answer: "Grandpa And The Upbeat Tadpoles (Tadpole Pond) - Super Mario RPG (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/rachel-lambert-810356329/mario-golf-toadstool-tour-blooper-bay",
-            answer: "Blooper Bay - Mario Golf: Toadstool Tour",
-          },
-          {
-            url: "https://soundcloud.com/super-smash-bros-anthology-390758306/103-luigis-mansion-series",
-            answer: "Luigi's Mansion Series Medley - Super Smash Bros. For 3DS/Wii U",
-          },
-          {
-            url: "https://soundcloud.com/user-272592510/mario-kart-wii-daisy-circuit",
-            answer: "Daisy Circuit - Mario Kart Wii",
-          },
-          {
-            url: "https://soundcloud.com/bobbery-hoonsey/ice-warren-donkey-kong-jungle",
-            answer: "Ice Warren - Donkey Kong Jungle Beat",
-          },
-          {
-            url: "https://soundcloud.com/woolly-world-ost/across-the-fluttering-dunes",
-            answer: "Across The Fluttering Dunes - Yoshi's Woolly World",
-          },
-          {
-            url: "https://soundcloud.com/papergirl3/riverside-station-paper-mario",
-            answer: "Riverside Station - Paper Mario: The Thousand-Year Door (GameCube)",
-          },
-          {
-            url: "https://soundcloud.com/donkey-kong-country-tropical-freeze-ost/scorch-n-torch",
-            answer: "Scorch 'N' Torch - Donkey Kong Country: Tropical Freeze",
-          },
-          {
-            url: "https://soundcloud.com/picross-all-stars/mario-bgm-2",
-            answer: "Mario BGM 2 - Mario's Super Picross",
-          },
-          {
-            url: "https://soundcloud.com/dylan-dylan-298845181/enter-the-galaxy-super-mario-galaxy",
-            answer: "Enter The Galaxy (Gateway Galaxy) - Super Mario Galaxy",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/wii-rainbow-road",
-            answer: "Wii Rainbow Road (Wave 6) - MK8DX Booster Course Pass Waves 4-6",
-          },
-          {
-            url: "https://soundcloud.com/twoblu94/western-land",
-            answer: "Western Land - Mario Party 2",
-          },
-          {
-            url: "https://soundcloud.com/picross-all-stars/bonus-super-mario-bros-super",
-            answer: "Bonus [Super Mario Bros.] - Super Mario All-Stars",
-          },
-          {
-            url: "https://soundcloud.com/user-203973585/super-skywheel-stage-theme",
-            answer: "Super Skywheel B - Mario vs. Donkey Kong: Mini-Land Mayhem!",
-          },
-          {
-            url: "https://soundcloud.com/user-880408256/super-mario-bros-2-title-theme-1",
-            answer: "Title Screen - Super Mario Bros. 2",
-          },
-          {
-            url: "https://soundcloud.com/user409121565/mario-kart-ds-ost-credits",
-            answer: "Staff Roll - Mario Kart DS",
-          },
-          {
-            url: "https://soundcloud.com/smart-gaming-166773353/file-select",
-            answer: "File Select - Super Mario 64",
-          },
-          {
-            url: "https://soundcloud.com/yell0wsuit/peaceful-ocean-sm3dw-bowsers-fury-ost",
-            answer: "Lake Lapcat - Bowser's Fury",
-          },
-          {
-            url: "https://soundcloud.com/user-602684896/mk8-electrodrome",
-            answer: "Electrodrome - Mario Kart 8",
-          },
-          {
-            url: "https://soundcloud.com/simplepro/fortress-super-mario-bros-3",
-            answer: "Fortress - Super Mario Bros. 3",
-          },
-          {
-            url: "https://soundcloud.com/not-bowsers-fury/mount-must-dash-super-mario-3d-world-2013",
-            answer: "Mount Must Dash (Super Mario Kart ~ Mario Circuit) - Super Mario 3D World",
-          },
-          {
-            url: "https://soundcloud.com/vgmb/02-title-theme",
-            answer: "Title Screen - New Super Mario Bros. Wii",
-          },
-          {
-            url: "https://soundcloud.com/game-and-watch-gallery/gw4-fire-attack-modern-mode",
-            answer: "Fire Attack - Game & Watch Gallery 4",
-          },
-          {
-            url: "https://soundcloud.com/user-824634691/tomb-suites-10-theme-track-1",
-            answer: "Tomb Suites - Luigi's Mansion 3",
-          },
-          {
-            url: "https://soundcloud.com/kereta-simit/destruction-in-the-moonlight",
-            answer: "Destruction Dance (Wrecking Crew ~ Bonus Stage) - Dance Dance Revolution: Mario Mix",
-          },
-          {
-            url: "https://soundcloud.com/minimarioamiibo/ground-coin-rush",
-            answer: "Ground (Coin Rush) - Super Mario Run",
-          },
-          {
-            url: "https://soundcloud.com/beep-blox/yoshi-park-mario-super-sluggers",
-            answer: "Yoshi Park - Mario Super Sluggers",
-          },
-          {
-            url: "https://soundcloud.com/mario-vs-donkey-kong/stilt-village-donkey-kong-land-iii",
-            answer: "Stilt Village - Donkey Kong Land III",
-          },
-          {
-            url: "https://soundcloud.com/mario-heardle/sky-island-mario-golf-world-tour",
-            answer: "Sky Island (Super Mario Bros. 3 ~ Athletic) - Mario Golf World Tour",
-          },
-          {
-            url: "https://soundcloud.com/vitalic-rudenko-396547002/super-mario-bros-the-great-3",
-            answer: "Doki Doki Do It - Super Mario Bros: The Great Mission To Rescue Princess Peach",
-          },
-          {
-            url: "https://soundcloud.com/frigidscholar/shopping-in-wakeport-mario-luigi-dream-team-music",
-            answer: "Shopping In Wakeport - Mario & Luigi: Dream Team",
-          },
-          {
-            url: "https://soundcloud.com/faded_boo/adventure-tours-sparkletown",
-            answer: "Adventure Tours: Sparkletown - Mario & Sonic At The Olympic Winter Games (DS)",
-          },
-          {
-            url: "https://soundcloud.com/user-227502204-594364584/krooks-march",
-            answer: "Krook's March - Donkey Kong Country 2: Diddy's Kong Quest",
-          },
-          {
-            url: "https://soundcloud.com/mk8dxbcpost/tour-london-loop",
-            answer: "Tour London Loop (Wave 3) - MK8DX Booster Course Pass Waves 1-3",
-          },
-          {
-            url: "https://soundcloud.com/mr-starderp-64/super-mario-maker-smb1-ghost-house",
-            answer: "Ghost House [Super Mario Bros.] - Super Mario Maker",
-          },
-          {
-            url: "https://soundcloud.com/5nintendo/wuhu-loop-maka-wuhu",
-            answer: "Wuhu Loop/Maka Wuhu - Mario Kart 7",
-          },
-          {
-            url: "https://soundcloud.com/caitlin-freeman-8/gelato-beach-super-mario-sunshine",
-            answer: "Gelato Beach - Super Mario Sunshine",
-          },
-          {
-            url: "https://soundcloud.com/mario-vs-donkey-kong-switch/the-real-final-battle",
-            answer: "The Real Final Battle - Mario vs. Donkey Kong (Switch)",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy/drowsy-operation-l-dr-luigi",
-            answer: "Drowsy - Dr. Luigi",
-          },
-          {
-            url: "https://soundcloud.com/superninjigalaxy-2/faire-square-mario-party-6",
-            answer: "Faire Square - Mario Party 6",
-          },
-          {
-            url: "https://soundcloud.com/susumi-sama/mario-paint-bgm-3",
-            answer: "Mysterious - Mario Paint",
-          },
-          {
-            url: "https://soundcloud.com/silly-person-52110284/24-chucklehuck-woods",
-            answer: "Chucklehuck Woods - Mario & Luigi: Superstar Saga (GBA)",
-          },
-          {
-            url: "https://soundcloud.com/kirby-nep-adventure-rst1/indigo-underground-paper-mario-color-splash-2016",
-            answer: "Indigo Underground - Paper Mario: Color Splash",
-          },
-          {
-            url: "https://soundcloud.com/romeo-lopez-734877597/bandit-valley-yoshis-new-island-ost",
-            answer: "Bandit Valley - Yoshi's New Island",
-          },
-          {
-            url: "https://soundcloud.com/mvpl/mario-party-1-ost-lets-go",
-            answer: "Let's Go Lightly (Bobsled Run, Platform Peril) - Mario Party (N64)",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
-          },
-          {
-            url: "https://soundcloud.com/vgmplanet/song",
-            answer: "Song - Game",
+            url: "https://soundcloud.com/toby-radiation-fox/040-before-the-story",
+            answer: "Before the Story - Deltarune",
           },
 
           //End Of Links Pog
-        ],
-        Pn
+        ]),
+        Pn,
       ).subscribe,
     };
   ("use strict");
+
+  function deterministicShuffle(arr) {
+    let seed = 2463534242;
+    let i = arr.length - 1;
+
+    for (i; i > 0; i--) {
+      seed = xorshift(seed);
+      let idx = Math.abs(seed) % i;
+      let a = arr[idx];
+      let b = arr[i];
+      arr[idx] = b;
+      arr[i] = a;
+    }
+
+    return arr;
+  }
+
+  function xorshift(seed) {
+    seed ^= seed << 13;
+    seed ^= seed << 17;
+    seed ^= seed << 5;
+
+    return seed;
+  }
+
   function e() {}
   function t(e) {
     return e();
@@ -6073,7 +781,7 @@
         if (null == t) return e;
         const r = t.subscribe(...n);
         return r.unsubscribe ? () => r.unsubscribe() : r;
-      })(n, r)
+      })(n, r),
     );
   }
   function c(e, t, n, r) {
@@ -6263,8 +971,8 @@
     "undefined" != typeof window
       ? window
       : "undefined" != typeof globalThis
-      ? globalThis
-      : global;
+        ? globalThis
+        : global;
   function Q(e) {
     e && e.c();
   }
@@ -6376,7 +1084,7 @@
           M(
             t,
             "class",
-            "px-2 py-2 uppercase tracking-widest bg-custom-mg border-none flex items-center font-semibold text-sm svelte-1r54uzk"
+            "px-2 py-2 uppercase tracking-widest bg-custom-mg border-none flex items-center font-semibold text-sm svelte-1r54uzk",
           ),
           Y(t, "bg-custom-positive", e[0]),
           Y(t, "bg-custom-mg", e[1]);
@@ -6505,7 +1213,7 @@
                   : ((i.rel = "stylesheet"), (i.href = t)),
                   (i.onload = s),
                   document.body.appendChild(i);
-              }
+              },
             );
       })(
         [
@@ -6515,7 +1223,7 @@
           },
         ],
         de,
-        a
+        a,
       );
     }
     function a() {
@@ -6616,7 +1324,7 @@
           M(
             n,
             "d",
-            "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",
           ),
           M(t, "xmlns", "http://www.w3.org/2000/svg"),
           M(t, "width", "24"),
@@ -6645,7 +1353,7 @@
           M(
             n,
             "d",
-            "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
           ),
           M(t, "xmlns", "http://www.w3.org/2000/svg"),
           M(t, "width", "24"),
@@ -6771,14 +1479,14 @@
             M(
               u,
               "class",
-              "font-serif text-3xl font-bold flex-grow text-center flex-1"
+              "font-serif text-3xl font-bold flex-grow text-center flex-1",
             ),
             // M(v, "class", "text-sm text-center text-gray-500 mt-2"), // NEW: Style for <p>
             M(d, "class", "flex flex-1 justify-end"),
             M(
               r,
               "class",
-              "flex justify-evenly text-custom-fgcolor p-3 items-center"
+              "flex justify-evenly text-custom-fgcolor p-3 items-center",
               //new M(r, "class", "flex flex-col items-center text-custom-fgcolor p-3 gap-y-2")
             ),
             M(n, "class", "max-w-screen-md mx-auto "),
@@ -6975,7 +1683,7 @@
               e[1].artist +
               " - " +
               e[1].title +
-              " on SoundCloud")
+              " on SoundCloud"),
           ),
           M(n, "class", "no-underline"),
           M(t, "class", "p-3 pb-0 flex-col items-evenly");
@@ -7194,7 +1902,7 @@
           M(
             t,
             "class",
-            "p-2 mb-2 border border-custom-mg flex items-center last:mb-0"
+            "p-2 mb-2 border border-custom-mg flex items-center last:mb-0",
           ),
           Y(t, "border-custom-line", e[7] == e[0].length);
       },
@@ -7645,345 +2353,348 @@
     };
   }
   function Qe(e) {
-  let t,
-    n,
-    r,
-    i,
-    o,
-    a,
-    l,
-    u,
-    c,
-    d,
-    h,
-    f,
-    m,
-    v,
-    k,
-    b,
-    volumeControl,
-    S,
-    D,
-    Y,
-    C,
-    O,
-    P,
-    A = mt(e[11]) + "",
-    L =
-      mt(
-        e[15]
-          ? e[4].isPrime
-            ? e[8].slice(-1)[0]
-            : e[2].maxAttempts * e[2].attemptInterval
-          : e[3]
-      ) + "",
-    N = !e[12] && 1 == e[0] && tt();
-  function H(e, t) {
-    return e[4].isPrime ? rt : nt;
-  }
-  let I = H(e),
-    W = I(e);
-  return (
-    (D = new ae({
-      props: {
-        $$slots: {
-          default: [ht],
+    let t,
+      n,
+      r,
+      i,
+      o,
+      a,
+      l,
+      u,
+      c,
+      d,
+      h,
+      f,
+      m,
+      v,
+      k,
+      b,
+      volumeControl,
+      S,
+      D,
+      Y,
+      C,
+      O,
+      P,
+      A = mt(e[11]) + "",
+      L =
+        mt(
+          e[15]
+            ? e[4].isPrime
+              ? e[8].slice(-1)[0]
+              : e[2].maxAttempts * e[2].attemptInterval
+            : e[3],
+        ) + "",
+      N = !e[12] && 1 == e[0] && tt();
+    function H(e, t) {
+      return e[4].isPrime ? rt : nt;
+    }
+    let I = H(e),
+      W = I(e);
+    return (
+      (D = new ae({
+        props: {
+          $$slots: {
+            default: [ht],
+          },
+          $$scope: {
+            ctx: e,
+          },
         },
-        $$scope: {
-          ctx: e,
+      })),
+      D.$on("click", function () {
+        s(e[18] ? e[6] : e[5]) && (e[18] ? e[6] : e[5]).apply(this, arguments);
+      }),
+      {
+        c() {
+          N && N.c(),
+            (t = x()),
+            (n = w("div")),
+            (r = w("div")),
+            (i = w("div")),
+            (o = w("div")),
+            (a = w("div")),
+            (l = x()),
+            W.c(),
+            (u = x()),
+            (c = w("div")),
+            (d = w("div")),
+            (h = w("div")),
+            (f = w("div")),
+            (m = w("div")),
+            (v = w("div")),
+            (k = _(A)),
+            (b = x()),
+            (volumeDiv = w("div")),
+            (volumeIcon = w("button")),
+            M(volumeIcon, "style", "margin-right: 15px; border: none;"),
+            (volumeSvg = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "svg",
+            )),
+            M(volumeSvg, "viewBox", "0 0 24 24"),
+            M(volumeSvg, "width", "24"),
+            M(volumeSvg, "height", "24"),
+            (volumeSvg.innerHTML =
+              "<path d='M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z' style='fill: white;'></path>"),
+            M(volumeSvg, "class", "volume-icon"),
+            M(volumeDiv, "class", "item2"),
+            M(volumeDiv, "style", "display: flex; align-items: center;"),
+            (volumeControl = w("div")),
+            M(volumeControl, "class", "volume-control"),
+            (S = w("div")),
+            Q(D.$$.fragment),
+            (Y = x()),
+            (C = w("div")),
+            (O = _(L)),
+            M(a, "class", "h-full absolute bg-custom-positive"),
+            T(a, "width", e[10] + "%"),
+            M(o, "class", "h-full absolute bg-custom-mg overflow-hidden"),
+            T(o, "width", (e[15] ? e[16] : "100") + "%"),
+            M(i, "class", "h-3 w-full relative overflow-hidden "),
+            M(r, "class", "max-w-screen-sm w-full mx-auto px-3 flex-col"),
+            M(n, "class", "border-t border-custom-line"),
+            M(m, "class", "flex items-center item1"),
+            M(S, "class", "flex justify-center items-center p-1 item3"),
+            M(f, "class", "container"),
+            M(C, "class", "item4 "),
+            M(h, "class", "px-3 "),
+            M(d, "class", "max-w-screen-sm w-full mx-auto flex-col"),
+            M(c, "class", "border-t border-custom-line");
         },
-      },
-    })),
-    D.$on("click", function () {
-      s(e[18] ? e[6] : e[5]) && (e[18] ? e[6] : e[5]).apply(this, arguments);
-    }),
-    {
-      c() {
-        N && N.c(),
-          (t = x()),
-          (n = w("div")),
-          (r = w("div")),
-          (i = w("div")),
-          (o = w("div")),
-          (a = w("div")),
-          (l = x()),
-          W.c(),
-          (u = x()),
-          (c = w("div")),
-          (d = w("div")),
-          (h = w("div")),
-          (f = w("div")),
-          (m = w("div")),
-          (v = w("div")),
-          (k = _(A)),
-          (b = x()),
-          (volumeDiv = w("div")),
-          (volumeIcon = w("button")),
-          M(volumeIcon, "style", "margin-right: 15px; border: none;"),
-          (volumeSvg = document.createElementNS(
-            "http://www.w3.org/2000/svg",
-            "svg"
-          )),
-          M(volumeSvg, "viewBox", "0 0 24 24"),
-          M(volumeSvg, "width", "24"),
-          M(volumeSvg, "height", "24"),
-          (volumeSvg.innerHTML =
-            "<path d='M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z' style='fill: white;'></path>"),
-          M(volumeSvg, "class", "volume-icon"),
-          M(volumeDiv, "class", "item2"),
-          M(volumeDiv, "style", "display: flex; align-items: center;"),
-          (volumeControl = w("div")),
-          M(volumeControl, "class", "volume-control"),
-          (S = w("div")),
-          Q(D.$$.fragment),
-          (Y = x()),
-          (C = w("div")),
-          (O = _(L)),
-          M(a, "class", "h-full absolute bg-custom-positive"),
-          T(a, "width", e[10] + "%"),
-          M(o, "class", "h-full absolute bg-custom-mg overflow-hidden"),
-          T(o, "width", (e[15] ? e[16] : "100") + "%"),
-          M(i, "class", "h-3 w-full relative overflow-hidden "),
-          M(r, "class", "max-w-screen-sm w-full mx-auto px-3 flex-col"),
-          M(n, "class", "border-t border-custom-line"),
-          M(m, "class", "flex items-center item1"),
-          M(S, "class", "flex justify-center items-center p-1 item3"),
-          M(f, "class", "container"),
-          M(C, "class", "item4 "),
-          M(h, "class", "px-3 "),
-          M(d, "class", "max-w-screen-sm w-full mx-auto flex-col"),
-          M(c, "class", "border-t border-custom-line");
-      },
-      m(e, s) {
-        N && N.m(e, s),
-          g(e, t, s),
-          g(e, n, s),
-          p(n, r),
-          p(r, i),
-          p(i, o),
-          p(o, a),
-          p(i, l),
-          W.m(i, null),
-          g(e, u, s),
-          g(e, c, s),
-          p(c, d),
-          p(d, h),
-          p(h, f),
-          p(f, m),
-          p(m, v);
-        if (!/Mobi/i.test(window.navigator.userAgent)) {
-          f.classList.add("with-volume");
-          p(f, volumeDiv), p(volumeDiv, volumeIcon), p(volumeIcon, volumeSvg);
- 
-          // Create the slider container
-          const sliderContainer = document.createElement("div");
-          sliderContainer.className = "volume-control";
-          p(volumeDiv, sliderContainer);
- 
-          // Create the slider
-          const slider = document.createElement("div");
-          slider.className = "slider";
-          slider.setAttribute("role", "slider");
-          slider.setAttribute("aria-label", "Volume");
-          slider.setAttribute("aria-valuemin", "0");
-          slider.setAttribute("aria-valuemax", "100");
-          slider.setAttribute("aria-valuenow", "50");
-          slider.setAttribute("tabindex", "0");
-          p(sliderContainer, slider);
- 
-          // Create the slider fill
-          const sliderFill = document.createElement("div");
-          sliderFill.className = "slider-fill";
-          p(slider, sliderFill);
- 
-          // Create the slider thumb
-          const sliderThumb = document.createElement("div");
-          sliderThumb.className = "slider-thumb";
-          p(slider, sliderThumb);
- 
-          let isDragging = false;
- 
-          const startDragging = () => {
-            isDragging = true;
-            volumeIcon.style.pointerEvents = "none";
-          };
- 
-          const stopDragging = () => {
-            isDragging = false;
-            volumeIcon.style.pointerEvents = "auto";
-          };
- 
-          const updateSlider = (clientX) => {
-            const rect = slider.getBoundingClientRect();
-            let value = Math.max(
-              0,
-              Math.min(100, ((clientX - rect.left) / rect.width) * 100)
-            );
-            value = Math.round(value);
-            sliderFill.style.width = `${value}%`;
-            sliderThumb.style.left = `${value}%`;
-            slider.setAttribute("aria-valuenow", value);
- 
-            // Update volume for SoundCloud widget
-            if (window.SC && window.SC.Widget) {
-              const widget = SC.Widget(document.querySelector("iframe"));
-              widget.setVolume(value);
-            }
- 
-            // Update mute icon
-            updateMuteIcon(value);
-          };
- 
-          const updateMuteIcon = (value) => {
-            const path = volumeSvg.querySelector("path");
-            let line = volumeSvg.querySelector("line");
- 
-            if (value === 0) {
-              if (!line) {
-                line = document.createElementNS(
-                  "http://www.w3.org/2000/svg",
-                  "line"
-                );
-                line.setAttribute("x1", "1");
-                line.setAttribute("y1", "1");
-                line.setAttribute("x2", "23");
-                line.setAttribute("y2", "23");
-                line.setAttribute("style", "stroke: white; stroke-width: 2");
-                volumeSvg.appendChild(line);
+        m(e, s) {
+          N && N.m(e, s),
+            g(e, t, s),
+            g(e, n, s),
+            p(n, r),
+            p(r, i),
+            p(i, o),
+            p(o, a),
+            p(i, l),
+            W.m(i, null),
+            g(e, u, s),
+            g(e, c, s),
+            p(c, d),
+            p(d, h),
+            p(h, f),
+            p(f, m),
+            p(m, v);
+          if (!/Mobi/i.test(window.navigator.userAgent)) {
+            f.classList.add("with-volume");
+            p(f, volumeDiv), p(volumeDiv, volumeIcon), p(volumeIcon, volumeSvg);
+
+            // Create the slider container
+            const sliderContainer = document.createElement("div");
+            sliderContainer.className = "volume-control";
+            p(volumeDiv, sliderContainer);
+
+            // Create the slider
+            const slider = document.createElement("div");
+            slider.className = "slider";
+            slider.setAttribute("role", "slider");
+            slider.setAttribute("aria-label", "Volume");
+            slider.setAttribute("aria-valuemin", "0");
+            slider.setAttribute("aria-valuemax", "100");
+            slider.setAttribute("aria-valuenow", "50");
+            slider.setAttribute("tabindex", "0");
+            p(sliderContainer, slider);
+
+            // Create the slider fill
+            const sliderFill = document.createElement("div");
+            sliderFill.className = "slider-fill";
+            p(slider, sliderFill);
+
+            // Create the slider thumb
+            const sliderThumb = document.createElement("div");
+            sliderThumb.className = "slider-thumb";
+            p(slider, sliderThumb);
+
+            let isDragging = false;
+
+            const startDragging = () => {
+              isDragging = true;
+              volumeIcon.style.pointerEvents = "none";
+            };
+
+            const stopDragging = () => {
+              isDragging = false;
+              volumeIcon.style.pointerEvents = "auto";
+            };
+
+            const updateSlider = (clientX) => {
+              const rect = slider.getBoundingClientRect();
+              let value = Math.max(
+                0,
+                Math.min(100, ((clientX - rect.left) / rect.width) * 100),
+              );
+              value = Math.round(value);
+              sliderFill.style.width = `${value}%`;
+              sliderThumb.style.left = `${value}%`;
+              slider.setAttribute("aria-valuenow", value);
+
+              // Update volume for SoundCloud widget
+              if (window.SC && window.SC.Widget) {
+                const widget = SC.Widget(document.querySelector("iframe"));
+                widget.setVolume(value);
               }
-            } else {
-              if (line) {
-                volumeSvg.removeChild(line);
+
+              // Update mute icon
+              updateMuteIcon(value);
+            };
+
+            const updateMuteIcon = (value) => {
+              const path = volumeSvg.querySelector("path");
+              let line = volumeSvg.querySelector("line");
+
+              if (value === 0) {
+                if (!line) {
+                  line = document.createElementNS(
+                    "http://www.w3.org/2000/svg",
+                    "line",
+                  );
+                  line.setAttribute("x1", "1");
+                  line.setAttribute("y1", "1");
+                  line.setAttribute("x2", "23");
+                  line.setAttribute("y2", "23");
+                  line.setAttribute("style", "stroke: white; stroke-width: 2");
+                  volumeSvg.appendChild(line);
+                }
+              } else {
+                if (line) {
+                  volumeSvg.removeChild(line);
+                }
               }
-            }
- 
-            // Update the path (if needed)
-            path.setAttribute(
-              "d",
-              "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
-            );
-            path.setAttribute("style", "fill: white");
-          };
- 
-          slider.addEventListener("mousedown", (e) => {
-            if (isDragging) {
-              e.preventDefault();
-              e.stopPropagation();
-            }
-            isDragging = true;
-            updateSlider(e.clientX);
-            e.preventDefault(); // Prevent text selection
-          });
- 
-          document.addEventListener("mousemove", (e) => {
-            if (isDragging) {
+
+              // Update the path (if needed)
+              path.setAttribute(
+                "d",
+                "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z",
+              );
+              path.setAttribute("style", "fill: white");
+            };
+
+            slider.addEventListener("mousedown", (e) => {
+              if (isDragging) {
+                e.preventDefault();
+                e.stopPropagation();
+              }
+              isDragging = true;
               updateSlider(e.clientX);
               e.preventDefault(); // Prevent text selection
-            }
-          });
- 
-          document.addEventListener("mouseup", () => {
-            isDragging = false;
-          });
- 
-          slider.addEventListener("click", (e) => {
-            updateSlider(e.clientX);
-          });
- 
-          slider.addEventListener("keydown", (e) => {
-            let value = parseInt(slider.getAttribute("aria-valuenow"));
-            switch (e.key) {
-              case "ArrowRight":
-              case "ArrowUp":
-                value = Math.min(100, value + 5);
-                break;
-              case "ArrowLeft":
-              case "ArrowDown":
-                value = Math.max(0, value - 5);
-                break;
-              case "Home":
-                value = 0;
-                break;
-              case "End":
-                value = 100;
-                break;
-              default:
-                return;
-            }
+            });
+
+            document.addEventListener("mousemove", (e) => {
+              if (isDragging) {
+                updateSlider(e.clientX);
+                e.preventDefault(); // Prevent text selection
+              }
+            });
+
+            document.addEventListener("mouseup", () => {
+              isDragging = false;
+            });
+
+            slider.addEventListener("click", (e) => {
+              updateSlider(e.clientX);
+            });
+
+            slider.addEventListener("keydown", (e) => {
+              let value = parseInt(slider.getAttribute("aria-valuenow"));
+              switch (e.key) {
+                case "ArrowRight":
+                case "ArrowUp":
+                  value = Math.min(100, value + 5);
+                  break;
+                case "ArrowLeft":
+                case "ArrowDown":
+                  value = Math.max(0, value - 5);
+                  break;
+                case "Home":
+                  value = 0;
+                  break;
+                case "End":
+                  value = 100;
+                  break;
+                default:
+                  return;
+              }
+              updateSlider(
+                slider.getBoundingClientRect().left +
+                  (value / 100) * slider.offsetWidth,
+              );
+              e.preventDefault();
+            });
+
+            volumeIcon.addEventListener("click", () => {
+              const currentValue = parseInt(
+                slider.getAttribute("aria-valuenow"),
+              );
+              updateSlider(
+                slider.getBoundingClientRect().left +
+                  ((currentValue === 0 ? 50 : 0) / 100) * slider.offsetWidth,
+              );
+            });
+
+            // Initialize slider
             updateSlider(
               slider.getBoundingClientRect().left +
-                (value / 100) * slider.offsetWidth
+                (50 / 100) * slider.offsetWidth,
             );
-            e.preventDefault();
-          });
- 
-          volumeIcon.addEventListener("click", () => {
-            const currentValue = parseInt(slider.getAttribute("aria-valuenow"));
-            updateSlider(
-              slider.getBoundingClientRect().left +
-                ((currentValue === 0 ? 50 : 0) / 100) * slider.offsetWidth
-            );
-          });
- 
-          // Initialize slider
-          updateSlider(
-            slider.getBoundingClientRect().left +
-              (50 / 100) * slider.offsetWidth
-          );
-        } else {
-          f.classList.add("without-volume");
-        }
-        p(v, k),
-          p(f, b),
-          p(f, S),
-          ee(D, S, null),
-          p(f, Y),
-          p(f, C),
-          p(C, O),
-          (P = !0);
-      },
-      p(n, r) {
-        (e = n)[12] || 1 != e[0]
-          ? N && (N.d(1), (N = null))
-          : N || ((N = tt()), N.c(), N.m(t.parentNode, t)),
-          (!P || 1024 & r[0]) && T(a, "width", e[10] + "%"),
-          (!P || 98304 & r[0]) && T(o, "width", (e[15] ? e[16] : "100") + "%"),
-          I === (I = H(e)) && W
-            ? W.p(e, r)
-            : (W.d(1), (W = I(e)), W && (W.c(), W.m(i, null))),
-          (!P || 2048 & r[0]) && A !== (A = mt(e[11]) + "") && $(k, A);
-        const s = {};
-        (262144 & r[0]) | (128 & r[1]) &&
-          (s.$$scope = {
-            dirty: r,
-            ctx: e,
-          }),
-          D.$set(s),
-          (!P || 33052 & r[0]) &&
-            L !==
-              (L =
-                mt(
-                  e[15]
-                    ? e[4].isPrime
-                      ? e[8].slice(-1)[0]
-                      : e[2].maxAttempts * e[2].attemptInterval
-                    : e[3]
-                ) + "") &&
-            $(O, L);
-      },
-      i(e) {
-        P || (Z(D.$$.fragment, e), (P = !0));
-      },
-      o(e) {
-        q(D.$$.fragment, e), (P = !1);
-      },
-      d(e) {
-        N && N.d(e), e && y(t), e && y(n), W.d(), e && y(u), e && y(c), te(D);
-      },
-    }
-  );
-}
- 
+          } else {
+            f.classList.add("without-volume");
+          }
+          p(v, k),
+            p(f, b),
+            p(f, S),
+            ee(D, S, null),
+            p(f, Y),
+            p(f, C),
+            p(C, O),
+            (P = !0);
+        },
+        p(n, r) {
+          (e = n)[12] || 1 != e[0]
+            ? N && (N.d(1), (N = null))
+            : N || ((N = tt()), N.c(), N.m(t.parentNode, t)),
+            (!P || 1024 & r[0]) && T(a, "width", e[10] + "%"),
+            (!P || 98304 & r[0]) &&
+              T(o, "width", (e[15] ? e[16] : "100") + "%"),
+            I === (I = H(e)) && W
+              ? W.p(e, r)
+              : (W.d(1), (W = I(e)), W && (W.c(), W.m(i, null))),
+            (!P || 2048 & r[0]) && A !== (A = mt(e[11]) + "") && $(k, A);
+          const s = {};
+          (262144 & r[0]) | (128 & r[1]) &&
+            (s.$$scope = {
+              dirty: r,
+              ctx: e,
+            }),
+            D.$set(s),
+            (!P || 33052 & r[0]) &&
+              L !==
+                (L =
+                  mt(
+                    e[15]
+                      ? e[4].isPrime
+                        ? e[8].slice(-1)[0]
+                        : e[2].maxAttempts * e[2].attemptInterval
+                      : e[3],
+                  ) + "") &&
+              $(O, L);
+        },
+        i(e) {
+          P || (Z(D.$$.fragment, e), (P = !0));
+        },
+        o(e) {
+          q(D.$$.fragment, e), (P = !1);
+        },
+        d(e) {
+          N && N.d(e), e && y(t), e && y(n), W.d(), e && y(u), e && y(c), te(D);
+        },
+      }
+    );
+  }
+
   function et(e) {
     let t, n, r, s, i, o;
     return {
@@ -7993,7 +2704,7 @@
           (r = w("a")),
           (s = _("here")),
           (o = _(
-            ", though, if you want to maintain your streak.\n                                We won't tell..."
+            ", though, if you want to maintain your streak.\n                                We won't tell...",
           )),
           M(r, "href", (i = e[1].url)),
           M(t, "class", "text-xs text-custom-line pt-1");
@@ -8015,11 +2726,11 @@
       c() {
         (t = w("div")),
           (t.innerHTML =
-             '<p><a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">Click Here for the full list of Mario Heardle songs. <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>'),
+            '<p><a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">Click Here for the full list of Mario Heardle songs. <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>'),
           M(
             t,
             "class",
-            "text-center p-3 flex flex-col items-center text-sm text-custom-line"
+            "text-center p-3 flex flex-col items-center text-sm text-custom-line",
           );
       },
       m(e, n) {
@@ -8304,7 +3015,7 @@
             M(
               t,
               "class",
-              "flex justify-center items-center text-custom-fg h-14 w-14 border-2 rounded-full relative overflow-hidden"
+              "flex justify-center items-center text-custom-fg h-14 w-14 border-2 rounded-full relative overflow-hidden",
             );
         },
         m(e, r) {
@@ -8469,7 +3180,7 @@
                       w > d * f.attemptInterval && M())
                   : (n(10, (v = (w / m) * 100)), w > m && M());
             });
-        }
+        },
       );
     }
     P(() => {
@@ -8507,7 +3218,7 @@
               16,
               (l = p.isPrime
                 ? (a[o - 1] / a.slice(-1)[0]) * 100
-                : (d / f.maxAttempts) * 100)
+                : (d / f.maxAttempts) * 100),
             ),
           384 & e.$$.dirty[0] && (u = a[o - 1]);
       }),
@@ -8579,7 +3290,7 @@
             resetAndPlay: 21,
           },
           null,
-          [-1, -1]
+          [-1, -1],
         );
     }
     get togglePlayState() {
@@ -8598,10 +3309,10 @@
   "undefined" != typeof globalThis
     ? globalThis
     : "undefined" != typeof window
-    ? window
-    : "undefined" != typeof global
-    ? global
-    : "undefined" != typeof self && self;
+      ? window
+      : "undefined" != typeof global
+        ? global
+        : "undefined" != typeof self && self;
   function yt(e) {
     var t = {
       exports: {},
@@ -8612,7 +3323,7 @@
     throw new Error(
       'Could not dynamically require "' +
         e +
-        '". Please configure the dynamicRequireTargets option of @rollup/plugin-commonjs appropriately for this require call to behave properly.'
+        '". Please configure the dynamicRequireTargets option of @rollup/plugin-commonjs appropriately for this require call to behave properly.',
     );
   }
   var wt = yt(function (e, t) {
@@ -8638,14 +3349,17 @@
                   r(t, e, s[e]);
                 })
               : Object.getOwnPropertyDescriptors
-              ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(s))
-              : e(Object(s)).forEach(function (e) {
-                  Object.defineProperty(
+                ? Object.defineProperties(
                     t,
-                    e,
-                    Object.getOwnPropertyDescriptor(s, e)
-                  );
-                });
+                    Object.getOwnPropertyDescriptors(s),
+                  )
+                : e(Object(s)).forEach(function (e) {
+                    Object.defineProperty(
+                      t,
+                      e,
+                      Object.getOwnPropertyDescriptor(s, e),
+                    );
+                  });
           }
           return t;
         }
@@ -8692,7 +3406,7 @@
             i(e) ||
             (function () {
               throw new TypeError(
-                "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
               );
             })()
           );
@@ -8706,9 +3420,9 @@
               "Map" === n || "Set" === n
                 ? Array.from(e)
                 : "Arguments" === n ||
-                  /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
-                ? o(e, t)
-                : void 0
+                    /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
+                  ? o(e, t)
+                  : void 0
             );
           }
         }
@@ -8755,8 +3469,8 @@
                 },
                 "string" == typeof n && {
                   class: n,
-                }
-              )
+                },
+              ),
             ).outerHTML;
           },
           d = function (e, t) {
@@ -8765,7 +3479,7 @@
                 bubbles: !0,
                 detail: t.feedback,
                 cancelable: !0,
-              })
+              }),
             );
           },
           h = function (e, t, n) {
@@ -8865,7 +3579,7 @@
                         };
                       }
                       throw new TypeError(
-                        "Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."
+                        "Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
                       );
                     }
                     var o,
@@ -8917,7 +3631,7 @@
               {
                 index: n,
               },
-              e.feedback.results[n]
+              e.feedback.results[n],
             );
           },
           w = function (e) {
@@ -9014,8 +3728,8 @@
                                       },
                                       s.class && {
                                         class: s.class,
-                                      }
-                                    )
+                                      },
+                                    ),
                                   );
                                   s.element && s.element(r, e);
                                 }),
@@ -9061,10 +3775,10 @@
                     },
                     i && {
                       placeholder: i,
-                    }
+                    },
                   ),
-                  !e.wrapper && t({}, a)
-                )
+                  !e.wrapper && t({}, a),
+                ),
               ),
               e.wrapper &&
                 (e.wrapper = l(
@@ -9074,8 +3788,8 @@
                       around: e.input,
                       class: e.name + "_wrapper",
                     },
-                    a
-                  )
+                    a,
+                  ),
                 )),
               o &&
                 (e.list = l(
@@ -9089,8 +3803,8 @@
                     },
                     o.class && {
                       class: o.class,
-                    }
-                  )
+                    },
+                  ),
                 )),
               (function (e) {
                 var n,
@@ -9114,7 +3828,7 @@
                     },
                     e.resultsList && {
                       list: i ? t({}, i.list) : {},
-                    }
+                    },
                   )),
                   l = {
                     input: {
@@ -9406,7 +4120,7 @@
       })),
       //FIVERR NEW LINE
       b.$on("click", (ev) => {
-        _onSubmit(); 
+        _onSubmit();
         e[5]();
       }),
       {
@@ -9449,7 +4163,7 @@
             M(
               c,
               "class",
-              "focus:outline-none focus:border-custom-positive w-full p-3 pl-9 placeholder:text-custom-line bg-custom-bg text-custom-fg border-custom-mg"
+              "focus:outline-none focus:border-custom-positive w-full p-3 pl-9 placeholder:text-custom-line bg-custom-bg text-custom-fg border-custom-mg",
             ),
             M(c, "id", "autoComplete"),
             M(c, "type", "search"),
@@ -9537,12 +4251,12 @@
           }),
           n(4, (r = "")))
         : void 0 !== r && "" !== r.trim()
-        ? (u("guess", {
-            guess: r,
-            isSkipped: !1,
-          }),
-          n(4, (r = "")))
-        : l.focus();
+          ? (u("guess", {
+              guess: r,
+              isSkipped: !1,
+            }),
+            n(4, (r = "")))
+          : l.focus();
     }
     P(() => {
       !(function () {
@@ -9658,7 +4372,7 @@
           M(
             s,
             "class",
-            "text-sm text-center uppercase text-custom-line font-semibold tracking-widest"
+            "text-sm text-center uppercase text-custom-line font-semibold tracking-widest",
           ),
           M(r, "class", "flex-1 pl-7"),
           (l.autofocus = !0),
@@ -9759,19 +4473,19 @@
             M(
               t,
               "class",
-              "modal-background p-3 flex justify-center svelte-1nyqrwd"
+              "modal-background p-3 flex justify-center svelte-1nyqrwd",
             ),
             M(
               i,
               "class",
-              "pointer-events-auto modal max-w-screen-xs w-full mx-auto top-20 relative rounded-sm "
+              "pointer-events-auto modal max-w-screen-xs w-full mx-auto top-20 relative rounded-sm ",
             ),
             M(i, "role", "dialog"),
             M(i, "aria-modal", "true"),
             M(
               s,
               "class",
-              "modal-background p-3 pointer-events-none svelte-1nyqrwd"
+              "modal-background p-3 pointer-events-none svelte-1nyqrwd",
             );
         },
         m(r, a) {
@@ -9877,7 +4591,7 @@
       c() {
         (n = w("div")),
           (n.innerHTML =
-          //Fiverr new line
+            //Fiverr new line
             '<p class="mb-3">Mario Heardle is a version of Heardle that features songs from across the entire Mario franchise.</p> <p class="mb-3">Volume Slider and Scroll Bar code by <a href="https://github.com/morgvanny">morgvanny</a>.</p> <p class="mb-3">Metadata code by <a href="https://www.fiverr.com/gema_designer">gema_designer</a>.</p>\n\n<p class="mb-3">The full list of songs is available <a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">here.</a> </p> \n\n<p class="mb-3"> If you have any technical issues, you can contact me @NinjiGalaxy on Bluesky, or by commenting on the previously linked Google Sheet. </p>'),
           //FNL
           M(n, "class", "text");
@@ -9905,19 +4619,19 @@
       c() {
         (n = w("div")),
           (r = w("a")),
-           (r.innerHTML =
-           '<span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Click here to play</p>Mario Heardle Infinite!'),
-           M(
-             r,
-             "class",
-             "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
-           ),
-           M(r, "href", "https://ninjigalaxy.github.io/mario-heardle-infinite/"),
-           M(r, "title", "Mario Heardle Infinite"),
+          (r.innerHTML =
+            '<span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Click here to play</p>Mario Heardle Infinite!'),
+          M(
+            r,
+            "class",
+            "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy",
+          ),
+          M(r, "href", "https://ninjigalaxy.github.io/mario-heardle-infinite/"),
+          M(r, "title", "Mario Heardle Infinite"),
           M(
             n,
             "class",
-            "text-center flex justify-center items-center flex-col "
+            "text-center flex justify-center items-center flex-col ",
           );
       },
       m(e, o) {
@@ -9991,7 +4705,7 @@
           T(
             d,
             "background",
-            "linear-gradient(to bottom, rgba(18,18,18,0), rgba(18,18,18,1)) no-repeat bottom"
+            "linear-gradient(to bottom, rgba(18,18,18,0), rgba(18,18,18,1)) no-repeat bottom",
           ),
           T(d, "background-size", "100% 100%"),
           M(n, "class", "relative");
@@ -10068,7 +4782,7 @@
       P(async function () {
         (async function () {
           const e = await fetch(
-            "https://wjsn-heardle.glitch.me/supporters.json"
+            "https://wjsn-heardle.glitch.me/supporters.json",
           );
           return await e.json();
         })().then((e) => {
@@ -10188,7 +4902,7 @@
           ":" +
           ("00" + t).slice(-2) +
           ":" +
-          ("00" + s).slice(-2))
+          ("00" + s).slice(-2)),
       ),
         i--,
         0 == e && 0 == t && 0 == s && location.reload(!0);
@@ -10286,7 +5000,7 @@
             M(
               m,
               "class",
-              "flex flex-col justify-center items-center mb-6 mx-3"
+              "flex flex-col justify-center items-center mb-6 mx-3",
             ),
             M(Y, "class", "flex justify-center items-center mb-3"),
             M(T, "class", "bg-custom-highlight py-3 pb-5 mx-3 rounded-t-md");
@@ -10387,10 +5101,10 @@
       return e[0][e[12]].isSkipped
         ? sn
         : e[0][e[12]].isCorrect || e[0][e[12]].isSkipped
-        ? e[0][e[12]].isCorrect
-          ? nn
-          : void 0
-        : rn;
+          ? e[0][e[12]].isCorrect
+            ? nn
+            : void 0
+          : rn;
     }
     let r = n(e),
       s = r && r(e);
@@ -10543,7 +5257,7 @@
         n = _(
           "You didn't get today's " +
             artist +
-            " Heardle. Better luck tomorrow! 💎"
+            " Heardle. Better luck tomorrow! 💎",
         );
       },
       m(e, t) {
@@ -10564,7 +5278,7 @@
           M(
             t,
             "class",
-            "tracking-widest uppercase text-xs text-custom-line p-3 pb-0 text-center"
+            "tracking-widest uppercase text-xs text-custom-line p-3 pb-0 text-center",
           );
       },
       m(e, n) {
@@ -10691,22 +5405,27 @@
             ? r.length < i.maxAttempts / 3
               ? (t += "🔊")
               : r.length < (i.maxAttempts / 3) * 2
-              ? (t += "🔉")
-              : r.length <= i.maxAttempts && (t += "🔈")
+                ? (t += "🔉")
+                : r.length <= i.maxAttempts && (t += "🔈")
             : (t += "🔇");
           for (let e = 0; e < i.maxAttempts; e++)
             r.length > e
               ? 1 == r[e].isCorrect
                 ? (t += "🟢")
                 : 1 == r[e].isSkipped
-                ? (t += "⚫")
-                : (t += "🔴")
+                  ? (t += "⚫")
+                  : (t += "🔴")
               : (t += "⚪");
-          let o = e + "\n\n" + t + "\n\n" + "https://ninjigalaxy.github.io/mario-heardle";
+          let o =
+            e +
+            "\n\n" +
+            t +
+            "\n\n" +
+            "https://ninjigalaxy.github.io/mario-heardle";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-              navigator.userAgent
+              navigator.userAgent,
             ) ||
             /Firefox/i.test(navigator.userAgent)
           )
@@ -10722,7 +5441,7 @@
                 }, 2e3),
                 navigator.clipboard.writeText(o))
               : Promise.reject(
-                  "There was a problem copying your result to the clipboard"
+                  "There was a problem copying your result to the clipboard",
                 );
           navigator
             .share({
@@ -11083,7 +5802,7 @@
             Y(
               t,
               "text-custom-positive",
-              e[17] == e[1] - 1 && 0 != e[4] && e[2]
+              e[17] == e[1] - 1 && 0 != e[4] && e[2],
             ),
           22 & n &&
             Y(t, "text-custom-negative", e[17] == e[1] && 0 == e[4] && e[2]);
@@ -11167,7 +5886,7 @@
           M(
             a,
             "class",
-            "text-center border-right text-xs pt-1 text-custom-line"
+            "text-center border-right text-xs pt-1 text-custom-line",
           ),
           M(t, "class", "flex flex-col items-stretch ");
       },
@@ -11472,7 +6191,7 @@
                 "\nArguments: " +
                 Array.prototype.slice.call(l).join("") +
                 "\n" +
-                new Error().stack
+                new Error().stack,
             ),
               (n = !1);
           }
@@ -11499,7 +6218,7 @@
           (this._dayOfMonthOrdinalParseLenient = new RegExp(
             (this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) +
               "|" +
-              /\d{1,2}/.source
+              /\d{1,2}/.source,
           ));
       }
       function O(e, t) {
@@ -11510,8 +6229,8 @@
             (o(e[n]) && o(t[n])
               ? ((r[n] = {}), f(r[n], e[n]), f(r[n], t[n]))
               : null != t[n]
-              ? (r[n] = t[n])
-              : delete r[n]);
+                ? (r[n] = t[n])
+                : delete r[n]);
         for (n in e) a(e, n) && !a(t, n) && o(e[n]) && (r[n] = f({}, r[n]));
         return r;
       }
@@ -11727,7 +6446,7 @@
               e._d["set" + (e._isUTC ? "UTC" : "") + t](
                 n,
                 e.month(),
-                Qe(n, e.month())
+                Qe(n, e.month()),
               ))
             : e._d["set" + (e._isUTC ? "UTC" : "") + t](n));
       }
@@ -11779,8 +6498,8 @@
               /\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,
               function (e, t, n, r, s) {
                 return t || n || r || s;
-              }
-            )
+              },
+            ),
         );
       }
       function Ie(e) {
@@ -11866,7 +6585,7 @@
         });
       var et =
           "January_February_March_April_May_June_July_August_September_October_November_December".split(
-            "_"
+            "_",
           ),
         tt = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
         nt = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/,
@@ -11880,8 +6599,8 @@
                 (this._months.isFormat || nt).test(t) ? "format" : "standalone"
               ][e.month()]
           : i(this._months)
-          ? this._months
-          : this._months.standalone;
+            ? this._months
+            : this._months.standalone;
       }
       function ot(e, t) {
         return e
@@ -11889,8 +6608,8 @@
             ? this._monthsShort[e.month()]
             : this._monthsShort[nt.test(t) ? "format" : "standalone"][e.month()]
           : i(this._monthsShort)
-          ? this._monthsShort
-          : this._monthsShort.standalone;
+            ? this._monthsShort
+            : this._monthsShort.standalone;
       }
       function at(e, t, n) {
         var r,
@@ -11909,11 +6628,11 @@
             (i = m([2e3, r])),
               (this._shortMonthsParse[r] = this.monthsShort(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase()),
               (this._longMonthsParse[r] = this.months(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase());
         return n
           ? "MMM" === t
@@ -11921,17 +6640,17 @@
               ? s
               : null
             : -1 !== (s = Ee.call(this._longMonthsParse, o))
-            ? s
-            : null
+              ? s
+              : null
           : "MMM" === t
-          ? -1 !== (s = Ee.call(this._shortMonthsParse, o)) ||
-            -1 !== (s = Ee.call(this._longMonthsParse, o))
-            ? s
-            : null
-          : -1 !== (s = Ee.call(this._longMonthsParse, o)) ||
-            -1 !== (s = Ee.call(this._shortMonthsParse, o))
-          ? s
-          : null;
+            ? -1 !== (s = Ee.call(this._shortMonthsParse, o)) ||
+              -1 !== (s = Ee.call(this._longMonthsParse, o))
+              ? s
+              : null
+            : -1 !== (s = Ee.call(this._longMonthsParse, o)) ||
+                -1 !== (s = Ee.call(this._shortMonthsParse, o))
+              ? s
+              : null;
       }
       function lt(e, t, n) {
         var r, s, i;
@@ -11951,11 +6670,11 @@
               !this._longMonthsParse[r] &&
               ((this._longMonthsParse[r] = new RegExp(
                 "^" + this.months(s, "").replace(".", "") + "$",
-                "i"
+                "i",
               )),
               (this._shortMonthsParse[r] = new RegExp(
                 "^" + this.monthsShort(s, "").replace(".", "") + "$",
-                "i"
+                "i",
               ))),
             n ||
               this._monthsParse[r] ||
@@ -12029,7 +6748,7 @@
           (this._monthsStrictRegex = new RegExp("^(" + s.join("|") + ")", "i")),
           (this._monthsShortStrictRegex = new RegExp(
             "^(" + r.join("|") + ")",
-            "i"
+            "i",
           ));
       }
       function pt(e) {
@@ -12102,8 +6821,8 @@
           a <= 0
             ? (o = pt((i = e - 1)) + a)
             : a > pt(e)
-            ? ((i = e + 1), (o = a - pt(e)))
-            : ((i = e), (o = a)),
+              ? ((i = e + 1), (o = a - pt(e)))
+              : ((i = e), (o = a)),
           {
             year: i,
             dayOfYear: o,
@@ -12119,8 +6838,8 @@
           o < 1
             ? (r = o + St((s = e.year() - 1), t, n))
             : o > St(e.year(), t, n)
-            ? ((r = o - St(e.year(), t, n)), (s = e.year() + 1))
-            : ((s = e.year()), (r = o)),
+              ? ((r = o - St(e.year(), t, n)), (s = e.year() + 1))
+              : ((s = e.year()), (r = o)),
           {
             week: r,
             year: s,
@@ -12170,17 +6889,17 @@
         return "string" != typeof e
           ? e
           : isNaN(e)
-          ? "number" == typeof (e = t.weekdaysParse(e))
-            ? e
-            : null
-          : parseInt(e, 10);
+            ? "number" == typeof (e = t.weekdaysParse(e))
+              ? e
+              : null
+            : parseInt(e, 10);
       }
       function Pt(e, t) {
         return "string" == typeof e
           ? t.weekdaysParse(e) % 7 || 7
           : isNaN(e)
-          ? null
-          : e;
+            ? null
+            : e;
       }
       function At(e, t) {
         return e.slice(t, 7).concat(e.slice(0, t));
@@ -12223,7 +6942,7 @@
           t[r] = ce(e);
         });
       var Lt = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
-          "_"
+          "_",
         ),
         Nt = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
         Ht = "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
@@ -12244,15 +6963,15 @@
         return !0 === e
           ? At(this._weekdaysShort, this._week.dow)
           : e
-          ? this._weekdaysShort[e.day()]
-          : this._weekdaysShort;
+            ? this._weekdaysShort[e.day()]
+            : this._weekdaysShort;
       }
       function Et(e) {
         return !0 === e
           ? At(this._weekdaysMin, this._week.dow)
           : e
-          ? this._weekdaysMin[e.day()]
-          : this._weekdaysMin;
+            ? this._weekdaysMin[e.day()]
+            : this._weekdaysMin;
       }
       function jt(e, t, n) {
         var r,
@@ -12271,15 +6990,15 @@
             (i = m([2e3, 1]).day(r)),
               (this._minWeekdaysParse[r] = this.weekdaysMin(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase()),
               (this._shortWeekdaysParse[r] = this.weekdaysShort(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase()),
               (this._weekdaysParse[r] = this.weekdays(
                 i,
-                ""
+                "",
               ).toLocaleLowerCase());
         return n
           ? "dddd" === t
@@ -12287,29 +7006,29 @@
               ? s
               : null
             : "ddd" === t
-            ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
+              ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
+                ? s
+                : null
+              : -1 !== (s = Ee.call(this._minWeekdaysParse, o))
+                ? s
+                : null
+          : "dddd" === t
+            ? -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
+              -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
+              -1 !== (s = Ee.call(this._minWeekdaysParse, o))
               ? s
               : null
-            : -1 !== (s = Ee.call(this._minWeekdaysParse, o))
-            ? s
-            : null
-          : "dddd" === t
-          ? -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._minWeekdaysParse, o))
-            ? s
-            : null
-          : "ddd" === t
-          ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._minWeekdaysParse, o))
-            ? s
-            : null
-          : -1 !== (s = Ee.call(this._minWeekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
-            -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
-          ? s
-          : null;
+            : "ddd" === t
+              ? -1 !== (s = Ee.call(this._shortWeekdaysParse, o)) ||
+                -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
+                -1 !== (s = Ee.call(this._minWeekdaysParse, o))
+                ? s
+                : null
+              : -1 !== (s = Ee.call(this._minWeekdaysParse, o)) ||
+                  -1 !== (s = Ee.call(this._weekdaysParse, o)) ||
+                  -1 !== (s = Ee.call(this._shortWeekdaysParse, o))
+                ? s
+                : null;
       }
       function Bt(e, t, n) {
         var r, s, i;
@@ -12330,15 +7049,15 @@
               !this._fullWeekdaysParse[r] &&
               ((this._fullWeekdaysParse[r] = new RegExp(
                 "^" + this.weekdays(s, "").replace(".", "\\.?") + "$",
-                "i"
+                "i",
               )),
               (this._shortWeekdaysParse[r] = new RegExp(
                 "^" + this.weekdaysShort(s, "").replace(".", "\\.?") + "$",
-                "i"
+                "i",
               )),
               (this._minWeekdaysParse[r] = new RegExp(
                 "^" + this.weekdaysMin(s, "").replace(".", "\\.?") + "$",
-                "i"
+                "i",
               ))),
             this._weekdaysParse[r] ||
               ((i =
@@ -12437,15 +7156,15 @@
           (this._weekdaysMinRegex = this._weekdaysRegex),
           (this._weekdaysStrictRegex = new RegExp(
             "^(" + l.join("|") + ")",
-            "i"
+            "i",
           )),
           (this._weekdaysShortStrictRegex = new RegExp(
             "^(" + a.join("|") + ")",
-            "i"
+            "i",
           )),
           (this._weekdaysMinStrictRegex = new RegExp(
             "^(" + o.join("|") + ")",
-            "i"
+            "i",
           ));
       }
       function Xt() {
@@ -12603,7 +7322,7 @@
               : "undefined" != typeof console &&
                 console.warn &&
                 console.warn(
-                  "Locale " + e + " not found. Did you forget to load it?"
+                  "Locale " + e + " not found. Did you forget to load it?",
                 )),
           an._abbr
         );
@@ -12615,7 +7334,7 @@
           if (((t.abbr = e), null != un[e]))
             T(
               "defineLocaleOverride",
-              "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."
+              "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info.",
             ),
               (r = un[e]._config);
           else if (null != t.parentLocale)
@@ -12687,18 +7406,19 @@
               n[Be] < 0 || n[Be] > 11
                 ? Be
                 : n[ze] < 1 || n[ze] > Qe(n[je], n[Be])
-                ? ze
-                : n[Ue] < 0 ||
-                  n[Ue] > 24 ||
-                  (24 === n[Ue] && (0 !== n[Ve] || 0 !== n[Je] || 0 !== n[Ke]))
-                ? Ue
-                : n[Ve] < 0 || n[Ve] > 59
-                ? Ve
-                : n[Je] < 0 || n[Je] > 59
-                ? Je
-                : n[Ke] < 0 || n[Ke] > 999
-                ? Ke
-                : -1),
+                  ? ze
+                  : n[Ue] < 0 ||
+                      n[Ue] > 24 ||
+                      (24 === n[Ue] &&
+                        (0 !== n[Ve] || 0 !== n[Je] || 0 !== n[Ke]))
+                    ? Ue
+                    : n[Ve] < 0 || n[Ve] > 59
+                      ? Ve
+                      : n[Je] < 0 || n[Je] > 59
+                        ? Je
+                        : n[Ke] < 0 || n[Ke] > 999
+                          ? Ke
+                          : -1),
             g(e)._overflowDayOfYear && (t < je || t > ze) && (t = ze),
             g(e)._overflowWeeks && -1 === t && (t = Ze),
             g(e)._overflowWeekday && -1 === t && (t = qe),
@@ -12909,15 +7629,15 @@
             null != t.d
               ? ((s = t.d) < 0 || s > 6) && (l = !0)
               : null != t.e
-              ? ((s = t.e + i), (t.e < 0 || t.e > 6) && (l = !0))
-              : (s = i)),
+                ? ((s = t.e + i), (t.e < 0 || t.e > 6) && (l = !0))
+                : (s = i)),
           r < 1 || r > St(n, i, o)
             ? (g(e)._overflowWeeks = !0)
             : null != l
-            ? (g(e)._overflowWeekday = !0)
-            : ((a = xt(n, r, s, i, o)),
-              (e._a[je] = a.year),
-              (e._dayOfYear = a.dayOfYear));
+              ? (g(e)._overflowWeekday = !0)
+              : ((a = xt(n, r, s, i, o)),
+                (e._a[je] = a.year),
+                (e._dayOfYear = a.dayOfYear));
       }
       function Gn(e) {
         if (e._f !== r.ISO_8601)
@@ -12968,12 +7688,12 @@
         return null == n
           ? t
           : null != e.meridiemHour
-          ? e.meridiemHour(t, n)
-          : null != e.isPM
-          ? ((r = e.isPM(n)) && t < 12 && (t += 12),
-            r || 12 !== t || (t = 0),
-            t)
-          : t;
+            ? e.meridiemHour(t, n)
+            : null != e.isPM
+              ? ((r = e.isPM(n)) && t < 12 && (t += 12),
+                r || 12 !== t || (t = 0),
+                t)
+              : t;
       }
       function jn(e) {
         var t,
@@ -13009,7 +7729,7 @@
             [t.year, t.month, n, t.hour, t.minute, t.second, t.millisecond],
             function (e) {
               return e && parseInt(e, 10);
-            }
+            },
           )),
             Rn(e);
         }
@@ -13040,19 +7760,19 @@
         u(t)
           ? (e._d = new Date(r.now()))
           : d(t)
-          ? (e._d = new Date(t.valueOf()))
-          : "string" == typeof t
-          ? Hn(e)
-          : i(t)
-          ? ((e._a = h(t.slice(0), function (e) {
-              return parseInt(e, 10);
-            })),
-            Rn(e))
-          : o(t)
-          ? Bn(e)
-          : c(t)
-          ? (e._d = new Date(t))
-          : r.createFromInputFallback(e);
+            ? (e._d = new Date(t.valueOf()))
+            : "string" == typeof t
+              ? Hn(e)
+              : i(t)
+                ? ((e._a = h(t.slice(0), function (e) {
+                    return parseInt(e, 10);
+                  })),
+                  Rn(e))
+                : o(t)
+                  ? Bn(e)
+                  : c(t)
+                    ? (e._d = new Date(t))
+                    : r.createFromInputFallback(e);
       }
       function Jn(e, t, n, r, s) {
         var a = {};
@@ -13076,7 +7796,7 @@
         "value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",
         function (e) {
           e._d = new Date(e._i + (e._useUTC ? " UTC" : ""));
-        }
+        },
       )),
         (r.ISO_8601 = function () {}),
         (r.RFC_2822 = function () {});
@@ -13085,14 +7805,14 @@
           function () {
             var e = Kn.apply(null, arguments);
             return this.isValid() && e.isValid() ? (e < this ? this : e) : v();
-          }
+          },
         ),
         qn = M(
           "moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",
           function () {
             var e = Kn.apply(null, arguments);
             return this.isValid() && e.isValid() ? (e > this ? this : e) : v();
-          }
+          },
         );
       function Xn(e, t) {
         var n, r;
@@ -13203,18 +7923,18 @@
         return null === s
           ? null
           : 0 ===
-            (r =
-              60 *
-                (n = ((s[s.length - 1] || []) + "").match(dr) || [
-                  "-",
-                  0,
-                  0,
-                ])[1] +
-              ce(n[2]))
-          ? 0
-          : "+" === n[0]
-          ? r
-          : -r;
+              (r =
+                60 *
+                  (n = ((s[s.length - 1] || []) + "").match(dr) || [
+                    "-",
+                    0,
+                    0,
+                  ])[1] +
+                ce(n[2]))
+            ? 0
+            : "+" === n[0]
+              ? r
+              : -r;
       }
       function fr(e, t) {
         var n, s;
@@ -13332,35 +8052,35 @@
                 M: e._months,
               })
             : c(e) || !isNaN(+e)
-            ? ((i = {}), t ? (i[t] = +e) : (i.milliseconds = +e))
-            : (o = $r.exec(e))
-            ? ((n = "-" === o[1] ? -1 : 1),
-              (i = {
-                y: 0,
-                d: ce(o[ze]) * n,
-                h: ce(o[Ue]) * n,
-                m: ce(o[Ve]) * n,
-                s: ce(o[Je]) * n,
-                ms: ce(lr(1e3 * o[Ke])) * n,
-              }))
-            : (o = Dr.exec(e))
-            ? ((n = "-" === o[1] ? -1 : 1),
-              (i = {
-                y: Yr(o[2], n),
-                M: Yr(o[3], n),
-                w: Yr(o[4], n),
-                d: Yr(o[5], n),
-                h: Yr(o[6], n),
-                m: Yr(o[7], n),
-                s: Yr(o[8], n),
-              }))
-            : null == i
-            ? (i = {})
-            : "object" == typeof i &&
-              ("from" in i || "to" in i) &&
-              ((s = Or(Kn(i.from), Kn(i.to))),
-              ((i = {}).ms = s.milliseconds),
-              (i.M = s.months)),
+              ? ((i = {}), t ? (i[t] = +e) : (i.milliseconds = +e))
+              : (o = $r.exec(e))
+                ? ((n = "-" === o[1] ? -1 : 1),
+                  (i = {
+                    y: 0,
+                    d: ce(o[ze]) * n,
+                    h: ce(o[Ue]) * n,
+                    m: ce(o[Ve]) * n,
+                    s: ce(o[Je]) * n,
+                    ms: ce(lr(1e3 * o[Ke])) * n,
+                  }))
+                : (o = Dr.exec(e))
+                  ? ((n = "-" === o[1] ? -1 : 1),
+                    (i = {
+                      y: Yr(o[2], n),
+                      M: Yr(o[3], n),
+                      w: Yr(o[4], n),
+                      d: Yr(o[5], n),
+                      h: Yr(o[6], n),
+                      m: Yr(o[7], n),
+                      s: Yr(o[8], n),
+                    }))
+                  : null == i
+                    ? (i = {})
+                    : "object" == typeof i &&
+                      ("from" in i || "to" in i) &&
+                      ((s = Or(Kn(i.from), Kn(i.to))),
+                      ((i = {}).ms = s.milliseconds),
+                      (i.M = s.months)),
           (r = new or(i)),
           ar(e) && a(e, "_locale") && (r._locale = e._locale),
           ar(e) && a(e, "_isValid") && (r._isValid = e._isValid),
@@ -13406,7 +8126,7 @@
                   t +
                   "(period, number) is deprecated. Please use moment()." +
                   t +
-                  "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."
+                  "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.",
               ),
               (s = n),
               (n = r),
@@ -13504,16 +8224,16 @@
         return n < -6
           ? "sameElse"
           : n < -1
-          ? "lastWeek"
-          : n < 0
-          ? "lastDay"
-          : n < 1
-          ? "sameDay"
-          : n < 2
-          ? "nextDay"
-          : n < 7
-          ? "nextWeek"
-          : "sameElse";
+            ? "lastWeek"
+            : n < 0
+              ? "lastDay"
+              : n < 1
+                ? "sameDay"
+                : n < 2
+                  ? "nextDay"
+                  : n < 7
+                    ? "nextWeek"
+                    : "sameElse";
       }
       function Er(e, t) {
         1 === arguments.length &&
@@ -13639,18 +8359,20 @@
               n,
               t
                 ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
-                : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ"
+                : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ",
             )
           : Y(Date.prototype.toISOString)
-          ? t
-            ? this.toDate().toISOString()
-            : new Date(this.valueOf() + 60 * this.utcOffset() * 1e3)
-                .toISOString()
-                .replace("Z", j(n, "Z"))
-          : j(
-              n,
-              t ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ"
-            );
+            ? t
+              ? this.toDate().toISOString()
+              : new Date(this.valueOf() + 60 * this.utcOffset() * 1e3)
+                  .toISOString()
+                  .replace("Z", j(n, "Z"))
+            : j(
+                n,
+                t
+                  ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
+                  : "YYYY-MM-DD[T]HH:mm:ss.SSSZ",
+              );
       }
       function es() {
         if (!this.isValid()) return "moment.invalid(/* " + this._i + " */)";
@@ -13714,7 +8436,7 @@
         "moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.",
         function (e) {
           return void 0 === e ? this.localeData() : this.locale(e);
-        }
+        },
       );
       function ls() {
         return this._locale;
@@ -13757,7 +8479,7 @@
             t = n(
               this.year(),
               this.month(),
-              this.date() - (this.isoWeekday() - 1)
+              this.date() - (this.isoWeekday() - 1),
             );
             break;
           case "day":
@@ -13800,7 +8522,7 @@
               n(
                 this.year(),
                 this.month(),
-                this.date() - (this.isoWeekday() - 1) + 7
+                this.date() - (this.isoWeekday() - 1) + 7,
               ) - 1;
             break;
           case "day":
@@ -14049,7 +8771,7 @@
           this.week(),
           this.weekday(),
           this.localeData()._week.dow,
-          this.localeData()._week.doy
+          this.localeData()._week.doy,
         );
       }
       function zs(e) {
@@ -14175,7 +8897,8 @@
       function ei(e) {
         var t =
           Math.round(
-            (this.clone().startOf("day") - this.clone().startOf("year")) / 864e5
+            (this.clone().startOf("day") - this.clone().startOf("year")) /
+              864e5,
           ) + 1;
         return null == e ? t : this.add(e - t, "d");
       }
@@ -14348,11 +9071,11 @@
         (li.years = M("years accessor is deprecated. Use year instead", gt)),
         (li.zone = M(
           "moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",
-          gr
+          gr,
         )),
         (li.isDSTShifted = M(
           "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",
-          xr
+          xr,
         ));
       var hi = P.prototype;
       function fi(e, t, n, r) {
@@ -14457,22 +9180,22 @@
               (1 === ce((e % 100) / 10)
                 ? "th"
                 : 1 === t
-                ? "st"
-                : 2 === t
-                ? "nd"
-                : 3 === t
-                ? "rd"
-                : "th")
+                  ? "st"
+                  : 2 === t
+                    ? "nd"
+                    : 3 === t
+                      ? "rd"
+                      : "th")
             );
           },
         }),
         (r.lang = M(
           "moment.lang is deprecated. Use moment.locale instead.",
-          pn
+          pn,
         )),
         (r.langData = M(
           "moment.langData is deprecated. Use moment.localeData instead.",
-          vn
+          vn,
         ));
       var _i = Math.abs;
       function xi() {
@@ -14770,7 +9493,7 @@
         (uo.localeData = ls),
         (uo.toIsoString = M(
           "toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)",
-          lo
+          lo,
         )),
         (uo.lang = as),
         F("X", 0, 0, "unix"),
@@ -15000,12 +9723,12 @@
       return "info" == e[10].name
         ? 0
         : "donate" == e[10].name
-        ? 1
-        : "results" == e[10].name
-        ? 2
-        : "help" == e[10].name
-        ? 3
-        : -1;
+          ? 1
+          : "results" == e[10].name
+            ? 2
+            : "help" == e[10].name
+              ? 3
+              : -1;
     }
     return (
       ~(t = a(e)) && (n = o[t] = i[t](e)),
@@ -15067,7 +9790,7 @@
         (function (e, t, n) {
           const r = e.$$.props[t];
           void 0 !== r && ((e.$$.bound[r] = n), n(e.$$.ctx[r]));
-        })(t, "guessInput", s)
+        })(t, "guessInput", s),
       ),
       t.$on("guess", e[15]),
       {
@@ -15179,7 +9902,7 @@
             "content",
             "Guess the " +
               artist +
-              " song from the intro in as few tries as possible"
+              " song from the intro in as few tries as possible",
           ),
           M(n, "rel", "apple-touch-icon"),
           M(n, "sizes", "180x180"),
@@ -15198,13 +9921,13 @@
           M(
             k,
             "class",
-            "max-w-screen-sm w-full mx-auto h-full flex flex-col justify-between overflow-auto"
+            "max-w-screen-sm w-full mx-auto h-full flex flex-col justify-between overflow-auto",
           ),
           M(v, "class", "w-full flex flex-col flex-grow relative"),
           M(
             c,
             "class",
-            "bg-custom-bg text-custom-fg overflow-auto flex flex-col"
+            "bg-custom-bg text-custom-fg overflow-auto flex flex-col",
           ),
           T(c, "height", e[3] + "px");
       },
@@ -15333,16 +10056,16 @@
         hasFinished: !1,
         hasStarted: !1,
       };
-      //FIVERR NEW LINE. DO NOT ENABLE CONSOLE.LOG, JUST THE ONE ABOVE IT.
-      setCurrentHeardle(l);
+    //FIVERR NEW LINE. DO NOT ENABLE CONSOLE.LOG, JUST THE ONE ABOVE IT.
+    setCurrentHeardle(l);
     // console.log("a", l);
     var c, d;
     void 0 !== document.hidden
       ? ((c = "hidden"), (d = "visibilitychange"))
       : void 0 !== document.msHidden
-      ? ((c = "msHidden"), (d = "msvisibilitychange"))
-      : void 0 !== document.webkitHidden &&
-        ((c = "webkitHidden"), (d = "webkitvisibilitychange")),
+        ? ((c = "msHidden"), (d = "msvisibilitychange"))
+        : void 0 !== document.webkitHidden &&
+          ((c = "webkitHidden"), (d = "webkitvisibilitychange")),
       void 0 === document.addEventListener ||
         void 0 === c ||
         document.addEventListener(
@@ -15350,7 +10073,7 @@
           function () {
             document[c] || a === x(Vt.startDate) || location.reload(!0);
           },
-          !1
+          !1,
         );
     let h,
       f,
@@ -15471,11 +10194,11 @@
               answer: e.detail.guess,
               isCorrect: s,
               isSkipped: r,
-            }))
+            })),
           ),
           //FIVERR NEW LINE
           evaluateGuessMetadata(v);
-          n(5, (f.guessList = v), f),
+        n(5, (f.guessList = v), f),
           localStorage.setItem("userStats", JSON.stringify(h)),
           (v.length != Vt.maxAttempts && 1 != s) ||
             ((o = s),
@@ -15545,16 +10268,16 @@
   });
 })();
 
-const button = document.createElement('button');
-button.innerText = 'Import Data';
+const button = document.createElement("button");
+button.innerText = "Import Data";
 
-button.style.position = 'fixed';
-button.style.bottom = '50px';
-button.style.left = '10px';
-button.style.zIndex = '1000';
-button.style.padding = '10px 15px';
-button.style.backgroundColor = '#28A745';
-button.style.color = 'white';
-button.style.border = 'none';
-button.style.borderRadius = '5px';
-button.style.cursor = 'pointer';
+button.style.position = "fixed";
+button.style.bottom = "50px";
+button.style.left = "10px";
+button.style.zIndex = "1000";
+button.style.padding = "10px 15px";
+button.style.backgroundColor = "#28A745";
+button.style.color = "white";
+button.style.border = "none";
+button.style.borderRadius = "5px";
+button.style.cursor = "pointer";
