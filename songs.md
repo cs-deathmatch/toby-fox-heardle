@@ -6,6 +6,9 @@ Heardle so far.
 - [Undertale](#Undertale)
 - [Deltarune](#Deltarune)
     - [Chapter 1](#chapter-1)
+    - [Chapter 2](#chapter-2)
+    - [Chapters 3+4](#Chapters 3 + 4)
+    - [Chapter 5](#chapter-5)
 - [EarthBound Halloween Hack](#earthbound-halloween-hack)
 - [Homestuck](#homestuck)
     - [Midnight Crew: Drawing Dead](#midnight-crew-drawing-dead)
@@ -283,6 +286,49 @@ Heardle so far.
 - Neverending Night
 - The LEGEND...?
 - With Hope Crossed On Our Hearts
+
+### Chapter 5
+
+-Chapter 5 Logo
+-Inappropriate Recycling
+-Pirate Dojo
+-4rd Sanctuary
+-Festival
+-Catfession...?
+-Bratfession...?
+-I guess I'm in love
+-Weirder Birds
+-Your Dad's Best Friend
+-Garden of Hopes and Dreams
+-Rakuichi Buster
+-The Diner Song of Best Friends
+-Ride the Board
+-Quiet Glade
+-Who might you be?
+-Petal Dance
+-Flying Feather
+-Sunset of Seven Suns
+-Shop 3
+-Violet Tactics
+-Flower King
+-Flower Foyer
+-Flower Castle
+-Thousand Cafe Zukan
+-I'm Telling!
+-Stop, Criminell!
+-Loving Steps
+-Onsen
+-Beautiful Bathtime
+-Pink
+-Cutie Mew Mew Magic
+-Running Sky
+-Flower Man
+-That Day
+-Dreamwatchers
+-Weak Flowers
+-Walking Home
+-Field of Hopes and Dreams (Credits Version)
+-Goodnight, Sweet Prince
 
 ## Earthbound Halloween Hack
 

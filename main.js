@@ -264,6 +264,48 @@ var app = (function () {
 		"The LEGEND...? - Deltarune",
 		"With Hope Crossed On Our Hearts - Deltarune",
 
+		// Deltarune Chapter 5
+		"Chapter 5 Logo - Deltarune",
+		"Inappropriate Recycling - Deltarune",
+		"Pirate Dojo - Deltarune",
+		"4rd Sanctuary - Deltarune",
+		"Festival - Deltarune",
+		"Catfession...? - Deltarune",
+		"Bratfession...? - Deltarune",
+		"I guess I'm in love - Deltarune",
+		"Weirder Birds - Deltarune",
+		"Your Dad's Best Friend - Deltarune",
+		"Garden of Hopes and Dreams - Deltarune",
+		"Rakuichi Buster - Deltarune",
+		"The Diner Song of Best Friends - Deltarune",
+		"Ride the Board - Deltarune",
+		"Quiet Glade - Deltarune",
+		"Who might you be? - Deltarune",
+		"Petal Dance - Deltarune",
+		"Flying Feather - Deltarune",
+		"Sunset of Seven Suns - Deltarune",
+		"Shop 3 - Deltarune",
+		"Violet Tactics - Deltarune",
+		"Flower King - Deltarune",
+		"Flower Foyer - Deltarune",
+		"Flower Castle - Deltarune",
+		"Thousand Cafe Zukan - Deltarune",
+		"I'm Telling! - Deltarune",
+		"Stop, Criminell! - Deltarune",
+		"Loving Steps - Deltarune",
+		"Onsen - Deltarune",
+		"Beautiful Bathtime - Deltarune",
+		"Pink - Deltarune",
+		"Cutie Mew Mew Magic - Deltarune",
+		"Running Sky - Deltarune",
+		"Flower Man - Deltarune",
+		"That Day - Deltarune",
+		"Dreamwatchers - Deltarune",
+		"Weak Flowers - Deltarune",
+		"Walking Home - Deltarune",
+		"Field of Hopes and Dreams (Credits Version) - Deltarune",
+		"Goodnight, Sweet Prince - Deltarune",
+
 		// EarthBound Halloween Hack
 
 		// Technically missing File Select 2 and Game Over (Andonauts) but those
@@ -1404,6 +1446,170 @@ var app = (function () {
 				answer: "With Hope Crossed On Our Hearts - Deltarune",
 			},
 		],
+		deltarune_ch5: [
+
+			{
+				url: "https://soundcloud.com/tobyfox-music/chapter-5-logo",
+				answer: "Chapter 5 Logo - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/inappropriate-recycling",
+				answer: "Inappropriate Recycling - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/pirate-dojo",
+				answer: "Pirate Dojo - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/4rd-sanctuary",
+				answer: "4rd Sanctuary - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/festival",
+				answer: "Festival - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/catfession",
+				answer: "Catfession...? - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/bratfession",
+				answer: "Bratfession...? - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/i-guess-im-in-love-feat-itoki",
+				answer: "I guess I'm in love - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/weirder-birds",
+				answer: "Weirder Birds - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/your-dads-best-friend",
+				answer: "Your Dad's Best Friend - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/garden-of-hopes-and-dreams",
+				answer: "Garden of Hopes and Dreams - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/rakuichi-buster",
+				answer: "Rakuichi Buster - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/the-diner-song-of-best-friends",
+				answer: "The Diner Song of Best Friends - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/ride-the-board",
+				answer: "Ride the Board - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/quiet-glade",
+				answer: "Quiet Glade - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/who-might-you-be",
+				answer: "Who might you be? - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/petal-dance",
+				answer: "Petal Dance - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/flying-feather",
+				answer: "Flying Feather - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/sunset-of-seven-suns",
+				answer: "Sunset of Seven Suns - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/shop-3",
+				answer: "Shop 3 - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/violet-tactics",
+				answer: "Violet Tactics - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/flower-king",
+				answer: "Flower King - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/flower-foyer",
+				answer: "Flower Foyer - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/flower-castle",
+				answer: "Flower Castle - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/thousand-cafe-zukan",
+				answer: "Thousand Cafe Zukan - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/im-telling",
+				answer: "I'm Telling! - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/stop-criminell",
+				answer: "Stop, Criminell! - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/loving-steps",
+				answer: "Loving Steps - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/running-water-3",
+				answer: "Onsen - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/beautiful-bathtime",
+				answer: "Beautiful Bathtime - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/pink",
+				answer: "Pink - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/cutie-mew-mew-magic-feat?in=tobyfox-music/sets/deltarune-chapter-5-original-1",
+				answer: "Cutie Mew Mew Magic - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/running-sky",
+				answer: "Running Sky - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/flower-man-feat-camellia",
+				answer: "Flower Man - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/that-day",
+				answer: "That Day - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/dreamwatchers",
+				answer: "Dreamwatchers - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/weak-flowers",
+				answer: "Weak Flowers - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/walking-home",
+				answer: "Walking Home - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/scarlet-forest-from-deltarune",
+				answer: "Field of Hopes and Dreams (Credits Version) - Deltarune",
+			},
+			{
+				url: "https://soundcloud.com/tobyfox-music/goodnight-sweet-prince",
+				answer: "Goodnight, Sweet Prince - Deltarune",
+			},
+
+		],
 
 		// EarthBound Halloween Hack
 		halloween_hack: [
@@ -1850,6 +2056,7 @@ var app = (function () {
 						.concat(songData.deltarune_ch1)
 						.concat(songData.deltarune_ch2)
 						.concat(songData.deltarune_ch3_4)
+						.concat(songData.deltarune_ch5)
 						.concat(songData.halloween_hack)
 						.concat(songData.hs_midnight_crew)
 						.concat(songData.hs_vol_4)
