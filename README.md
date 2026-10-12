@@ -1,8 +1,5 @@
 # Toby Fox Heardle (Undertale, Deltarune, and more!)
 
-# Abandoning this, I honestly have no clue what i'm doing here. And it turns out somebody else took my idea and ran with it days after i originally abandoned this repo LOL. go check out https://github.com/IntangibleMatter/toby-fox-heardle
-
-
 # Still very WIP, absolutely not ready to play yet. If you want to help, don't hesitate to get in contact, or just submit code!
 
 **DISCLAIMER: If you want to play this legitimately, don't look in main.js or extension.js or you'll be spoiled on what songs will be used in the future.**
