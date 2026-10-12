@@ -1,44 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Toby Fox Heardle</title>
-<meta name="description" content="Guess the Toby Fox song from the intro in as little tries as possible.">
-<meta itemprop="name" content="Toby Fox Heardle">
-<meta itemprop="description" content="Guess the Toby Fox song from the intro in as little tries as possible.">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Toby Fox Heardle</title>
+		<meta
+			name="description"
+			content="Guess the Toby Fox song from the intro in as little tries as possible."
+		/>
+		<meta itemprop="name" content="Toby Fox Heardle" />
+		<meta
+			itemprop="description"
+			content="Guess the Toby Fox song from the intro in as little tries as possible."
+		/>
 
+		<!--<meta property="og:url" content="https://wii.gay/TEMPTEMPTEMP">-->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Toby Fox Heardle" />
+		<meta
+			property="og:description"
+			content="Guess the Toby Fox song from the intro in as little tries as possible."
+		/>
 
-<!--<meta property="og:url" content="https://wii.gay/TEMPTEMPTEMP">-->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Toby Fox Heardle">
-<meta property="og:description" content="Guess the Toby Fox song from the intro in as little tries as possible.">
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Mario Heardle" />
+		<meta
+			name="twitter:description"
+			content="Guess the Mario song from the intro in as little tries as possible."
+		/>
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mario Heardle">
-<meta name="twitter:description" content="Guess the Mario song from the intro in as little tries as possible.">
+		<!-- EDIT THE content= TAGS on lines 23-25 WITH A LINK TO AN IMAGE THAT WILL SHOW UP WHEN YOU SHARE THE LINK   -->
+		<meta itemprop="image" content="/assets/header.png" />
+		<meta property="og:image" content="/assets/header.png" />
+		<meta name="twitter:image" content="/assets/header.png" />
 
-  
-<!-- EDIT THE content= TAGS on lines 23-25 WITH A LINK TO AN IMAGE THAT WILL SHOW UP WHEN YOU SHARE THE LINK   -->
-<meta itemprop="image" content="/assets/header.png">
-<meta property="og:image" content="/assets/header.png">
-<meta name="twitter:image" content="/assets/header.png">
+		<!-- EDIT THE href TAGS  on lines 29-33 WITH A LINK THATLL SHOW UP AS AN ICON IN YOUR BROWSER   -->
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico"
+		/>
+		<link
+			rel="shortcut icon"
+			href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico"
+		/>
 
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="stylesheet" href="global.css" />
+		<link rel="stylesheet" href="bundle.css" />
 
-<!-- EDIT THE href TAGS  on lines 29-33 WITH A LINK THATLL SHOW UP AS AN ICON IN YOUR BROWSER   -->
-<link rel="icon" type="image/png" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
-<link rel="shortcut icon" href="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/3752270/d85578378ac96967dc177c1bb9067acff56a17d9.ico">
-  
-  
-  
-<link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="bundle.css">
-
-<script defer src="extension.js"></script>
-<script defer src="main.js"></script>
-</head>
+		<script defer src="extension.js"></script>
+		<script defer src="main.js"></script>
+	</head>
 </html>
